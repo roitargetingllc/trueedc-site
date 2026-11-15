@@ -1,0 +1,143 @@
+[
+ {
+  "id": "victorinox-classic-sd",
+  "name": "Victorinox Classic SD",
+  "brand": "Victorinox",
+  "category": "Multitool",
+  "asin": "B092DZCM42",
+  "price": 24.0,
+  "checked": "2026-11-15",
+  "facts": [
+   "7 functions, including a small blade, screwdriver and key ring",
+   "Swiss made",
+   "Small enough to live on a keychain"
+  ],
+  "pitch": "The gift nobody returns. It is small enough to forget about until the moment someone needs to open a package, trim a thread or tighten a screw, and then they never forget who gave it to them."
+ },
+ {
+  "id": "olight-imini-2",
+  "name": "Olight iMini 2",
+  "brand": "Olight",
+  "category": "Flashlight",
+  "asin": "B0C54ZH8WW",
+  "price": 19.99,
+  "checked": "2026-11-15",
+  "facts": [
+   "Rechargeable keychain flashlight",
+   "Clips to a key ring"
+  ],
+  "pitch": "A phone flashlight drains the phone. This rides on the keys and is always there for the parking lot, the dropped earbud under the car seat or the dark porch lock."
+ },
+ {
+  "id": "nite-ize-s-biner-microlock",
+  "name": "Nite Ize S-Biner MicroLock (2-pack)",
+  "brand": "Nite Ize",
+  "category": "Keychain",
+  "asin": "B00BKVPU08",
+  "price": 6.41,
+  "checked": "2026-11-15",
+  "facts": [
+   "Stainless steel",
+   "Locking gates on both sides",
+   "2-pack"
+  ],
+  "pitch": "The cheapest upgrade in EDC. It splits car keys from house keys and lets a light or a knife come off the ring in a second. Perfect stocking filler."
+ },
+ {
+  "id": "field-notes-kraft-3",
+  "name": "Field Notes Original Kraft (3-pack)",
+  "brand": "Field Notes",
+  "category": "Notebook",
+  "asin": "B0034KDEMO",
+  "price": 12.95,
+  "checked": "2026-11-15",
+  "facts": [
+   "3 notebooks, 48 ruled pages each",
+   "3.5 x 5.5 inches, fits a back pocket"
+  ],
+  "pitch": "For the person who still writes things down. It fits in a back pocket and has a cult following, so it reads as a thoughtful gift, not a cheap one."
+ },
+ {
+  "id": "casio-f91w",
+  "name": "Casio F-91W",
+  "brand": "Casio",
+  "category": "Watch",
+  "asin": "B000GAWSDG",
+  "price": 25.5,
+  "checked": "2026-11-15",
+  "facts": [
+   "Digital sport watch with a resin strap"
+  ],
+  "pitch": "The most famous cheap watch in the world. It is light enough to wear to bed and cheap enough to wear to the gym, which is exactly why people end up wearing it every day."
+ },
+ {
+  "id": "fisher-space-pen-bullet",
+  "name": "Fisher Space Pen Bullet (Matte Black)",
+  "brand": "Fisher",
+  "category": "Pen",
+  "asin": "B00K54CJZK",
+  "price": 30.59,
+  "checked": "2026-11-15",
+  "facts": [
+   "Pressurized ballpoint cartridge",
+   "Pocket size when capped, full size when posted"
+  ],
+  "pitch": "Fisher's pressurized cartridge is made to write upside down and in the cold. Capped, it is about 3.75 inches long; with the cap posted, it is a full-size pen. It looks more expensive than it is."
+ },
+ {
+  "id": "gerber-dime",
+  "name": "Gerber Dime",
+  "brand": "Gerber",
+  "category": "Multitool",
+  "asin": "B006M9NIDO",
+  "price": 34.99,
+  "checked": "2026-11-15",
+  "facts": [
+   "12 tools including pliers, a small blade and a bottle opener",
+   "Keychain size"
+  ],
+  "pitch": "Real pliers on a keychain. It is the tool people reach for at tailgates, campsites and in the junk drawer, and the bottle opener alone earns its spot."
+ },
+ {
+  "id": "civivi-elementum",
+  "name": "CIVIVI Elementum",
+  "brand": "CIVIVI",
+  "category": "Knife",
+  "asin": "B08C9PQPRQ",
+  "price": 50.15,
+  "checked": "2026-11-15",
+  "facts": [
+   "2.96 inch D2 steel blade",
+   "G10 handle"
+  ],
+  "pitch": "The knife enthusiasts recommend to people buying their first good one. Clean, slim, and it feels far nicer in the hand than its price suggests."
+ },
+ {
+  "id": "leatherman-skeletool-cx",
+  "name": "Leatherman Skeletool CX",
+  "brand": "Leatherman",
+  "category": "Multitool",
+  "asin": "B000059GTH",
+  "price": 79.95,
+  "checked": "2026-11-15",
+  "facts": [
+   "7 tools",
+   "Lightweight, built for everyday carry"
+  ],
+  "pitch": "A full-size Leatherman that disappears in a pocket. If the person on your list already has a cheap multitool, this is the one that replaces it for good."
+ },
+ {
+  "id": "leatherman-wave-plus",
+  "name": "Leatherman Wave+",
+  "brand": "Leatherman",
+  "category": "Multitool",
+  "asin": "B079MJBP21",
+  "price": 103.95,
+  "checked": "2026-11-15",
+  "facts": [
+   "18 tools",
+   "Stainless steel"
+  ],
+  "pitch": "The multitool that ends up being handed down. It is the classic big gift for a dad, a new homeowner or anyone who fixes things. Eighteen tools, and the ones people use most open from outside without unfolding the handles."
+ }
+]

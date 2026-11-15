@@ -1,0 +1,86 @@
+"""Text-only Pinterest pins (1000x1500 PNG). No product photos, so no image-rights issues.
+
+One pin per guide, plus one per product pointing at that product on its best guide.
+Returns a list of dicts used by feed.py (newest first is fine; Pinterest reads every new item).
+"""
+import datetime
+from pathlib import Path
+from PIL import Image, ImageDraw, ImageFont
+
+W, H = 1000, 1500
+BG, INK, ACCENT, MUTED = (20, 20, 19), (241, 239, 233), (249, 115, 22), (169, 165, 156)
+FONT_DIR = "/usr/share/fonts/opentype/inter/"
+
+def font(weight, size):
+    for name in (f"Inter-{weight}.otf", "Inter-Bold.otf"):
+        try: return ImageFont.truetype(FONT_DIR + name, size)
+        except OSError: pass
+    return ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", size)
+
+def wrap(draw, text, f, width):
+    words, lines, line = text.split(), [], ""
+    for w in words:
+        test = (line + " " + w).strip()
+        if draw.textlength(test, font=f) <= width: line = test
+        else: lines.append(line); line = w
+    if line: lines.append(line)
+    return lines
+
+def fit(draw, text, weight, max_size, width, max_lines):
+    size = max_size
+    while size > 40:
+        f = font(weight, size)
+        lines = wrap(draw, text, f, width)
+        if len(lines) <= max_lines: return f, lines, size
+        size -= 6
+    f = font(weight, 40); return f, wrap(draw, text, f, width), 40
+
+def make_pin(path, kicker, headline, sub, cta="trueedc.com"):
+    img = Image.new("RGB", (W, H), BG)
+    d = ImageDraw.Draw(img)
+    m = 80
+    d.rectangle([0, 0, W, 18], fill=ACCENT)
+    d.text((m, 110), "TRUE", font=font("Black", 56), fill=INK)
+    d.text((m + d.textlength("TRUE", font=font("Black", 56)), 110), "EDC", font=font("Black", 56), fill=ACCENT)
+    y = 330
+    kf = font("Bold", 38)
+    for line in wrap(d, kicker.upper(), kf, W - 2 * m):
+        d.text((m, y), line, font=kf, fill=ACCENT); y += 50
+    y += 30
+    hf, hlines, hs = fit(d, headline, "Black", 120, W - 2 * m, 6)
+    for line in hlines:
+        d.text((m, y), line, font=hf, fill=INK); y += int(hs * 1.12)
+    y += 40
+    sf = font("Medium", 44)
+    for line in wrap(d, sub, sf, W - 2 * m)[:5]:
+        d.text((m, y), line, font=sf, fill=MUTED); y += 60
+    d.rounded_rectangle([m, H - 240, W - m, H - 130], radius=20, fill=ACCENT)
+    cf = font("Bold", 46)
+    tw = d.textlength(cta, font=cf)
+    d.text(((W - tw) / 2, H - 213), cta, font=cf, fill=BG)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    img.save(path, optimize=True)
+
+def make_all(site, products, guides, out_dir):
+    base = site["base_url"].rstrip("/")
+    items, seen = [], set()
+    for g in guides:
+        fn = f"guide-{g['slug']}.png"
+        checked = max(products[i]["checked"] for i in g["products"] if i in products)
+        checked = datetime.date.fromisoformat(checked).strftime("%b %-d, %Y")
+        desc = g["description"].replace("{checked}", checked)
+        kicker = {"holiday": "Holiday gift guide", "evergreen": "EDC buying guide"}.get(g.get("season"), "EDC guide")
+        make_pin(out_dir / fn, kicker, g["title"], desc, "See the picks at trueedc.com")
+        items.append({"id": fn, "title": g["title"], "desc": desc + " Links may earn us a commission. #ad",
+                      "link": f"{base}/{g['slug']}/", "image": f"{base}/pins/{fn}"})
+    for g in guides:
+        for pid in g["products"]:
+            if pid in seen or pid not in products: continue
+            seen.add(pid)
+            p = products[pid]
+            fn = f"pick-{pid}.png"
+            kicker = "Under $25 EDC pick" if p["price"] <= 25 else ("Under $50 EDC pick" if p["price"] <= 50 else "Worth the splurge")
+            make_pin(out_dir / fn, kicker, p["name"], p["pitch"], "Why we picked it: trueedc.com")
+            items.append({"id": fn, "title": f"{p['name']}: {kicker}", "desc": p["pitch"] + " Links may earn us a commission. #ad",
+                          "link": f"{base}/{g['slug']}/#{pid}", "image": f"{base}/pins/{fn}"})
+    return items

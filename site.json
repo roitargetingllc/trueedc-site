@@ -1,11 +1,11 @@
 {
-  "name": "True EDC",
-  "tagline": "Everyday carry, picked by budget. No fluff.",
-  "base_url": "https://trueedc.com",
-  "amazon_tag": "",
-  "newsletter_url": "",
-  "newsletter_name": "The True EDC Drop",
-  "instagram": "https://www.instagram.com/trueedc/",
-  "pinterest": "https://www.pinterest.com/trueedc/",
-  "year": 2026
+ "name": "True EDC",
+ "tagline": "Everyday carry, picked by budget. No fluff.",
+ "base_url": "https://trueedc.com",
+ "amazon_tag": "trueedc-20",
+ "newsletter_url": "",
+ "newsletter_name": "The True EDC Drop",
+ "instagram": "https://www.instagram.com/trueedc/",
+ "pinterest": "https://www.pinterest.com/trueedc/",
+ "year": 2026
 }

@@ -1,20 +1,68 @@
 [
- {"slug":"best-edc-gifts-2026","title":"The Best EDC Gifts of 2026, by Budget","short":"Best EDC Gifts of 2026","season":"holiday",
-  "description":"Ten everyday-carry gifts that actually get used, sorted into under $25, under $50 and splurge. Real products, prices checked {checked}.",
-  "intro":["Everyday carry, or EDC, is the stuff someone has on them every day: keys, a light, a small tool, a pen. It makes a great gift because it gets used daily instead of living in a drawer.","Every pick below is a real product, with its price checked {checked}. They are grouped by budget so you can jump straight to yours. If you only buy one thing, buy the Victorinox Classic SD."],
-  "mode":"tiers",
-  "products":["victorinox-classic-sd","olight-imini-2","nite-ize-s-biner-microlock","field-notes-kraft-3","casio-f91w","fisher-space-pen-bullet","gerber-dime","civivi-elementum","leatherman-skeletool-cx","leatherman-wave-plus"],
-  "outro":"Buying a blade? Knife laws differ by state and city, so check where the person lives before you gift one. Every pick here except the CIVIVI Elementum is a tool first and a blade second."},
- {"slug":"edc-stocking-stuffers-under-25","title":"EDC Stocking Stuffers Under $25","short":"Stocking Stuffers Under $25","season":"holiday",
-  "description":"Small, useful, under $25: the everyday-carry stocking stuffers people keep using in March.",
-  "intro":["A good stocking stuffer is small, cheap and still in use months later. These all fit in a stocking and all came in under $25 when we checked."],
-  "mode":"under","max_price":25,
-  "products":["victorinox-classic-sd","olight-imini-2","nite-ize-s-biner-microlock","field-notes-kraft-3"],
-  "outro":"Want to go a little bigger? The full list, up to the splurge picks, is in our main gift guide."},
- {"slug":"first-edc-kit-under-100","title":"A Complete First EDC Kit for Under $100","short":"First EDC Kit Under $100","season":"evergreen",
-  "description":"Five pieces, one budget: a small tool, a light, a pen, a notebook and a better keyring, all for under $100.",
-  "intro":["You do not need a $300 knife to start carrying useful gear. This five-piece kit covers the jobs that come up every week, and the whole set came in under $100 when we priced it."],
-  "mode":"kit","budget":100,
-  "products":["victorinox-classic-sd","olight-imini-2","fisher-space-pen-bullet","field-notes-kraft-3","nite-ize-s-biner-microlock"],
-  "outro":"Add one piece at a time and you will quickly learn what you actually reach for. That is the whole point of EDC."}
+ {
+  "slug": "best-edc-gifts-2026",
+  "title": "The Best EDC Gifts of 2026, by Budget",
+  "short": "Best EDC Gifts of 2026",
+  "season": "holiday",
+  "description": "Ten everyday-carry gifts that actually get used, sorted into under $25, under $50 and splurge. Real products, prices checked {checked}.",
+  "intro": [
+   "Everyday carry, or EDC, is the stuff someone has on them every day: keys, a light, a small tool, a pen. It makes a great gift because it gets used daily instead of living in a drawer.",
+   "Every pick below is a real product, with its price checked {checked}. They are grouped by budget so you can jump straight to yours. If you only buy one thing, buy the Victorinox Classic SD."
+  ],
+  "mode": "tiers",
+  "products": [
+   "victorinox-classic-sd",
+   "olight-imini-2",
+   "nite-ize-s-biner-microlock",
+   "field-notes-kraft-3",
+   "casio-f91w",
+   "fisher-space-pen-bullet",
+   "gerber-dime",
+   "civivi-elementum",
+   "leatherman-skeletool-cx",
+   "leatherman-wave-plus"
+  ],
+  "outro": "Buying a blade? Knife laws differ by state and city, so check where the person lives before you gift one. Every pick here except the CIVIVI Elementum is a tool first and a blade second.",
+  "top_pick": "victorinox-classic-sd"
+ },
+ {
+  "slug": "edc-stocking-stuffers-under-25",
+  "title": "EDC Stocking Stuffers Under $25",
+  "short": "Stocking Stuffers Under $25",
+  "season": "holiday",
+  "description": "Small, useful, under $25: the everyday-carry stocking stuffers people keep using in March.",
+  "intro": [
+   "A good stocking stuffer is small, cheap and still in use months later. These all fit in a stocking and all came in under $25 when we checked."
+  ],
+  "mode": "under",
+  "max_price": 25,
+  "products": [
+   "victorinox-classic-sd",
+   "olight-imini-2",
+   "nite-ize-s-biner-microlock",
+   "field-notes-kraft-3"
+  ],
+  "outro": "Want to go a little bigger? The full list, up to the splurge picks, is in our main gift guide."
+ },
+ {
+  "slug": "first-edc-kit-under-100",
+  "title": "A Complete First EDC Kit for Under $100",
+  "short": "First EDC Kit Under $100",
+  "season": "evergreen",
+  "description": "Five pieces, one budget: a small tool, a light, a pen, a notebook and a better keyring, all for under $100.",
+  "intro": [
+   "You do not need a $300 knife to start carrying useful gear. This five-piece kit covers the jobs that come up every week, and the whole set came in under $100 when we priced it."
+  ],
+  "mode": "kit",
+  "budget": 100,
+  "products": [
+   "victorinox-classic-sd",
+   "olight-imini-2",
+   "fisher-space-pen-bullet",
+   "field-notes-kraft-3",
+   "nite-ize-s-biner-microlock"
+  ],
+  "outro": "Add one piece at a time and you will quickly learn what you actually reach for. That is the whole point of EDC.",
+  "top_pick": "victorinox-classic-sd"
+ }
 ]

@@ -89,7 +89,7 @@ TOPO = ('<svg class="topo" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid s
                   for i in range(12)) + "</svg>")
 
 CSS = """
-:root{--bg:#0e0e0d;--panel:#171715;--panel2:#1f1e1b;--line:#2c2b27;--ink:#efe9dc;--muted:#a49f93;--blaze:#ff6b1a;--blaze2:#ff8a47;--olive:#8b9160;--r:14px}
+:root{--bg:#0e0e0d;--panel:#171715;--panel2:#1f1e1b;--line:#2c2b27;--ink:#efe9dc;--muted:#a49f93;--blaze:#ff6b1a;--blaze2:#ff8a47;--olive:#8b9160;--r:14px;color-scheme:dark}
 *{box-sizing:border-box}html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
 a{color:var(--blaze)}img,svg{display:block}

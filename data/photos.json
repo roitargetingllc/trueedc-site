@@ -1,0 +1,19 @@
+{
+ "_note": "Scene photos from Unsplash (free licence, commercial use allowed). Each one was checked by eye: no brand or logo showing. They set the mood; they are never shown as one of our products. Product photos go on products in products.json as image/image_source, only from a brand's approved feed or Amazon's API.",
+ "home": {"id": "1528196996966-f221704e0de2", "alt": "A person shining a flashlight beam into the night sky beside a river", "pos": "70% 50%"},
+ "guides": {
+  "best-edc-gifts-2026": {"id": "1481708426686-bad08e28e1c2", "alt": "A wrapped gift tied with string, resting on pine branches", "pos": "50% 40%"},
+  "edc-stocking-stuffers-under-25": {"id": "1639972584779-8c95dc6757bb", "alt": "Christmas stockings on a mantel beside a tree and wrapped gifts", "pos": "50% 50%"},
+  "first-edc-kit-under-100": {"id": "1509762774605-f07235a08f1f", "alt": "A day pack and water bottle on a rock above a valley at sunset", "pos": "60% 55%"}
+ },
+ "posts": {
+  "what-is-edc": {"id": "1722487631997-cf1e0f92c2c4", "alt": "A hand holding a ring of house keys", "pos": "55% 45%"},
+  "how-to-build-an-edc-kit": {"id": "1471107340929-a87cd0f5b5f3", "alt": "A fountain pen resting on a notebook", "pos": "60% 60%"},
+  "best-edc-knife-under-50": {"id": "1765563472316-591c95509ba1", "alt": "A folding knife with a wood-inlay handle against a tree trunk", "pos": "50% 45%"},
+  "best-keychain-flashlight": {"id": "1528196996966-f221704e0de2", "alt": "A person shining a flashlight beam into the night sky", "pos": "70% 50%"},
+  "edc-flashlight-vs-headlamp": {"id": "1788206857337-a6c63eafdacd", "alt": "A hiker with a headlamp on a mountain ridge at night", "pos": "50% 30%"},
+  "best-pocket-multitool": {"id": "1595148852838-426feff31473", "alt": "An open multitool resting on a timber frame", "pos": "50% 45%"},
+  "best-edc-gifts-for-dads": {"id": "1481708426686-bad08e28e1c2", "alt": "A wrapped gift tied with string, resting on pine branches", "pos": "50% 40%"},
+  "best-edc-watch": {"id": "1759489036027-44eac680741a", "alt": "Someone checking the watch on their wrist outdoors", "pos": "50% 50%"}
+ }
+}

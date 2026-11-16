@@ -10,8 +10,10 @@ Rules baked in:
     Prices in products.json only place items in budget tiers.
   - Every page carries the FTC disclosure and Amazon's required statement; every Amazon button
     is labeled as a paid link and carries rel="sponsored nofollow noopener".
-  - No product photos until they can come through Amazon's API or a brand's written permission.
-    Product cards use drawn category icons, which are clearly icons, never stand-ins for photos.
+  - No product photos until they come through Amazon's API or a brand's approved affiliate feed
+    (set "image" and "image_source" on the product). Until then cards use drawn category icons.
+  - Scene photos (data/photos.json) are free Unsplash photos with no brand showing. They sit behind
+    headers as mood, never as a product, and the footer says so.
   - Internal links are relative, so the same build works on trueedc.com and in a preview.
 """
 import json, html, datetime, shutil, sys
@@ -28,6 +30,17 @@ products = {p["id"]: p for p in json.loads((ROOT / "data/products.json").read_te
 guides = json.loads((ROOT / "data/guides.json").read_text())
 posts_path = ROOT / "data/posts.json"
 posts = json.loads(posts_path.read_text()) if posts_path.exists() else []
+photos_path = ROOT / "data/photos.json"
+PHOTOS = json.loads(photos_path.read_text()) if photos_path.exists() else {}
+
+def photo_url(ph, w=1600):
+    return f"https://images.unsplash.com/photo-{ph['id']}?auto=format&fit=crop&w={w}&q=70"
+
+def photo_bg(ph, strength="side"):
+    if not ph: return ""
+    grad = ("linear-gradient(90deg,rgba(14,14,13,.96) 0%,rgba(14,14,13,.82) 42%,rgba(14,14,13,.35) 100%)" if strength == "side"
+            else "linear-gradient(180deg,rgba(14,14,13,.62) 0%,rgba(14,14,13,.8) 45%,rgba(14,14,13,.96) 100%)")
+    return f' style="background:{grad},url({esc(photo_url(ph))}) {ph.get("pos", "50% 50%")}/cover no-repeat,var(--bg)"'
 BUILD_DATE = max([p["checked"] for p in products.values()] + [p["date"] for p in posts])
 
 AMAZON_LINE = "As an Amazon Associate, True EDC earns from qualifying purchases."
@@ -203,6 +216,15 @@ footer .fine{margin-top:24px;padding-top:20px;border-top:1px solid var(--line);f
 .postcard{display:flex;flex-direction:column;gap:10px;text-decoration:none;color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:22px;transition:border-color .15s,transform .15s}
 .postcard:hover{border-color:var(--blaze);transform:translateY(-2px)}.postcard h3{font-size:22px}.postcard p{margin:0;color:var(--muted);font-size:15px}
 .postcard .tag{font:800 11px/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--olive)}
+.hero.photo .wrap{grid-template-columns:1fr;min-height:560px}.hero.photo .wrap>div{max-width:640px}
+.hero.photo:before,.ghero.photo:before{content:"";position:absolute;inset:0;background:rgba(14,14,13,0)}.hero.photo .topo,.ghero.photo .topo{display:none}
+.ghero.photo .wrap{padding-top:88px;padding-bottom:64px}
+.postcard{overflow:hidden}.guide.photo p{color:#d4cec1}
+.thumb{display:block;width:calc(100% + 44px);margin:-22px -22px 6px;aspect-ratio:16/9;object-fit:cover;border-bottom:1px solid var(--line);background:var(--panel2)}
+.guide.photo{background-size:cover!important}.guide.photo .num{-webkit-text-stroke:1.5px rgba(255,255,255,.35)}
+.plate img{width:100%;height:100%;object-fit:contain;background:#f4f2ee}
+.plate .src{position:absolute;right:10px;bottom:8px;font-size:10px;font-weight:700;color:#55524b;letter-spacing:.06em}
+@media (max-width:760px){.hero.photo:before,.ghero.photo:before{background:rgba(14,14,13,.55)}.hero.photo .wrap{min-height:0}.hero.photo{background-position:75% 50%!important}}
 @media (max-width:960px){.posts{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:760px){.posts{grid-template-columns:1fr}}
 @media (max-width:960px){.cats{grid-template-columns:repeat(3,1fr)}.grid,.guides{grid-template-columns:repeat(2,1fr)}}
@@ -294,7 +316,7 @@ def page(title, description, body, path, ld=(), og_type="website", published=Non
 <div class="cols">{brand}
 <div class="links"><a href="{L('/best-edc-gifts-2026/')}">Gift guide</a><a href="{L('/blog/')}">Blog</a><a href="{L('/about/')}">About</a><a href="{L('/disclosure/')}">Affiliate disclosure</a><a href="{L('/privacy/')}">Privacy</a><a href="{esc(site['pinterest'])}" rel="noopener">Pinterest</a><a href="{esc(site['instagram'])}" rel="noopener">Instagram</a></div>
 </div>
-<p class="fine">{esc(AMAZON_LINE)} Links marked "paid link" may earn us a commission. © {site['year']} True EDC</p>
+<p class="fine">{esc(AMAZON_LINE)} Links marked "paid link" may earn us a commission. Header and blog photos are from Unsplash and show the setting, not the products we list. © {site['year']} True EDC</p>
 </div></footer>
 </body></html>"""
 
@@ -304,7 +326,7 @@ def product_card(p, top=False, show_tier=True):
     if show_tier: chips += f'<span class="chip t">{esc(tier_label(p["price"]))}</span>'
     if top: chips += '<span class="chip top">Top pick</span>'
     return f"""<article class="card" id="{esc(p['id'])}">
-<div class="plate">{icon(CAT_ICON.get(p['category'], 'spark'))}{chips}</div>
+<div class="plate">{plate_art(p)}{chips}</div>
 <div class="body">
 <div class="brand-line">{esc(p['brand'])}</div>
 <h3>{esc(p['name'])}</h3>
@@ -313,12 +335,19 @@ def product_card(p, top=False, show_tier=True):
 <div class="buy"><a class="btn" href="{esc(amazon_url(p['asin']))}" rel="sponsored nofollow noopener" target="_blank">Check price on Amazon</a><span class="paid">Paid link</span></div>
 </div></article>"""
 
+def plate_art(p):
+    if p.get("image"):  # only from a brand's approved feed or Amazon's API
+        return (f'<img src="{esc(p["image"])}" alt="{esc(p["name"])}" loading="lazy">'
+                f'<span class="src">Photo: {esc(p.get("image_source", p["brand"]))}</span>')
+    return icon(CAT_ICON.get(p['category'], 'spark'))
+
 def latest_checked(ids):
     return max(products[i]["checked"] for i in ids if i in products)
 
-def ghero(eyebrow, title, dek, pills, extra="", crumbs=""):
+def ghero(eyebrow, title, dek, pills, extra="", crumbs="", photo=None):
     pills_html = "".join(f'<span class="pill">{esc(p)}</span>' for p in pills)
-    return (f'<section class="ghero">{TOPO}<div class="wrap">{crumbs}<span class="eyebrow">{esc(eyebrow)}</span>'
+    cls = "ghero photo" if photo else "ghero"
+    return (f'<section class="{cls}"{photo_bg(photo)}>{TOPO}<div class="wrap">{crumbs}<span class="eyebrow">{esc(eyebrow)}</span>'
             f'<h1>{esc(title)}</h1><p class="dek">{esc(dek)}</p><div class="meta-row">{pills_html}</div>{extra}</div></section>')
 
 def build_guide(g):
@@ -360,7 +389,7 @@ def build_guide(g):
     dek = g["description"].replace("{checked}", checked)
     trail = [("Home", "/"), ("Guides", "/#guides"), (g["short"], path)]
     html_ = (ghero(eyebrow, g["title"], dek, [f"Checked {checked}", f"{len(ids)} real products", "Affiliate links labeled"], jump,
-                   crumbs_html(path, trail))
+                   crumbs_html(path, trail), PHOTOS.get("guides", {}).get(g["slug"]))
              + f'<div class="wrap" style="padding-top:36px;padding-bottom:72px"><p class="disclosure">{esc(FTC_LINE)} {esc(AMAZON_LINE)}</p>'
              + answer_html(g.get("answer", "").replace("{checked}", checked))
              + f'<div class="prose" style="margin-top:28px">{intro}</div>{"".join(body)}</div>')
@@ -409,7 +438,7 @@ def build_post(po):
         if ps: secs.append('<div class="grid">' + "".join(product_card(p) for p in ps) + "</div>")
     trail = [("Home", "/"), ("Blog", "/blog/"), (po["title"], path)]
     pills = [f"{po['tag']}", f"Updated {checked}"] + ([f"{len(items)} real products", "Affiliate links labeled"] if items else [])
-    body = (ghero("True EDC blog", po["title"], po["description"], pills, "", crumbs_html(path, trail))
+    body = (ghero("True EDC blog", po["title"], po["description"], pills, "", crumbs_html(path, trail), PHOTOS.get("posts", {}).get(po["slug"]))
             + '<div class="wrap" style="padding-top:36px;padding-bottom:72px">'
             + (f'<p class="disclosure">{esc(FTC_LINE)} {esc(AMAZON_LINE)}</p>' if items else "")
             + answer_html(po["answer"])
@@ -425,10 +454,15 @@ def build_post(po):
     if po.get("faq"): ld.append(faq_ld(po["faq"]))
     return path, page(f"{po['title']} | True EDC", po["description"], body, path, ld, "article", po["date"])
 
+def post_thumb(p):
+    ph = PHOTOS.get("posts", {}).get(p["slug"])
+    if not ph: return ""
+    return f'<img class="thumb" src="{esc(photo_url(ph, 800))}" alt="{esc(ph["alt"])}" loading="lazy" style="object-position:{ph.get("pos", "50% 50%")}">'
+
 def postcards(path, items):
     L = lambda t: esc(rel(path, t))
     return '<div class="posts">' + "".join(
-        f'<a class="postcard" href="{L("/blog/" + p["slug"] + "/")}"><span class="tag">{esc(p["tag"])}</span>'
+        f'<a class="postcard" href="{L("/blog/" + p["slug"] + "/")}">{post_thumb(p)}<span class="tag">{esc(p["tag"])}</span>'
         f'<h3>{esc(p["title"])}</h3><p>{esc(p["description"])}</p></a>' for p in items) + "</div>"
 
 def blog_index():
@@ -475,7 +509,7 @@ def home():
     featured_ids = ["victorinox-classic-sd", "olight-imini-2", "gerber-dime", "civivi-elementum", "fisher-space-pen-bullet", "leatherman-wave-plus"]
     featured = "".join(product_card(products[i], top=(i == "victorinox-classic-sd")) for i in featured_ids if i in products)
     gl = "".join(
-        f'<a class="guide" href="{L("/" + g["slug"] + "/")}"><div><div class="num">0{n}</div><h3>{esc(g["title"])}</h3>'
+        f'<a class="guide{" photo" if PHOTOS.get("guides", {}).get(g["slug"]) else ""}" href="{L("/" + g["slug"] + "/")}"{photo_bg(PHOTOS.get("guides", {}).get(g["slug"]), "bottom")}><div><div class="num">0{n}</div><h3>{esc(g["title"])}</h3>'
         f'<p>{esc(g["description"].replace("{checked}", nice_date(latest_checked(g["products"]))))}</p></div><div class="go">Read the guide →</div></a>'
         for n, g in enumerate(guides, 1))
     if site.get("newsletter_url"):
@@ -486,7 +520,10 @@ def home():
                     '<p style="margin-top:12px;font-size:13px">The weekly email launches soon. Follow along until then.</p>')
     layout = "".join(f'<div class="slot">{icon(i)}<small>{esc(t)}</small></div>'
                      for i, t in [("light", "Light"), ("tool", "Tool"), ("pen", "Pen"), ("watch", "Watch")])
-    body = f"""<section class="hero">{TOPO}<div class="wrap">
+    hp = PHOTOS.get("home")
+    hero_open = f'<section class="hero photo"{photo_bg(hp)}>' if hp else '<section class="hero">'
+    if hp: layout = ""
+    body = f"""{hero_open}{TOPO}<div class="wrap">
 <div>
 <span class="eyebrow">2026 holiday gift guide is live</span>
 <h1 style="margin-top:18px">Gear worth <em>carrying.</em></h1>
@@ -494,7 +531,7 @@ def home():
 <div class="ctas"><a class="btn" href="{L('/best-edc-gifts-2026/')}">Shop the gift guide</a><a class="btn ghost" href="{L('/first-edc-kit-under-100/')}">Build a kit under $100</a></div>
 <div class="trust"><span>Real products only</span><span>Every page dated</span><span>Every affiliate link labeled</span></div>
 </div>
-<div class="layout" aria-hidden="true">{layout}</div>
+{f'<div class="layout" aria-hidden="true">{layout}</div>' if layout else ''}
 </div></section>
 <section class="band" id="budget"><div class="wrap">
 <div class="sec-head"><div><span class="eyebrow">Shop by budget</span><h2 style="margin-top:12px">What do you want to spend?</h2></div></div>

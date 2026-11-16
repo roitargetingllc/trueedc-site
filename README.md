@@ -21,7 +21,8 @@ Needs Python 3 and Pillow. Exit code 2 means a guide broke its own rule (an item
 ## Rules the build enforces, and why
 
 - No exact Amazon prices on pages. Amazon only allows prices that come from its own API and refresh at least daily; stored prices are used only to sort items into budget tiers.
-- No product photos. Amazon images may only be used through Amazon's own tools. Pins are text graphics.
+- No product photos until a source allows them. Amazon images may only come through Amazon's own API (needs 10 qualifying sales in 30 days). Brand photos come from a brand's Awin feed once it approves us: set `image` and `image_source` on the product and the card shows it. Pins are text graphics.
+- Scene photos in `data/photos.json` are free Unsplash photos, each checked for no visible brand. They sit behind headers and blog cards as mood, never as one of our products, and the footer says so.
 - Every page has the FTC disclosure and Amazon's line, "As an Amazon Associate, True EDC earns from qualifying purchases." Affiliate links carry `rel="sponsored nofollow noopener"`.
 - No Amazon customer reviews or star ratings, in part or in whole, until they come through Amazon's API. Never quote or paraphrase reviews from any store unless its terms allow it in writing.
 - Only real products, real listings, and facts that appear on the listing.

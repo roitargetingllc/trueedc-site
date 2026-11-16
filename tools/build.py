@@ -10,7 +10,9 @@ Rules baked in:
     Prices in products.json only place items in budget tiers.
   - Every page carries the FTC disclosure and Amazon's required statement; every Amazon button
     is labeled as a paid link and carries rel="sponsored nofollow noopener".
-  - No product photos until they come through Amazon's API or a brand's approved affiliate feed
+  - Product photos only from a source that allows them: Amazon's API, a brand's approved affiliate feed,
+    or an openly licensed photo of the exact model (CC0, public domain, CC BY, CC BY-SA, Unsplash) with credit.
+    Never copied from Amazon or retailer listings.
     (set "image" and "image_source" on the product). Until then cards use drawn category icons.
   - Scene photos (data/photos.json) are free Unsplash photos with no brand showing. They sit behind
     headers as mood, never as a product, and the footer says so.
@@ -222,8 +224,8 @@ footer .fine{margin-top:24px;padding-top:20px;border-top:1px solid var(--line);f
 .postcard{overflow:hidden}.guide.photo p{color:#d4cec1}
 .thumb{display:block;width:calc(100% + 44px);margin:-22px -22px 6px;aspect-ratio:16/9;object-fit:cover;border-bottom:1px solid var(--line);background:var(--panel2)}
 .guide.photo{background-size:cover!important}.guide.photo .num{-webkit-text-stroke:1.5px rgba(255,255,255,.35)}
-.plate img{width:100%;height:100%;object-fit:contain;background:#f4f2ee}
-.plate .src{position:absolute;right:10px;bottom:8px;font-size:10px;font-weight:700;color:#55524b;letter-spacing:.06em}
+.plate img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.plate .src{position:absolute;right:8px;bottom:8px;max-width:calc(100% - 16px);font-size:10px;font-weight:600;line-height:1.35;color:#e9e4d8;background:rgba(14,14,13,.72);padding:3px 7px;border-radius:4px;text-align:right}.plate .src a{color:inherit;text-decoration:underline}
 @media (max-width:760px){.hero.photo:before,.ghero.photo:before{background:rgba(14,14,13,.55)}.hero.photo .wrap{min-height:0}.hero.photo{background-position:75% 50%!important}}
 @media (max-width:960px){.posts{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:760px){.posts{grid-template-columns:1fr}}
@@ -316,7 +318,7 @@ def page(title, description, body, path, ld=(), og_type="website", published=Non
 <div class="cols">{brand}
 <div class="links"><a href="{L('/best-edc-gifts-2026/')}">Gift guide</a><a href="{L('/blog/')}">Blog</a><a href="{L('/about/')}">About</a><a href="{L('/disclosure/')}">Affiliate disclosure</a><a href="{L('/privacy/')}">Privacy</a><a href="{esc(site['pinterest'])}" rel="noopener">Pinterest</a><a href="{esc(site['instagram'])}" rel="noopener">Instagram</a></div>
 </div>
-<p class="fine">{esc(AMAZON_LINE)} Links marked "paid link" may earn us a commission. Header and blog photos are from Unsplash and show the setting, not the products we list. © {site['year']} True EDC</p>
+<p class="fine">{esc(AMAZON_LINE)} Links marked "paid link" may earn us a commission. Header and blog photos are from Unsplash and show the setting. Product photos are credited on each photo, and a note says when the finish or edition shown differs from the one linked. © {site['year']} True EDC</p>
 </div></footer>
 </body></html>"""
 
@@ -336,9 +338,22 @@ def product_card(p, top=False, show_tier=True):
 </div></article>"""
 
 def plate_art(p):
-    if p.get("image"):  # only from a brand's approved feed or Amazon's API
-        return (f'<img src="{esc(p["image"])}" alt="{esc(p["name"])}" loading="lazy">'
-                f'<span class="src">Photo: {esc(p.get("image_source", p["brand"]))}</span>')
+    if p.get("image"):  # licensed source only, see module docstring
+        fit = p.get("image_fit", "cover")
+        style = f'object-fit:{fit};object-position:{esc(p.get("image_pos", "50% 50%"))}'
+        if fit == "contain": style += ";background:#fff"
+        bits = []
+        if p.get("image_note"): bits.append(esc(p["image_note"]))
+        if p.get("image_author"):
+            who = esc(p["image_author"])
+            if p.get("image_page"): who = f'<a href="{esc(p["image_page"])}" rel="nofollow noopener" target="_blank">{who}</a>'
+            lic = esc(p.get("image_license", ""))
+            if p.get("image_license_url"): lic = f'<a href="{esc(p["image_license_url"])}" rel="nofollow noopener" target="_blank">{lic}</a>'
+            bits.append(f"Photo: {who}" + (f", {lic}" if lic else ""))
+        elif p.get("image_source"):
+            bits.append(f"Photo: {esc(p['image_source'])}")
+        return (f'<img src="{esc(p["image"])}" alt="{esc(p["name"])}" loading="lazy" style="{style}">'
+                f'<span class="src">{" · ".join(bits)}</span>')
     return icon(CAT_ICON.get(p['category'], 'spark'))
 
 def latest_checked(ids):

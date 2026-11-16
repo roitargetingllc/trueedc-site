@@ -279,6 +279,7 @@ def page(title, description, body, path, ld=(), og_type="website", published=Non
 <meta property="og:url" content="{esc(canonical)}"><meta property="og:type" content="{og_type}"><meta property="og:site_name" content="True EDC">
 <meta property="og:image" content="{BASE}/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">{art}
 <meta name="twitter:card" content="summary_large_image"><meta name="robots" content="index,follow,max-image-preview:large">
+<!-- Awin publisher site: True EDC -->
 <link rel="alternate" type="text/plain" title="llms.txt" href="{L('/llms.txt')}">
 {ld_html}
 <link rel="alternate" type="application/rss+xml" title="True EDC" href="{L('/feed.xml')}">

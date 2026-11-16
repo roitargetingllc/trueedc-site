@@ -139,5 +139,335 @@
    "Stainless steel"
   ],
   "pitch": "The multitool that ends up being handed down. It is the classic big gift for a dad, a new homeowner or anyone who fixes things. Eighteen tools, and the ones people use most open from outside without unfolding the handles."
+ },
+ {
+  "id": "kershaw-appa",
+  "name": "Kershaw Appa",
+  "brand": "Kershaw",
+  "category": "Knife",
+  "asin": "B09T8YPT1X",
+  "price": 16.6,
+  "facts": [
+   "2.75 inch reverse tanto blade",
+   "All-black finish",
+   "Pocket clip"
+  ],
+  "pitch": "A small, all-black folder at a stocking-stuffer price. The short reverse tanto blade suits boxes, tape and zip ties, which is most of what a pocket knife actually does.",
+  "checked": "2026-11-16"
+ },
+ {
+  "id": "gerber-pledge",
+  "name": "Gerber Pledge",
+  "brand": "Gerber",
+  "category": "Knife",
+  "asin": "B0BNWDTJ9J",
+  "price": 23.99,
+  "facts": [
+   "Plain edge blade",
+   "Pocket clip",
+   "Omni Gray handle"
+  ],
+  "pitch": "Gerber's plain, practical folder for people who want a clip knife from a known brand without paying enthusiast prices.",
+  "checked": "2026-11-16"
+ },
+ {
+  "id": "gerber-zilch",
+  "name": "Gerber Zilch",
+  "brand": "Gerber",
+  "category": "Knife",
+  "asin": "B09H3HKZ9J",
+  "price": 26.15,
+  "facts": [
+   "3.1 inch plain edge blade",
+   "Pocket clip",
+   "Coyote Brown handle"
+  ],
+  "pitch": "A lightweight, no-fuss folder with a full 3.1 inch blade. It is the kind of knife you hand a friend who keeps borrowing yours.",
+  "checked": "2026-11-16"
+ },
+ {
+  "id": "civivi-mini-praxis",
+  "name": "CIVIVI Mini Praxis",
+  "brand": "CIVIVI",
+  "category": "Knife",
+  "asin": "B0BF8FPH5L",
+  "price": 29.74,
+  "facts": [
+   "2.98 inch D2 steel blade",
+   "OD Green handle",
+   "Pocket clip"
+  ],
+  "pitch": "The smaller version of one of CIVIVI's best-known designs. A just-under-3 inch D2 blade keeps it office friendly while still feeling like a real knife.",
+  "checked": "2026-11-16"
+ },
+ {
+  "id": "gerber-quadrant",
+  "name": "Gerber Quadrant",
+  "brand": "Gerber",
+  "category": "Knife",
+  "asin": "B07SZLY2ZL",
+  "price": 30.54,
+  "facts": [
+   "Plain edge blade",
+   "Bamboo handle",
+   "Pocket clip"
+  ],
+  "pitch": "A slim gentleman's folder with a bamboo handle. It looks at home with a dress shirt, which makes it an easy gift for someone who doesn't want anything tactical.",
+  "checked": "2026-11-16"
+ },
+ {
+  "id": "buck-112-slim-select",
+  "name": "Buck 112 Slim Select",
+  "brand": "Buck Knives",
+  "category": "Knife",
+  "asin": "B0846LWLPT",
+  "price": 37.99,
+  "facts": [
+   "3 inch blade",
+   "About 2.5 oz",
+   "Pocket clip"
+  ],
+  "pitch": "Buck's classic 112 shape in a light, modern build. It's a nod to the knife a lot of grandfathers carried, at about 2.5 ounces.",
+  "checked": "2026-11-16"
+ },
+ {
+  "id": "civivi-praxis",
+  "name": "CIVIVI Praxis",
+  "brand": "CIVIVI",
+  "category": "Knife",
+  "asin": "B08PF6NHLJ",
+  "price": 42.5,
+  "facts": [
+   "3.75 inch blade",
+   "G10 handle",
+   "Model C803F"
+  ],
+  "pitch": "The full-size Praxis, for people who want a bigger blade and handle for outdoor work, yard work and opening a lot of boxes.",
+  "checked": "2026-11-16"
+ },
+ {
+  "id": "sog-terminus-xr",
+  "name": "SOG Terminus XR",
+  "brand": "SOG",
+  "category": "Knife",
+  "asin": "B0817DMXLG",
+  "price": 44.6,
+  "facts": [
+   "2.95 inch blade",
+   "Ambidextrous carry",
+   "OD Green handle"
+  ],
+  "pitch": "A sub-3 inch folder that works for left- and right-handed carry, which makes it a safe gift when you don't know which hand someone uses.",
+  "checked": "2026-11-16"
+ },
+ {
+  "id": "kershaw-iridium",
+  "name": "Kershaw Iridium",
+  "brand": "Kershaw",
+  "category": "Knife",
+  "asin": "B0BTB213Q6",
+  "price": 57.87,
+  "facts": [
+   "3.4 inch spear point blade",
+   "Black and gray finish",
+   "Model 2038"
+  ],
+  "pitch": "A step up from budget folders, with a clean 3.4 inch spear point blade. A good next knife for someone who has outgrown their first one.",
+  "checked": "2026-11-16"
+ },
+ {
+  "id": "sofirn-se1",
+  "name": "Sofirn SE1",
+  "brand": "Sofirn",
+  "category": "Flashlight",
+  "asin": "B0GWT8LVVS",
+  "price": 19.99,
+  "facts": [
+   "Coin-sized keychain light",
+   "Up to 300 lumens",
+   "Rechargeable, with UV and RGB modes"
+  ],
+  "pitch": "A coin-sized light for the key ring, with extra UV and colored modes. Cheap enough to buy a few as stocking stuffers.",
+  "checked": "2026-11-16"
+ },
+ {
+  "id": "olight-iultra",
+  "name": "Olight iUltra",
+  "brand": "Olight",
+  "category": "Flashlight",
+  "asin": "B0FYDFNDSG",
+  "price": 29.99,
+  "facts": [
+   "Mini keychain flashlight",
+   "Rechargeable",
+   "Olive Green"
+  ],
+  "pitch": "Olight's newer mini keychain light. A tidy step up for someone who already likes the idea of a light on their keys.",
+  "checked": "2026-11-16"
+ },
+ {
+  "id": "nitecore-tip3",
+  "name": "Nitecore TIP3",
+  "brand": "Nitecore",
+  "category": "Flashlight",
+  "asin": "B0GHPCFR38",
+  "price": 34.95,
+  "facts": [
+   "Up to 720 lumens",
+   "3 color temperatures",
+   "USB-C rechargeable, with pocket clip"
+  ],
+  "pitch": "A flat keychain light that also clips to a pocket, with a choice of warm, neutral or cool white.",
+  "checked": "2026-11-16"
+ },
+ {
+  "id": "nitecore-tini-3",
+  "name": "Nitecore TINI 3",
+  "brand": "Nitecore",
+  "category": "Flashlight",
+  "asin": "B0F2P7J832",
+  "price": 39.95,
+  "facts": [
+   "Up to 600 lumens",
+   "Warm, neutral and cool white",
+   "USB-C rechargeable"
+  ],
+  "pitch": "A tiny keychain light with a lot of output for its size, and a choice of light color for reading or finding things in the dark.",
+  "checked": "2026-11-16"
+ },
+ {
+  "id": "olight-oclip-pro",
+  "name": "Olight Oclip Pro",
+  "brand": "Olight",
+  "category": "Flashlight",
+  "asin": "B0DDC3M31M",
+  "price": 39.99,
+  "facts": [
+   "Clip-on light",
+   "Rechargeable",
+   "Clips to a pocket, strap or collar"
+  ],
+  "pitch": "A light that clips on instead of riding in a pocket, so both hands stay free for dog walks, runs and car trouble.",
+  "checked": "2026-11-16"
+ },
+ {
+  "id": "nitecore-edc09",
+  "name": "Nitecore EDC09",
+  "brand": "Nitecore",
+  "category": "Flashlight",
+  "asin": "B0G45JBD45",
+  "price": 69.95,
+  "facts": [
+   "Up to 1600 lumens",
+   "102\u00b0 swivel head and magnetic tail",
+   "USB-C rechargeable, stainless steel body"
+  ],
+  "pitch": "A pocket light with a head that swivels and a magnetic tail, so it can stand on a car hood or point into an engine bay while you work.",
+  "checked": "2026-11-16"
+ },
+ {
+  "id": "nitecore-edc29",
+  "name": "Nitecore EDC29",
+  "brand": "Nitecore",
+  "category": "Flashlight",
+  "asin": "B0DHQXJDM2",
+  "price": 109.95,
+  "facts": [
+   "Up to 6500 lumens",
+   "Flat EDC body",
+   "Rechargeable"
+  ],
+  "pitch": "A flat, pocketable light with huge maximum output. It's the big-gift light for someone who already owns a keychain one.",
+  "checked": "2026-11-16"
+ },
+ {
+  "id": "olight-arkpro-ultra",
+  "name": "Olight ArkPro Ultra",
+  "brand": "Olight",
+  "category": "Flashlight",
+  "asin": "B0GHR5DXFC",
+  "price": 129.99,
+  "facts": [
+   "Flat EDC flashlight",
+   "Up to 1700 lumens",
+   "Rechargeable, Onyx Black"
+  ],
+  "pitch": "Olight's premium flat EDC light. It's built to sit in a pocket like a phone, not roll around like a tube light.",
+  "checked": "2026-11-16"
+ },
+ {
+  "id": "leatherman-rev",
+  "name": "Leatherman Rev",
+  "brand": "Leatherman",
+  "category": "Multitool",
+  "asin": "B00TQ3S3GK",
+  "price": 44.95,
+  "facts": [
+   "Pocket size",
+   "Package opener and screwdrivers",
+   "Stainless steel"
+  ],
+  "pitch": "Leatherman's entry-level pocket tool. It has real pliers and drivers at a price that makes it an easy first Leatherman.",
+  "checked": "2026-11-16"
+ },
+ {
+  "id": "leatherman-wingman",
+  "name": "Leatherman Wingman",
+  "brand": "Leatherman",
+  "category": "Multitool",
+  "asin": "B005DI0XM4",
+  "price": 49.95,
+  "facts": [
+   "Spring-action pliers",
+   "Spring-action scissors",
+   "Stainless steel"
+  ],
+  "pitch": "The value pick in Leatherman's full-size lineup. The spring-loaded pliers and scissors open on their own, which people notice the first time they use them.",
+  "checked": "2026-11-16"
+ },
+ {
+  "id": "leatherman-rebar",
+  "name": "Leatherman Rebar",
+  "brand": "Leatherman",
+  "category": "Multitool",
+  "asin": "B07VWCXQRV",
+  "price": 79.95,
+  "facts": [
+   "Replaceable wire cutters",
+   "Saw",
+   "Coyote Tan"
+  ],
+  "pitch": "A workhorse tool with replaceable wire cutters and a saw, for people who fix things more than they open packages.",
+  "checked": "2026-11-16"
+ },
+ {
+  "id": "leatherman-signal",
+  "name": "Leatherman Signal",
+  "brand": "Leatherman",
+  "category": "Multitool",
+  "asin": "B07RQ53JPR",
+  "price": 149.95,
+  "facts": [
+   "19 tools",
+   "Outdoor-focused design",
+   "Coyote Tan"
+  ],
+  "pitch": "Leatherman's outdoor multitool, made for camping and hiking kits rather than the junk drawer.",
+  "checked": "2026-11-16"
+ },
+ {
+  "id": "leatherman-surge",
+  "name": "Leatherman Surge",
+  "brand": "Leatherman",
+  "category": "Multitool",
+  "asin": "B0014VVVCK",
+  "price": 159.95,
+  "facts": [
+   "21 tools",
+   "Heavy-duty build",
+   "Stainless steel"
+  ],
+  "pitch": "The big, heavy-duty Leatherman for work trucks, garages and the person who uses their tool every single day.",
+  "checked": "2026-11-16"
  }
 ]

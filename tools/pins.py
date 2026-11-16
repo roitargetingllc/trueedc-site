@@ -61,7 +61,7 @@ def make_pin(path, kicker, headline, sub, cta="trueedc.com"):
     path.parent.mkdir(parents=True, exist_ok=True)
     img.save(path, optimize=True)
 
-def make_all(site, products, guides, out_dir):
+def make_all(site, products, guides, out_dir, posts=()):
     base = site["base_url"].rstrip("/")
     items, seen = [], set()
     for g in guides:
@@ -83,4 +83,20 @@ def make_all(site, products, guides, out_dir):
             make_pin(out_dir / fn, kicker, p["name"], p["pitch"], "Why we picked it: trueedc.com")
             items.append({"id": fn, "title": f"{p['name']}: {kicker}", "desc": p["pitch"] + " Links may earn us a commission. #ad",
                           "link": f"{base}/{g['slug']}/#{pid}", "image": f"{base}/pins/{fn}"})
+    for po in posts:
+        fn = f"post-{po['slug']}.png"
+        make_pin(out_dir / fn, f"EDC {po['tag'].lower()} guide" if po["tag"] != "Gifts" else "EDC gift guide",
+                 po["title"], po["description"], "Read it at trueedc.com")
+        items.append({"id": fn, "title": po["title"], "desc": po["description"] + " Links may earn us a commission. #ad",
+                      "link": f"{base}/blog/{po['slug']}/", "image": f"{base}/pins/{fn}"})
+        for sec in po["sections"]:
+            for pid in sec.get("products", []):
+                if pid in seen or pid not in products: continue
+                seen.add(pid)
+                pr = products[pid]
+                fn = f"pick-{pid}.png"
+                kicker = "Under $25 EDC pick" if pr["price"] <= 25 else ("Under $50 EDC pick" if pr["price"] <= 50 else "Worth the splurge")
+                make_pin(out_dir / fn, kicker, pr["name"], pr["pitch"], "Why we picked it: trueedc.com")
+                items.append({"id": fn, "title": f"{pr['name']}: {kicker}", "desc": pr["pitch"] + " Links may earn us a commission. #ad",
+                              "link": f"{base}/blog/{po['slug']}/#{pid}", "image": f"{base}/pins/{fn}"})
     return items

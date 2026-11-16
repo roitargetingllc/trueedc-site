@@ -1,0 +1,41 @@
+# True EDC
+
+> Everyday carry gear picked by budget: pocket knives, keychain flashlights, multitools, pens and watches. Real products, dated listings and labeled affiliate links.
+
+True EDC is an independent site that picks everyday carry (EDC) gear by budget. Every pick is a real product with a real listing; pages show the date listings were last checked. True EDC does not publish exact prices or star ratings, and does not claim hands-on testing. Retailer links are labeled paid links (Amazon Associates).
+
+## Gift guides
+- [The Best EDC Gifts of 2026, by Budget](https://trueedc.com/best-edc-gifts-2026/): Ten everyday-carry gifts that actually get used, sorted into under $25, under $50 and splurge. Real products, prices checked Nov 15, 2026.
+- [EDC Stocking Stuffers Under $25](https://trueedc.com/edc-stocking-stuffers-under-25/): Small, useful, under $25: the everyday-carry stocking stuffers people keep using in March.
+- [A Complete First EDC Kit for Under $100](https://trueedc.com/first-edc-kit-under-100/): Five pieces, one budget: a small tool, a light, a pen, a notebook and a better keyring, all for under $100.
+
+## Blog
+- [What Is EDC? A Plain-English Guide to Everyday Carry](https://trueedc.com/blog/what-is-edc/): EDC stands for everyday carry: the small, useful things someone has on them every day, like keys, a wallet, a phone, a small light, a pen and a compact tool. A good EDC kit is light, legal where you live and made of things you actually use.
+- [How to Build an EDC Kit, Step by Step](https://trueedc.com/blog/how-to-build-an-edc-kit/): Build an EDC kit by starting from what you already carry, then adding one item for each problem you hit often: a cutting tool, a light, a pen and a key organizer. Keep the whole kit light enough that you never leave it at home.
+- [The Best EDC Knives Under $50](https://trueedc.com/blog/best-edc-knife-under-50/): For most people, the best EDC knife under $50 is a sub-3 inch folder from a known brand, such as the CIVIVI Mini Praxis or Kershaw Appa. Go bigger, like the CIVIVI Praxis, only if you cut a lot outdoors.
+- [The Best Keychain Flashlights for EDC](https://trueedc.com/blog/best-keychain-flashlight/): The best keychain flashlight is one small enough that you forget it's on your keys until you need it. The Olight iMini 2 and Sofirn SE1 are easy starts under $25, and the Nitecore TINI 3 adds more output and a choice of light color.
+- [EDC Flashlight vs Headlamp: Which Should You Carry?](https://trueedc.com/blog/edc-flashlight-vs-headlamp/): Carry a small flashlight every day, because it fits a pocket or key ring and is quick to aim. Keep a headlamp in the car, camping kit or junk drawer for jobs where you need both hands free for a long time.
+- [Best Multitools for Everyday Carry, From Keychain to Full Size](https://trueedc.com/blog/best-pocket-multitool/): Pick a multitool by size first. A keychain tool like the Victorinox Classic SD or Gerber Dime covers small daily jobs; a full-size tool like the Leatherman Wave+ is for people who fix things often and don't mind the weight.
+- [The Best EDC Gifts for Dads](https://trueedc.com/blog/best-edc-gifts-for-dads/): The best EDC gift for a dad is something he will use every week: a Leatherman multitool if he fixes things, a classic folding knife if he likes traditional gear, or a keychain light and a tough pen if you want to stay under $50.
+
+## Shop by budget
+- [Under $25](https://trueedc.com/budget/under-25/): Stocking stuffers and keychain upgrades.
+- [Under $50](https://trueedc.com/budget/under-50/): The sweet spot: real tools, real brands.
+- [Worth the splurge](https://trueedc.com/budget/splurge/): Buy once, carry for a decade.
+
+## Shop by gear
+- [Knives](https://trueedc.com/gear/knives/): Folders that open clean and carry light.
+- [Flashlights](https://trueedc.com/gear/flashlights/): Keychain lights that beat a phone torch.
+- [Multitools](https://trueedc.com/gear/multitools/): Pliers, drivers and blades in one.
+- [Pens & notebooks](https://trueedc.com/gear/pens-notebooks/): Write it down. Anywhere, any weather.
+- [Watches](https://trueedc.com/gear/watches/): Tough, simple, always on the wrist.
+- [Keychain gear](https://trueedc.com/gear/keychain/): Clips and carabiners that sort your keys.
+
+## Data
+- [All products as JSON](https://trueedc.com/products.json): names, brands, categories, budget tiers, facts and page links
+- [Sitemap](https://trueedc.com/sitemap.xml)
+- [RSS feed](https://trueedc.com/feed.xml)
+
+## Policies
+- [Affiliate disclosure](https://trueedc.com/disclosure/)
+- [About](https://trueedc.com/about/)

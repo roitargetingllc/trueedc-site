@@ -26,6 +26,9 @@ if PREVIEW:
 site = json.loads((ROOT / "site.json").read_text())
 products = {p["id"]: p for p in json.loads((ROOT / "data/products.json").read_text())}
 guides = json.loads((ROOT / "data/guides.json").read_text())
+posts_path = ROOT / "data/posts.json"
+posts = json.loads(posts_path.read_text()) if posts_path.exists() else []
+BUILD_DATE = max([p["checked"] for p in products.values()] + [p["date"] for p in posts])
 
 AMAZON_LINE = "As an Amazon Associate, True EDC earns from qualifying purchases."
 FTC_LINE = ("Some links on this page are affiliate links. If you buy through them, True EDC may earn a commission "
@@ -188,6 +191,20 @@ footer .cols{display:flex;justify-content:space-between;align-items:center;gap:2
 footer a{color:var(--muted);text-decoration:none}footer a:hover{color:var(--ink)}
 footer .links{display:flex;gap:18px;flex-wrap:wrap}
 footer .fine{margin-top:24px;padding-top:20px;border-top:1px solid var(--line);font-size:13px}
+.answer{max-width:760px;margin:28px 0 0;padding:20px 22px;border-radius:var(--r);background:linear-gradient(120deg,#1c1206,#171715 70%);border:1px solid #3a2a1c;font-size:17px;color:#efe9dc}
+.answer strong{display:block;font:800 12px/1 Inter,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--blaze);margin-bottom:10px}
+.faq{margin:56px 0 0;max-width:760px}.faq h2{font-size:clamp(28px,4.5vw,40px);margin-bottom:18px}
+.faq details{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-bottom:10px}
+.faq summary{cursor:pointer;font-weight:700;font-size:17px}.faq details p{margin:10px 0 0;color:#d4cec1}
+.post h2{font-size:clamp(26px,4vw,36px);margin:48px 0 14px}.post .grid{margin-top:20px}
+.crumbs{font-size:13px;color:var(--muted);margin:0 0 6px}.crumbs a{color:var(--muted);text-decoration:none}.crumbs a:hover{color:var(--ink)}
+.related{margin:56px 0 0}.related h2{font-size:clamp(26px,4vw,36px);margin-bottom:18px}
+.posts{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.postcard{display:flex;flex-direction:column;gap:10px;text-decoration:none;color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:22px;transition:border-color .15s,transform .15s}
+.postcard:hover{border-color:var(--blaze);transform:translateY(-2px)}.postcard h3{font-size:22px}.postcard p{margin:0;color:var(--muted);font-size:15px}
+.postcard .tag{font:800 11px/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--olive)}
+@media (max-width:960px){.posts{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:760px){.posts{grid-template-columns:1fr}}
 @media (max-width:960px){.cats{grid-template-columns:repeat(3,1fr)}.grid,.guides{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:760px){.hero .wrap{grid-template-columns:1fr;padding-top:44px;padding-bottom:56px}.layout{max-width:340px;margin:8px auto 0}
  .tiers,.how,.drop{grid-template-columns:1fr}.grid,.guides{grid-template-columns:1fr}.cats{grid-template-columns:repeat(2,1fr)}
@@ -208,11 +225,48 @@ def rel(cur, target):
         t = base + ("#" + frag if frag else "")
     return prefix + t
 
-def page(title, description, body, path):
-    canonical = site["base_url"].rstrip("/") + path
+BASE = site["base_url"].rstrip("/")
+ORG = {"@type": "Organization", "@id": BASE + "/#org", "name": "True EDC", "url": BASE + "/",
+       "logo": BASE + "/og.png", "sameAs": [site["pinterest"], site["instagram"]]}
+
+def jsonld(obj):
+    return '<script type="application/ld+json">' + json.dumps(obj, ensure_ascii=False).replace("</", "<\\/") + "</script>"
+
+def crumbs_ld(trail):
+    """trail: list of (name, path) from Home to this page."""
+    return {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+        {"@type": "ListItem", "position": i, "name": n, "item": BASE + p} for i, (n, p) in enumerate(trail, 1)]}
+
+def crumbs_html(path, trail):
+    L = lambda t: esc(rel(path, t))
+    parts = [f'<a href="{L(p)}">{esc(n)}</a>' for n, p in trail[:-1]] + [esc(trail[-1][0])]
+    return '<nav class="crumbs" aria-label="Breadcrumb">' + " / ".join(parts) + "</nav>"
+
+def itemlist_ld(name, path, items):
+    return {"@context": "https://schema.org", "@type": "ItemList", "name": name, "url": BASE + path,
+            "numberOfItems": len(items), "itemListElement": [
+                {"@type": "ListItem", "position": i, "name": p["name"], "url": f"{BASE}{path}#{p['id']}"}
+                for i, p in enumerate(items, 1)]}
+
+def faq_ld(faq):
+    return {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+        {"@type": "Question", "name": x["q"], "acceptedAnswer": {"@type": "Answer", "text": x["a"]}} for x in faq]}
+
+def faq_html(faq):
+    if not faq: return ""
+    return ('<section class="faq"><h2>Questions people ask</h2>' + "".join(
+        f'<details><summary>{esc(x["q"])}</summary><p>{esc(x["a"])}</p></details>' for x in faq) + "</section>")
+
+def answer_html(text):
+    return f'<div class="answer"><strong>The short answer</strong>{esc(text)}</div>' if text else ""
+
+def page(title, description, body, path, ld=(), og_type="website", published=None):
+    canonical = BASE + path
     L = lambda t: esc(rel(path, t))
     nav = (f'<a href="{L("/best-edc-gifts-2026/")}">Gift guide</a><a href="{L("/#budget")}">Budget</a>'
-           f'<a href="{L("/#gear")}">Gear</a><a href="{L("/about/")}">About</a>')
+           f'<a href="{L("/#gear")}">Gear</a><a href="{L("/blog/")}">Blog</a><a href="{L("/about/")}">About</a>')
+    ld_html = "".join(jsonld(x) for x in ld)
+    art = f'<meta property="article:published_time" content="{published}">' if published else ""
     brand = f'<a class="brand" href="{L("/")}">{LOGO}<span>TRUE<b>EDC</b></span></a>'
     return f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
@@ -222,7 +276,11 @@ def page(title, description, body, path):
 <meta name="theme-color" content="#0e0e0d">
 <link rel="canonical" href="{esc(canonical)}">
 <meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(description)}">
-<meta property="og:url" content="{esc(canonical)}"><meta property="og:type" content="website"><meta property="og:site_name" content="True EDC">
+<meta property="og:url" content="{esc(canonical)}"><meta property="og:type" content="{og_type}"><meta property="og:site_name" content="True EDC">
+<meta property="og:image" content="{BASE}/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">{art}
+<meta name="twitter:card" content="summary_large_image"><meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="alternate" type="text/plain" title="llms.txt" href="{L('/llms.txt')}">
+{ld_html}
 <link rel="alternate" type="application/rss+xml" title="True EDC" href="{L('/feed.xml')}">
 {FONTS}
 <style>{CSS}</style>
@@ -233,7 +291,7 @@ def page(title, description, body, path):
 </main>
 <footer><div class="wrap">
 <div class="cols">{brand}
-<div class="links"><a href="{L('/best-edc-gifts-2026/')}">Gift guide</a><a href="{L('/about/')}">About</a><a href="{L('/disclosure/')}">Affiliate disclosure</a><a href="{L('/privacy/')}">Privacy</a><a href="{esc(site['pinterest'])}" rel="noopener">Pinterest</a><a href="{esc(site['instagram'])}" rel="noopener">Instagram</a></div>
+<div class="links"><a href="{L('/best-edc-gifts-2026/')}">Gift guide</a><a href="{L('/blog/')}">Blog</a><a href="{L('/about/')}">About</a><a href="{L('/disclosure/')}">Affiliate disclosure</a><a href="{L('/privacy/')}">Privacy</a><a href="{esc(site['pinterest'])}" rel="noopener">Pinterest</a><a href="{esc(site['instagram'])}" rel="noopener">Instagram</a></div>
 </div>
 <p class="fine">{esc(AMAZON_LINE)} Links marked "paid link" may earn us a commission. © {site['year']} True EDC</p>
 </div></footer>
@@ -257,9 +315,9 @@ def product_card(p, top=False, show_tier=True):
 def latest_checked(ids):
     return max(products[i]["checked"] for i in ids if i in products)
 
-def ghero(eyebrow, title, dek, pills, extra=""):
+def ghero(eyebrow, title, dek, pills, extra="", crumbs=""):
     pills_html = "".join(f'<span class="pill">{esc(p)}</span>' for p in pills)
-    return (f'<section class="ghero">{TOPO}<div class="wrap"><span class="eyebrow">{esc(eyebrow)}</span>'
+    return (f'<section class="ghero">{TOPO}<div class="wrap">{crumbs}<span class="eyebrow">{esc(eyebrow)}</span>'
             f'<h1>{esc(title)}</h1><p class="dek">{esc(dek)}</p><div class="meta-row">{pills_html}</div>{extra}</div></section>')
 
 def build_guide(g):
@@ -296,19 +354,106 @@ def build_guide(g):
     body.append(f'<div class="outro">{esc(g["outro"])}</div>')
     body.append(f'<p class="muted" style="margin:18px 0 0;font-size:14px">Prices checked {checked}. Prices and stock change, so the button always shows today\'s price on Amazon.</p>')
     for w in warnings: print("WARN", w, file=sys.stderr)
+    body.append(faq_html(g.get("faq", [])))
+    body.append(related_html(path, g.get("related", [])))
     dek = g["description"].replace("{checked}", checked)
-    html_ = (ghero(eyebrow, g["title"], dek, [f"Checked {checked}", f"{len(ids)} real products", "Affiliate links labeled"], jump)
+    trail = [("Home", "/"), ("Guides", "/#guides"), (g["short"], path)]
+    html_ = (ghero(eyebrow, g["title"], dek, [f"Checked {checked}", f"{len(ids)} real products", "Affiliate links labeled"], jump,
+                   crumbs_html(path, trail))
              + f'<div class="wrap" style="padding-top:36px;padding-bottom:72px"><p class="disclosure">{esc(FTC_LINE)} {esc(AMAZON_LINE)}</p>'
+             + answer_html(g.get("answer", "").replace("{checked}", checked))
              + f'<div class="prose" style="margin-top:28px">{intro}</div>{"".join(body)}</div>')
-    return path, page(f"{g['title']} | True EDC", dek, html_, path), warnings
+    ld = [crumbs_ld(trail[:1] + trail[2:]), itemlist_ld(g["title"], path, [products[i] for i in ids]),
+          {"@context": "https://schema.org", "@type": "Article", "headline": g["title"], "description": dek,
+           "datePublished": "2026-11-15", "dateModified": latest_checked(ids), "author": ORG, "publisher": ORG,
+           "mainEntityOfPage": BASE + path, "image": BASE + "/og.png"}]
+    if g.get("faq"): ld.append(faq_ld(g["faq"]))
+    return path, page(f"{g['title']} | True EDC", dek, html_, path, ld, "article"), warnings
 
-def listing_page(path, eyebrow, title, dek, items):
+def page_title(slug):
+    for g in guides:
+        if g["slug"] == slug: return g["title"], g["description"].replace("{checked}", nice_date(latest_checked(g["products"]))), f"/{slug}/"
+    for p in posts:
+        if p["slug"] == slug: return p["title"], p["description"], f"/blog/{slug}/"
+    return None
+
+def related_html(path, slugs):
+    L = lambda t: esc(rel(path, t))
+    cards = []
+    for sl in slugs:
+        r = page_title(sl)
+        if not r: print("WARN unknown related", sl, file=sys.stderr); continue
+        t, d, p = r
+        cards.append(f'<a class="postcard" href="{L(p)}"><span class="tag">Read next</span><h3>{esc(t)}</h3><p>{esc(d)}</p></a>')
+    return f'<section class="related"><h2>Keep reading</h2><div class="posts">{"".join(cards)}</div></section>' if cards else ""
+
+def post_products(po):
+    seen, out = set(), []
+    for sec in po["sections"]:
+        for i in sec.get("products", []):
+            if i in products and i not in seen: seen.add(i); out.append(products[i])
+    return out
+
+def build_post(po):
+    path = f"/blog/{po['slug']}/"
+    items = post_products(po)
+    checked = nice_date(latest_checked([p["id"] for p in items])) if items else nice_date(po["date"])
+    secs = []
+    for sec in po["sections"]:
+        secs.append(f'<h2 id="{esc(sec["h2"].lower().replace(" ", "-").replace(":", "").replace("(", "").replace(")", ""))}">{esc(sec["h2"])}</h2>')
+        secs.append("".join(f"<p>{esc(t)}</p>" for t in sec["paras"]))
+        ps = [products[i] for i in sec.get("products", []) if i in products]
+        missing = [i for i in sec.get("products", []) if i not in products]
+        if missing: print("WARN", po["slug"], "unknown products", missing, file=sys.stderr)
+        if ps: secs.append('<div class="grid">' + "".join(product_card(p) for p in ps) + "</div>")
+    trail = [("Home", "/"), ("Blog", "/blog/"), (po["title"], path)]
+    pills = [f"{po['tag']}", f"Updated {checked}"] + ([f"{len(items)} real products", "Affiliate links labeled"] if items else [])
+    body = (ghero("True EDC blog", po["title"], po["description"], pills, "", crumbs_html(path, trail))
+            + '<div class="wrap" style="padding-top:36px;padding-bottom:72px">'
+            + (f'<p class="disclosure">{esc(FTC_LINE)} {esc(AMAZON_LINE)}</p>' if items else "")
+            + answer_html(po["answer"])
+            + f'<div class="post prose" style="max-width:none">{"".join(secs)}</div>'
+            + (f'<p class="muted" style="margin:28px 0 0;font-size:14px">Listings checked {checked}. Prices and stock change, so the buttons always show today\'s price on Amazon.</p>' if items else "")
+            + faq_html(po.get("faq", [])) + related_html(path, po.get("related", [])) + "</div>")
+    modified = max([p["checked"] for p in items] + [po["date"]])
+    ld = [crumbs_ld(trail),
+          {"@context": "https://schema.org", "@type": "BlogPosting", "headline": po["title"], "description": po["description"],
+           "datePublished": po["date"], "dateModified": modified, "author": ORG, "publisher": ORG,
+           "mainEntityOfPage": BASE + path, "image": BASE + "/og.png", "articleSection": po["tag"]}]
+    if items: ld.append(itemlist_ld(po["title"], path, items))
+    if po.get("faq"): ld.append(faq_ld(po["faq"]))
+    return path, page(f"{po['title']} | True EDC", po["description"], body, path, ld, "article", po["date"])
+
+def postcards(path, items):
+    L = lambda t: esc(rel(path, t))
+    return '<div class="posts">' + "".join(
+        f'<a class="postcard" href="{L("/blog/" + p["slug"] + "/")}"><span class="tag">{esc(p["tag"])}</span>'
+        f'<h3>{esc(p["title"])}</h3><p>{esc(p["description"])}</p></a>' for p in items) + "</div>"
+
+def blog_index():
+    path = "/blog/"
+    trail = [("Home", "/"), ("Blog", path)]
+    dek = "Plain-English buying guides and comparisons for everyday carry gear: knives, lights, multitools and gifts."
+    body = (ghero("True EDC blog", "The EDC blog", dek, [f"{len(posts)} posts", "Real products only"], "", crumbs_html(path, trail))
+            + f'<div class="wrap" style="padding-top:36px;padding-bottom:72px">{postcards(path, posts)}</div>')
+    ld = [crumbs_ld(trail), {"@context": "https://schema.org", "@type": "Blog", "name": "The True EDC blog", "url": BASE + path,
+          "publisher": ORG, "blogPost": [{"@type": "BlogPosting", "headline": p["title"], "url": f"{BASE}/blog/{p['slug']}/",
+          "datePublished": p["date"]} for p in posts]}]
+    return path, page("The EDC Blog: Buying Guides and Comparisons | True EDC", dek, body, path, ld)
+
+def listing_page(path, eyebrow, title, dek, items, trail_mid=None):
     cards = "".join(product_card(p) for p in items)
     checked = nice_date(latest_checked([p["id"] for p in items]))
-    body = (ghero(eyebrow, title, dek, [f"{len(items)} pick{'s' if len(items) > 1 else ''}", f"Checked {checked}"])
+    trail = [("Home", "/"), trail_mid, (title, path)]
+    body = (ghero(eyebrow, title, dek, [f"{len(items)} pick{'s' if len(items) > 1 else ''}", f"Checked {checked}"], "",
+                  crumbs_html(path, trail))
             + f'<div class="wrap" style="padding-top:36px;padding-bottom:72px"><p class="disclosure">{esc(FTC_LINE)} {esc(AMAZON_LINE)}</p>'
             + f'<div class="grid" style="margin-top:28px">{cards}</div></div>')
-    return page(f"{title} | True EDC", dek, body, path)
+    ld = [crumbs_ld([trail[0], trail[2]]), itemlist_ld(title, path, items)]
+    return page(f"{title} | True EDC", dek, body, path, ld)
+
+HOME_DESC = ("Everyday carry gear picked by budget: pocket knives, keychain flashlights, multitools, pens and watches. "
+             "Real products, dated listings and labeled affiliate links.")
 
 def home():
     path = "/"
@@ -344,9 +489,9 @@ def home():
 <div>
 <span class="eyebrow">2026 holiday gift guide is live</span>
 <h1 style="margin-top:18px">Gear worth <em>carrying.</em></h1>
-<p class="lead">Knives, lights, multitools and pocket gear, picked by budget and re-checked every week. Real products only. No fluff.</p>
+<p class="lead">Knives, lights, multitools and pocket gear, picked by budget and checked by hand. Real products only. No fluff.</p>
 <div class="ctas"><a class="btn" href="{L('/best-edc-gifts-2026/')}">Shop the gift guide</a><a class="btn ghost" href="{L('/first-edc-kit-under-100/')}">Build a kit under $100</a></div>
-<div class="trust"><span>Real products only</span><span>Prices re-checked weekly</span><span>Every affiliate link labeled</span></div>
+<div class="trust"><span>Real products only</span><span>Every page dated</span><span>Every affiliate link labeled</span></div>
 </div>
 <div class="layout" aria-hidden="true">{layout}</div>
 </div></section>
@@ -361,16 +506,21 @@ def home():
 <section class="band"><div class="wrap">
 <div class="sec-head"><div><span class="eyebrow">Top picks</span><h2 style="margin-top:12px">What we would carry</h2>
 <p>Six picks that earn their pocket space, from a keychain light to a tool that gets handed down.</p></div>
-<a href="{L('/best-edc-gifts-2026/')}">See all 10 →</a></div>
+<a href="{L('/budget/under-25/')}">See all {len(allp)} →</a></div>
 <div class="grid">{featured}</div>
 </div></section>
-<section class="band"><div class="wrap">
+<section class="band" id="guides"><div class="wrap">
 <div class="sec-head"><div><span class="eyebrow">Guides</span><h2 style="margin-top:12px">Start here</h2></div></div>
 <div class="guides">{gl}</div>
 </div></section>
+<section class="band" id="blog"><div class="wrap">
+<div class="sec-head"><div><span class="eyebrow">From the blog</span><h2 style="margin-top:12px">Buying guides and answers</h2></div>
+<a href="{L('/blog/')}">All posts →</a></div>
+{postcards(path, posts[:6])}
+</div></section>
 <section class="band"><div class="wrap"><div class="how">
 <div><h3>Real products only</h3><p>Every pick is a real listing we checked ourselves. No made-up products, no AI pictures pretending to be gear.</p></div>
-<div><h3>Re-checked every week</h3><p>Every price and listing gets re-checked weekly, and anything out of stock gets swapped out.</p></div>
+<div><h3>Dated and checked</h3><p>Every page shows when its listings were last checked, and anything that goes out of stock gets swapped out.</p></div>
 <div><h3>Honest about money</h3><p>We earn a small commission on some links. Every one is labeled, and it never decides what makes the list.</p></div>
 </div></div></section>
 <section style="padding:72px 0"><div class="wrap">
@@ -378,12 +528,15 @@ def home():
 <p>A short email with three useful pieces of gear and one genuine price drop. No spam, unsubscribe anytime.</p></div>
 <div>{drop_cta}</div></div>
 </div></section>"""
-    return page("True EDC | Everyday carry gear and gift guides, picked by budget", site["tagline"], body, path)
+    ld = [{"@context": "https://schema.org", **ORG},
+          {"@context": "https://schema.org", "@type": "WebSite", "@id": BASE + "/#site", "name": "True EDC", "url": BASE + "/",
+           "description": HOME_DESC, "publisher": {"@id": BASE + "/#org"}, "inLanguage": "en-US"}]
+    return page("True EDC | Everyday carry gear and gift guides, picked by budget", HOME_DESC, body, path, ld)
 
 def static_pages():
     about = """<span class="eyebrow">About</span><h1 style="margin-top:14px">Gear worth carrying.</h1>
 <p>True EDC picks everyday-carry gear by budget: small tools, lights, pens, watches and the rest of what people actually keep on them.</p>
-<p>Every pick is a real product with a real listing, and prices are re-checked every week. We do not use AI pictures of products, and we do not list anything we could not verify.</p>
+<p>Every pick is a real product with a real listing, and every page shows the date its listings were last checked. We do not use AI pictures of products, and we do not list anything we could not verify.</p>
 <p>True EDC is supported by affiliate links. See the <a href="../disclosure/">affiliate disclosure</a>.</p>"""
     disclosure = f"""<span class="eyebrow">Disclosure</span><h1 style="margin-top:14px">How we make money</h1>
 <p>{esc(FTC_LINE)}</p>
@@ -396,6 +549,66 @@ def static_pages():
     return {"/about/": ("About | True EDC", "What True EDC is and how picks are made.", wrap(about)),
             "/disclosure/": ("Affiliate disclosure | True EDC", "How True EDC earns money.", wrap(disclosure)),
             "/privacy/": ("Privacy | True EDC", "True EDC privacy policy.", wrap(privacy))}
+
+def product_home(pid):
+    """Best page for a product: first guide that lists it, else first post, else its gear page."""
+    for g in guides:
+        if pid in g["products"]: return f"/{g['slug']}/"
+    for po in posts:
+        if any(pid in sec.get("products", []) for sec in po["sections"]): return f"/blog/{po['slug']}/"
+    cat = products[pid]["category"]
+    for slug, _, pcats, _ in CATS:
+        if cat in pcats: return f"/gear/{slug}/"
+    return "/"
+
+def products_feed():
+    """Machine-readable list for search engines and AI assistants. No prices: Amazon only allows live API prices."""
+    return {"site": "True EDC", "url": BASE + "/", "updated": BUILD_DATE,
+            "note": "Real products picked by True EDC. Budget tiers are approximate; check the retailer for today's price. "
+                    "Retailer links are affiliate links (paid links).",
+            "products": [{"id": p["id"], "name": p["name"], "brand": p["brand"], "category": p["category"],
+                          "budget": tier_label(p["price"]), "facts": p["facts"], "summary": p["pitch"],
+                          "listing_checked": p["checked"], "page": BASE + product_home(p["id"]) + "#" + p["id"],
+                          "retailer_link": amazon_url(p["asin"]), "retailer_link_is_paid": True}
+                         for p in products.values()]}
+
+def llms_txt():
+    L = [f"# {site['name']}", "", f"> {HOME_DESC}", "",
+         "True EDC is an independent site that picks everyday carry (EDC) gear by budget. Every pick is a real product with a "
+         "real listing; pages show the date listings were last checked. True EDC does not publish exact prices or star ratings, "
+         "and does not claim hands-on testing. Retailer links are labeled paid links (Amazon Associates).", "",
+         "## Gift guides"]
+    for g in guides:
+        L.append(f"- [{g['title']}]({BASE}/{g['slug']}/): {g['description'].replace('{checked}', nice_date(latest_checked(g['products'])))}")
+    L += ["", "## Blog"]
+    for po in posts:
+        L.append(f"- [{po['title']}]({BASE}/blog/{po['slug']}/): {po['answer']}")
+    L += ["", "## Shop by budget"] + [f"- [{l}]({BASE}/budget/{s}/): {b}" for s, l, b in TIERS]
+    L += ["", "## Shop by gear"] + [f"- [{lab}]({BASE}/gear/{sl}/): {b}" for sl, lab, _, b in CATS]
+    L += ["", "## Data", f"- [All products as JSON]({BASE}/products.json): names, brands, categories, budget tiers, facts and page links",
+          f"- [Sitemap]({BASE}/sitemap.xml)", f"- [RSS feed]({BASE}/feed.xml)", "",
+          "## Policies", f"- [Affiliate disclosure]({BASE}/disclosure/)", f"- [About]({BASE}/about/)", ""]
+    return "\n".join(L)
+
+def og_image():
+    import io
+    from PIL import Image, ImageDraw, ImageFont
+    def fnt(w, sz):
+        for n in (f"/usr/share/fonts/opentype/inter/Inter-{w}.otf", "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"):
+            try: return ImageFont.truetype(n, sz)
+            except OSError: pass
+        return ImageFont.load_default()
+    img = Image.new("RGB", (1200, 630), (14, 14, 13)); d = ImageDraw.Draw(img)
+    d.rectangle([0, 0, 1200, 14], fill=(255, 107, 26))
+    for i in range(10):
+        y = 80 + i * 60
+        d.line([(0, y + 40), (400, y), (800, y + 50), (1200, y + 10)], fill=(30, 30, 28), width=2)
+    d.text((80, 90), "TRUE", font=fnt("Black", 64), fill=(239, 233, 220))
+    d.text((80 + d.textlength("TRUE", font=fnt("Black", 64)), 90), "EDC", font=fnt("Black", 64), fill=(255, 107, 26))
+    d.text((80, 250), "GEAR WORTH", font=fnt("Black", 104), fill=(239, 233, 220))
+    d.text((80, 365), "CARRYING.", font=fnt("Black", 104), fill=(255, 107, 26))
+    d.text((80, 520), "Knives, lights, multitools and gifts, picked by budget", font=fnt("Medium", 34), fill=(164, 159, 147))
+    b = io.BytesIO(); img.save(b, "PNG", optimize=True); return b.getvalue()
 
 def write(path, content, binary=False):
     f = OUT / path.lstrip("/")
@@ -419,26 +632,37 @@ def main():
         if not items: continue
         path = f"/budget/{s}/"
         title = "EDC gear worth the splurge" if s == "splurge" else f"EDC gear {l.lower()}"
-        write(path, listing_page(path, "Shop by budget", title, b, items)); urls.append(path)
+        write(path, listing_page(path, "Shop by budget", title, b, items, ("Budget", "/#budget"))); urls.append(path)
     for slug, label, pcats, blurb in CATS:
         items = [p for p in allp if p["category"] in pcats]
         if not items: continue
         path = f"/gear/{slug}/"
-        write(path, listing_page(path, "Shop by gear", label, blurb, items)); urls.append(path)
+        write(path, listing_page(path, "Shop by gear", f"Best EDC {label.lower()}" if slug != "keychain" else "EDC keychain gear", blurb, items, ("Gear", "/#gear"))); urls.append(path)
+    if posts:
+        path, h = blog_index(); write(path, h); urls.append(path)
+        for po in posts:
+            path, h = build_post(po); write(path, h); urls.append(path)
     write("/", home())
     for path, (t, d, b) in static_pages().items():
-        write(path, page(t, d, b, path)); urls.append(path)
-    base = site["base_url"].rstrip("/")
+        name = t.split(" | ")[0]
+        write(path, page(t, d, b, path, [crumbs_ld([("Home", "/"), (name, path)])])); urls.append(path)
+    base = BASE
     write("/sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
-          + "".join(f"<url><loc>{base}{u}</loc></url>" for u in urls) + "</urlset>\n")
-    write("/robots.txt", f"User-agent: *\nAllow: /\nSitemap: {base}/sitemap.xml\n")
+          + "".join(f"<url><loc>{base}{u}</loc><lastmod>{BUILD_DATE}</lastmod></url>" for u in urls) + "</urlset>\n")
+    bots = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "Claude-User", "PerplexityBot",
+            "Perplexity-User", "Google-Extended", "Applebot-Extended", "CCBot", "Bingbot", "Googlebot"]
+    write("/robots.txt", "".join(f"User-agent: {b}\nAllow: /\n\n" for b in bots)
+          + f"User-agent: *\nAllow: /\n\nSitemap: {base}/sitemap.xml\n")
+    write("/products.json", json.dumps(products_feed(), indent=1, ensure_ascii=False) + "\n")
+    write("/llms.txt", llms_txt())
+    write("/og.png", og_image(), binary=True)
     write("/CNAME", "trueedc.com\n")
     write("/.nojekyll", "")
     if PREVIEW:
         print(f"Preview: built {len(urls)} pages into {OUT}"); return
     sys.path.insert(0, str(ROOT / "tools"))
     import pins, feed
-    pin_items = pins.make_all(site, products, guides, OUT / "pins")
+    pin_items = pins.make_all(site, products, guides, OUT / "pins", posts)
     write("/feed.xml", feed.rss(site, pin_items))
     print(f"Built {len(urls)} pages and {len(pin_items)} pins into {OUT}")
     if all_warn:

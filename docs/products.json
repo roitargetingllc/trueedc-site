@@ -538,6 +538,91 @@
    "page": "https://trueedc.com/blog/best-pocket-multitool/#leatherman-surge",
    "retailer_link": "https://www.amazon.com/dp/B0014VVVCK?tag=trueedc-20",
    "retailer_link_is_paid": true
+  },
+  {
+   "id": "casio-duro-mdv106",
+   "name": "Casio Duro MDV106",
+   "brand": "Casio",
+   "category": "Watch",
+   "budget": "Worth the splurge",
+   "facts": [
+    "200M water resistant dive-style watch",
+    "Black dial",
+    "Model MDV106-1A"
+   ],
+   "summary": "An analog dive-style watch from Casio with 200 meter water resistance. It's a popular budget way to get the classic dive-watch look.",
+   "listing_checked": "2026-11-16",
+   "page": "https://trueedc.com/blog/best-edc-watch/#casio-duro-mdv106",
+   "retailer_link": "https://www.amazon.com/dp/B009KYJAJY?tag=trueedc-20",
+   "retailer_link_is_paid": true
+  },
+  {
+   "id": "gshock-dw5600ue",
+   "name": "Casio G-Shock DW5600UE",
+   "brand": "Casio",
+   "category": "Watch",
+   "budget": "Worth the splurge",
+   "facts": [
+    "Shock resistant",
+    "200M water resistant, LED backlight",
+    "5-year battery"
+   ],
+   "summary": "The classic square G-Shock. It is built to take knocks, so it's the watch for people who work with their hands and don't want to baby a watch.",
+   "listing_checked": "2026-11-16",
+   "page": "https://trueedc.com/blog/best-edc-gifts-for-dads/#gshock-dw5600ue",
+   "retailer_link": "https://www.amazon.com/dp/B0H2FNLT98?tag=trueedc-20",
+   "retailer_link_is_paid": true
+  },
+  {
+   "id": "gshock-gwm5610u",
+   "name": "Casio G-Shock GW-M5610U",
+   "brand": "Casio",
+   "category": "Watch",
+   "budget": "Worth the splurge",
+   "facts": [
+    "Tough Solar charging",
+    "Multi-Band 6 atomic timekeeping",
+    "200M water resistant"
+   ],
+   "summary": "The square G-Shock with solar charging and radio time sync, so it charges from light and sets its own time. The set-and-forget splurge watch.",
+   "listing_checked": "2026-11-16",
+   "page": "https://trueedc.com/blog/best-edc-watch/#gshock-gwm5610u",
+   "retailer_link": "https://www.amazon.com/dp/B0H2KBJ7KG?tag=trueedc-20",
+   "retailer_link_is_paid": true
+  },
+  {
+   "id": "zebra-f701",
+   "name": "Zebra F-701",
+   "brand": "Zebra Pen",
+   "category": "Pen",
+   "budget": "Under $25",
+   "facts": [
+    "Stainless steel barrel",
+    "Retractable ballpoint",
+    "Black ink, 0.8mm"
+   ],
+   "summary": "An all-steel retractable pen that costs about as much as a coffee, which makes it an easy add-on to any gift.",
+   "listing_checked": "2026-11-16",
+   "page": "https://trueedc.com/blog/how-to-build-an-edc-kit/#zebra-f701",
+   "retailer_link": "https://www.amazon.com/dp/B002L6RB80?tag=trueedc-20",
+   "retailer_link_is_paid": true
+  },
+  {
+   "id": "rite-in-the-rain-954",
+   "name": "Rite in the Rain No. 954 Pocket Notebook",
+   "brand": "Rite in the Rain",
+   "category": "Notebook",
+   "budget": "Under $25",
+   "facts": [
+    "Weatherproof paper",
+    "3.5 x 5 inch soft cover",
+    "Universal pattern pages"
+   ],
+   "summary": "A pocket notebook made to be written on outside, in the rain and on job sites. A small, practical stocking stuffer.",
+   "listing_checked": "2026-11-16",
+   "page": "https://trueedc.com/blog/how-to-build-an-edc-kit/#rite-in-the-rain-954",
+   "retailer_link": "https://www.amazon.com/dp/B00262E6PU?tag=trueedc-20",
+   "retailer_link_is_paid": true
   }
  ]
 }

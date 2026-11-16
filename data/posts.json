@@ -92,7 +92,9 @@
     ],
     "products": [
      "fisher-space-pen-bullet",
-     "field-notes-kraft-3"
+     "zebra-f701",
+     "field-notes-kraft-3",
+     "rite-in-the-rain-954"
     ]
    },
    {
@@ -400,6 +402,7 @@
     ],
     "products": [
      "leatherman-wave-plus",
+     "gshock-dw5600ue",
      "leatherman-rebar",
      "nitecore-edc09",
      "kershaw-iridium"
@@ -429,6 +432,68 @@
   "related": [
    "best-edc-gifts-2026",
    "edc-stocking-stuffers-under-25"
+  ]
+ },
+ {
+  "slug": "best-edc-watch",
+  "title": "The Best EDC Watches, From $25 to Splurge",
+  "description": "Tough, simple watches for everyday carry: the Casio F-91W, the Casio Duro and the square G-Shock, and how to choose between digital, analog and solar.",
+  "date": "2026-11-16",
+  "tag": "Watches",
+  "answer": "For most people the best EDC watch is a tough, simple Casio. The F-91W is the cheap classic, the Duro gives you an analog dive-watch look, and the square G-Shock is the one to buy if you want something built to take knocks.",
+  "sections": [
+   {
+    "h2": "Under $50: the cheap classic",
+    "paras": [
+     "A light digital watch you can wear every day and not worry about. It's the default starter watch for a reason: it's cheap, simple and easy to replace."
+    ],
+    "products": [
+     "casio-f91w"
+    ]
+   },
+   {
+    "h2": "Analog: the dive-watch look",
+    "paras": [
+     "If you want hands instead of a digital screen, a dive-style watch with real water resistance is the most practical everyday analog style."
+    ],
+    "products": [
+     "casio-duro-mdv106"
+    ]
+   },
+   {
+    "h2": "Built to take knocks: G-Shock",
+    "paras": [
+     "The square G-Shock is shock resistant and water resistant to 200 meters. The solar, atomic-time version charges from light and sets its own time."
+    ],
+    "products": [
+     "gshock-dw5600ue",
+     "gshock-gwm5610u"
+    ]
+   },
+   {
+    "h2": "Digital, analog or solar?",
+    "paras": [
+     "Digital is easiest to read and usually toughest. Analog looks better with a dress shirt. Solar costs more up front but saves you from regular battery swaps. Pick based on where the watch will be worn most."
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "What is a good everyday watch for under $50?",
+    "a": "The Casio F-91W is the long-running budget pick. It's light, simple and inexpensive."
+   },
+   {
+    "q": "Is a G-Shock worth it?",
+    "a": "If you work with your hands or play sports, yes. G-Shocks are built to be shock resistant and water resistant, so you don't have to baby them."
+   },
+   {
+    "q": "What does Tough Solar mean?",
+    "a": "It's Casio's name for solar charging. The watch charges from light, so it doesn't need regular battery changes."
+   }
+  ],
+  "related": [
+   "best-edc-gifts-for-dads",
+   "best-edc-gifts-2026"
   ]
  }
 ]

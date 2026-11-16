@@ -469,5 +469,80 @@
   ],
   "pitch": "The big, heavy-duty Leatherman for work trucks, garages and the person who uses their tool every single day.",
   "checked": "2026-11-16"
+ },
+ {
+  "id": "casio-duro-mdv106",
+  "name": "Casio Duro MDV106",
+  "brand": "Casio",
+  "category": "Watch",
+  "asin": "B009KYJAJY",
+  "price": 62.99,
+  "checked": "2026-11-16",
+  "facts": [
+   "200M water resistant dive-style watch",
+   "Black dial",
+   "Model MDV106-1A"
+  ],
+  "pitch": "An analog dive-style watch from Casio with 200 meter water resistance. It's a popular budget way to get the classic dive-watch look."
+ },
+ {
+  "id": "gshock-dw5600ue",
+  "name": "Casio G-Shock DW5600UE",
+  "brand": "Casio",
+  "category": "Watch",
+  "asin": "B0H2FNLT98",
+  "price": 80.57,
+  "checked": "2026-11-16",
+  "facts": [
+   "Shock resistant",
+   "200M water resistant, LED backlight",
+   "5-year battery"
+  ],
+  "pitch": "The classic square G-Shock. It is built to take knocks, so it's the watch for people who work with their hands and don't want to baby a watch."
+ },
+ {
+  "id": "gshock-gwm5610u",
+  "name": "Casio G-Shock GW-M5610U",
+  "brand": "Casio",
+  "category": "Watch",
+  "asin": "B0H2KBJ7KG",
+  "price": 141.32,
+  "checked": "2026-11-16",
+  "facts": [
+   "Tough Solar charging",
+   "Multi-Band 6 atomic timekeeping",
+   "200M water resistant"
+  ],
+  "pitch": "The square G-Shock with solar charging and radio time sync, so it charges from light and sets its own time. The set-and-forget splurge watch."
+ },
+ {
+  "id": "zebra-f701",
+  "name": "Zebra F-701",
+  "brand": "Zebra Pen",
+  "category": "Pen",
+  "asin": "B002L6RB80",
+  "price": 7.99,
+  "checked": "2026-11-16",
+  "facts": [
+   "Stainless steel barrel",
+   "Retractable ballpoint",
+   "Black ink, 0.8mm"
+  ],
+  "pitch": "An all-steel retractable pen that costs about as much as a coffee, which makes it an easy add-on to any gift."
+ },
+ {
+  "id": "rite-in-the-rain-954",
+  "name": "Rite in the Rain No. 954 Pocket Notebook",
+  "brand": "Rite in the Rain",
+  "category": "Notebook",
+  "asin": "B00262E6PU",
+  "price": 7.95,
+  "checked": "2026-11-16",
+  "facts": [
+   "Weatherproof paper",
+   "3.5 x 5 inch soft cover",
+   "Universal pattern pages"
+  ],
+  "pitch": "A pocket notebook made to be written on outside, in the rain and on job sites. A small, practical stocking stuffer."
  }
 ]

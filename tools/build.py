@@ -296,6 +296,7 @@ def page(title, description, body, path, ld=(), og_type="website", published=Non
     return f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="p:domain_verify" content="7c7e33527bbc4a9db4a0926ce592402d"/>
 <title>{esc(title)}</title>
 <meta name="description" content="{esc(description)}">
 <meta name="theme-color" content="#0e0e0d">

@@ -52,7 +52,16 @@ def make_pin(path, kicker, headline, sub, cta="trueedc.com"):
         d.text((m, y), line, font=hf, fill=INK); y += int(hs * 1.12)
     y += 40
     sf = font("Medium", 44)
-    for line in wrap(d, sub, sf, W - 2 * m)[:5]:
+    room = (H - 270 - y) // 60  # lines that fit above the button
+    slines = wrap(d, sub, sf, W - 2 * m)
+    if room < len(slines):
+        slines = slines[:max(room, 0)]
+        if slines:
+            last = slines[-1]
+            while last and d.textlength(last + "...", font=sf) > W - 2 * m:
+                last = last.rsplit(" ", 1)[0] if " " in last else last[:-1]
+            slines[-1] = last.rstrip(",.;:") + "..."
+    for line in slines:
         d.text((m, y), line, font=sf, fill=MUTED); y += 60
     d.rounded_rectangle([m, H - 240, W - m, H - 130], radius=20, fill=ACCENT)
     cf = font("Bold", 46)

@@ -735,6 +735,7 @@ def main():
     write("/og.png", og_image(), binary=True)
     write("/CNAME", "trueedc.com\n")
     write("/.nojekyll", "")
+    write("/google805dedd9e17d59fd.html", "google-site-verification: google805dedd9e17d59fd.html")  # Search Console
     if PREVIEW:
         print(f"Preview: built {len(urls)} pages into {OUT}"); return
     sys.path.insert(0, str(ROOT / "tools"))

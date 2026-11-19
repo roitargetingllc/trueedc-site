@@ -1,600 +1,688 @@
 [
-  {
-    "id": "victorinox-classic-sd",
-    "name": "Victorinox Classic SD",
-    "brand": "Victorinox",
-    "category": "Multitool",
-    "asin": "B092DZCM42",
-    "price": 24.0,
-    "checked": "2026-11-15",
-    "facts": [
-      "7 functions, including a small blade, screwdriver and key ring",
-      "Swiss made",
-      "Small enough to live on a keychain"
-    ],
-    "pitch": "The gift nobody returns. It is small enough to forget about until the moment someone needs to open a package, trim a thread or tighten a screw, and then they never forget who gave it to them.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Victorinox_Swiss_Army_Classic_%288383355167%29.jpg/960px-Victorinox_Swiss_Army_Classic_%288383355167%29.jpg",
-    "image_page": "https://commons.wikimedia.org/wiki/File:Victorinox_Swiss_Army_Classic_(8383355167).jpg",
-    "image_author": "James Case",
-    "image_license": "CC BY 2.0",
-    "image_license_url": "https://creativecommons.org/licenses/by/2.0/",
-    "image_note": "Decorated edition shown",
-    "image_pos": "60% 55%"
-  },
-  {
-    "id": "olight-imini-2",
-    "name": "Olight iMini 2",
-    "brand": "Olight",
-    "category": "Flashlight",
-    "asin": "B0C54ZH8WW",
-    "price": 19.99,
-    "checked": "2026-11-15",
-    "facts": [
-      "Rechargeable keychain flashlight",
-      "Clips to a key ring"
-    ],
-    "pitch": "A phone flashlight drains the phone. This rides on the keys and is always there for the parking lot, the dropped earbud under the car seat or the dark porch lock."
-  },
-  {
-    "id": "nite-ize-s-biner-microlock",
-    "name": "Nite Ize S-Biner MicroLock (2-pack)",
-    "brand": "Nite Ize",
-    "category": "Keychain",
-    "asin": "B00BKVPU08",
-    "price": 6.41,
-    "checked": "2026-11-15",
-    "facts": [
-      "Stainless steel",
-      "Locking gates on both sides",
-      "2-pack"
-    ],
-    "pitch": "The cheapest upgrade in EDC. It splits car keys from house keys and lets a light or a knife come off the ring in a second. Perfect stocking filler."
-  },
-  {
-    "id": "field-notes-kraft-3",
-    "name": "Field Notes Original Kraft (3-pack)",
-    "brand": "Field Notes",
-    "category": "Notebook",
-    "asin": "B0034KDEMO",
-    "price": 12.95,
-    "checked": "2026-11-15",
-    "facts": [
-      "3 notebooks, 48 ruled pages each",
-      "3.5 x 5.5 inches, fits a back pocket"
-    ],
-    "pitch": "For the person who still writes things down. It fits in a back pocket and has a cult following, so it reads as a thoughtful gift, not a cheap one.",
-    "image": "https://images.unsplash.com/photo-1532594722383-b75fb8381b55?auto=format&fit=crop&w=900&q=70",
-    "image_page": "https://unsplash.com/photos/black-gel-pen-on-field-notes-book-YiRQIglwYig",
-    "image_author": "Nik",
-    "image_license": "Unsplash License",
-    "image_license_url": "https://unsplash.com/license",
-    "image_pos": "75% 22%"
-  },
-  {
-    "id": "casio-f91w",
-    "name": "Casio F-91W",
-    "brand": "Casio",
-    "category": "Watch",
-    "asin": "B000GAWSDG",
-    "price": 25.5,
-    "checked": "2026-11-15",
-    "facts": [
-      "Digital sport watch with a resin strap"
-    ],
-    "pitch": "The most famous cheap watch in the world. It is light enough to wear to bed and cheap enough to wear to the gym, which is exactly why people end up wearing it every day.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Casio_F-91W_82T38575.jpg/960px-Casio_F-91W_82T38575.jpg",
-    "image_page": "https://commons.wikimedia.org/wiki/File:Casio_F-91W_82T38575.jpg",
-    "image_author": "Ashley Pomeroy",
-    "image_license": "CC BY-SA 3.0",
-    "image_license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
-    "image_pos": "50% 50%"
-  },
-  {
-    "id": "fisher-space-pen-bullet",
-    "name": "Fisher Space Pen Bullet (Matte Black)",
-    "brand": "Fisher",
-    "category": "Pen",
-    "asin": "B00K54CJZK",
-    "price": 30.59,
-    "checked": "2026-11-15",
-    "facts": [
-      "Pressurized ballpoint cartridge",
-      "Pocket size when capped, full size when posted"
-    ],
-    "pitch": "Fisher's pressurized cartridge is made to write upside down and in the cold. Capped, it is about 3.75 inches long; with the cap posted, it is a full-size pen. It looks more expensive than it is.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/SpacePen.jpg/960px-SpacePen.jpg",
-    "image_page": "https://commons.wikimedia.org/wiki/File:SpacePen.jpg",
-    "image_author": "Lx-s",
-    "image_license": "CC BY-SA 4.0",
-    "image_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-    "image_note": "Chrome finish shown",
-    "image_pos": "50% 50%"
-  },
-  {
-    "id": "gerber-dime",
-    "name": "Gerber Dime",
-    "brand": "Gerber",
-    "category": "Multitool",
-    "asin": "B006M9NIDO",
-    "price": 34.99,
-    "checked": "2026-11-15",
-    "facts": [
-      "12 tools including pliers, a small blade and a bottle opener",
-      "Keychain size"
-    ],
-    "pitch": "Real pliers on a keychain. It is the tool people reach for at tailgates, campsites and in the junk drawer, and the bottle opener alone earns its spot."
-  },
-  {
-    "id": "civivi-elementum",
-    "name": "CIVIVI Elementum",
-    "brand": "CIVIVI",
-    "category": "Knife",
-    "asin": "B08C9PQPRQ",
-    "price": 50.15,
-    "checked": "2026-11-15",
-    "facts": [
-      "2.96 inch D2 steel blade",
-      "G10 handle"
-    ],
-    "pitch": "The knife enthusiasts recommend to people buying their first good one. Clean, slim, and it feels far nicer in the hand than its price suggests."
-  },
-  {
-    "id": "leatherman-skeletool-cx",
-    "name": "Leatherman Skeletool CX",
-    "brand": "Leatherman",
-    "category": "Multitool",
-    "asin": "B000059GTH",
-    "price": 79.95,
-    "checked": "2026-11-15",
-    "facts": [
-      "7 tools",
-      "Lightweight, built for everyday carry"
-    ],
-    "pitch": "A full-size Leatherman that disappears in a pocket. If the person on your list already has a cheap multitool, this is the one that replaces it for good.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Leatherman_Skeletool_CX_%2848710366323%29.jpg/960px-Leatherman_Skeletool_CX_%2848710366323%29.jpg",
-    "image_page": "https://commons.wikimedia.org/wiki/File:Leatherman_Skeletool_CX_(48710366323).jpg",
-    "image_author": "Olgierd",
-    "image_license": "CC BY 2.0",
-    "image_license_url": "https://creativecommons.org/licenses/by/2.0/",
-    "image_pos": "50% 50%"
-  },
-  {
-    "id": "leatherman-wave-plus",
-    "name": "Leatherman Wave+",
-    "brand": "Leatherman",
-    "category": "Multitool",
-    "asin": "B079MJBP21",
-    "price": 103.95,
-    "checked": "2026-11-15",
-    "facts": [
-      "18 tools",
-      "Stainless steel"
-    ],
-    "pitch": "The multitool that ends up being handed down. It is the classic big gift for a dad, a new homeowner or anyone who fixes things. Eighteen tools, and the ones people use most open from outside without unfolding the handles."
-  },
-  {
-    "id": "kershaw-appa",
-    "name": "Kershaw Appa",
-    "brand": "Kershaw",
-    "category": "Knife",
-    "asin": "B09T8YPT1X",
-    "price": 16.6,
-    "facts": [
-      "2.75 inch reverse tanto blade",
-      "All-black finish",
-      "Pocket clip"
-    ],
-    "pitch": "A small, all-black folder at a stocking-stuffer price. The short reverse tanto blade suits boxes, tape and zip ties, which is most of what a pocket knife actually does.",
-    "checked": "2026-11-16"
-  },
-  {
-    "id": "gerber-pledge",
-    "name": "Gerber Pledge",
-    "brand": "Gerber",
-    "category": "Knife",
-    "asin": "B0BNWDTJ9J",
-    "price": 23.99,
-    "facts": [
-      "Plain edge blade",
-      "Pocket clip",
-      "Omni Gray handle"
-    ],
-    "pitch": "Gerber's plain, practical folder for people who want a clip knife from a known brand without paying enthusiast prices.",
-    "checked": "2026-11-16"
-  },
-  {
-    "id": "gerber-zilch",
-    "name": "Gerber Zilch",
-    "brand": "Gerber",
-    "category": "Knife",
-    "asin": "B09H3HKZ9J",
-    "price": 26.15,
-    "facts": [
-      "3.1 inch plain edge blade",
-      "Pocket clip",
-      "Coyote Brown handle"
-    ],
-    "pitch": "A lightweight, no-fuss folder with a full 3.1 inch blade. It is the kind of knife you hand a friend who keeps borrowing yours.",
-    "checked": "2026-11-16"
-  },
-  {
-    "id": "civivi-mini-praxis",
-    "name": "CIVIVI Mini Praxis",
-    "brand": "CIVIVI",
-    "category": "Knife",
-    "asin": "B0BF8FPH5L",
-    "price": 29.74,
-    "facts": [
-      "2.98 inch D2 steel blade",
-      "OD Green handle",
-      "Pocket clip"
-    ],
-    "pitch": "The smaller version of one of CIVIVI's best-known designs. A just-under-3 inch D2 blade keeps it office friendly while still feeling like a real knife.",
-    "checked": "2026-11-16"
-  },
-  {
-    "id": "gerber-quadrant",
-    "name": "Gerber Quadrant",
-    "brand": "Gerber",
-    "category": "Knife",
-    "asin": "B07SZLY2ZL",
-    "price": 30.54,
-    "facts": [
-      "Plain edge blade",
-      "Bamboo handle",
-      "Pocket clip"
-    ],
-    "pitch": "A slim gentleman's folder with a bamboo handle. It looks at home with a dress shirt, which makes it an easy gift for someone who doesn't want anything tactical.",
-    "checked": "2026-11-16"
-  },
-  {
-    "id": "buck-112-slim-select",
-    "name": "Buck 112 Slim Select",
-    "brand": "Buck Knives",
-    "category": "Knife",
-    "asin": "B0846LWLPT",
-    "price": 37.99,
-    "facts": [
-      "3 inch blade",
-      "About 2.5 oz",
-      "Pocket clip"
-    ],
-    "pitch": "Buck's classic 112 shape in a light, modern build. It's a nod to the knife a lot of grandfathers carried, at about 2.5 ounces.",
-    "checked": "2026-11-16"
-  },
-  {
-    "id": "civivi-praxis",
-    "name": "CIVIVI Praxis",
-    "brand": "CIVIVI",
-    "category": "Knife",
-    "asin": "B08PF6NHLJ",
-    "price": 42.5,
-    "facts": [
-      "3.75 inch blade",
-      "G10 handle",
-      "Model C803F"
-    ],
-    "pitch": "The full-size Praxis, for people who want a bigger blade and handle for outdoor work, yard work and opening a lot of boxes.",
-    "checked": "2026-11-16"
-  },
-  {
-    "id": "sog-terminus-xr",
-    "name": "SOG Terminus XR",
-    "brand": "SOG",
-    "category": "Knife",
-    "asin": "B0817DMXLG",
-    "price": 44.6,
-    "facts": [
-      "2.95 inch blade",
-      "Ambidextrous carry",
-      "OD Green handle"
-    ],
-    "pitch": "A sub-3 inch folder that works for left- and right-handed carry, which makes it a safe gift when you don't know which hand someone uses.",
-    "checked": "2026-11-16"
-  },
-  {
-    "id": "kershaw-iridium",
-    "name": "Kershaw Iridium",
-    "brand": "Kershaw",
-    "category": "Knife",
-    "asin": "B0BTB213Q6",
-    "price": 57.87,
-    "facts": [
-      "3.4 inch spear point blade",
-      "Black and gray finish",
-      "Model 2038"
-    ],
-    "pitch": "A step up from budget folders, with a clean 3.4 inch spear point blade. A good next knife for someone who has outgrown their first one.",
-    "checked": "2026-11-16"
-  },
-  {
-    "id": "sofirn-se1",
-    "name": "Sofirn SE1",
-    "brand": "Sofirn",
-    "category": "Flashlight",
-    "asin": "B0GWT8LVVS",
-    "price": 19.99,
-    "facts": [
-      "Coin-sized keychain light",
-      "Up to 300 lumens",
-      "Rechargeable, with UV and RGB modes"
-    ],
-    "pitch": "A coin-sized light for the key ring, with extra UV and colored modes. Cheap enough to buy a few as stocking stuffers.",
-    "checked": "2026-11-16"
-  },
-  {
-    "id": "olight-iultra",
-    "name": "Olight iUltra",
-    "brand": "Olight",
-    "category": "Flashlight",
-    "asin": "B0FYDFNDSG",
-    "price": 29.99,
-    "facts": [
-      "Mini keychain flashlight",
-      "Rechargeable",
-      "Olive Green"
-    ],
-    "pitch": "Olight's newer mini keychain light. A tidy step up for someone who already likes the idea of a light on their keys.",
-    "checked": "2026-11-16"
-  },
-  {
-    "id": "nitecore-tip3",
-    "name": "Nitecore TIP3",
-    "brand": "Nitecore",
-    "category": "Flashlight",
-    "asin": "B0GHPCFR38",
-    "price": 34.95,
-    "facts": [
-      "Up to 720 lumens",
-      "3 color temperatures",
-      "USB-C rechargeable, with pocket clip"
-    ],
-    "pitch": "A flat keychain light that also clips to a pocket, with a choice of warm, neutral or cool white.",
-    "checked": "2026-11-16"
-  },
-  {
-    "id": "nitecore-tini-3",
-    "name": "Nitecore TINI 3",
-    "brand": "Nitecore",
-    "category": "Flashlight",
-    "asin": "B0F2P7J832",
-    "price": 39.95,
-    "facts": [
-      "Up to 600 lumens",
-      "Warm, neutral and cool white",
-      "USB-C rechargeable"
-    ],
-    "pitch": "A tiny keychain light with a lot of output for its size, and a choice of light color for reading or finding things in the dark.",
-    "checked": "2026-11-16"
-  },
-  {
-    "id": "olight-oclip-pro",
-    "name": "Olight Oclip Pro",
-    "brand": "Olight",
-    "category": "Flashlight",
-    "asin": "B0DDC3M31M",
-    "price": 39.99,
-    "facts": [
-      "Clip-on light",
-      "Rechargeable",
-      "Clips to a pocket, strap or collar"
-    ],
-    "pitch": "A light that clips on instead of riding in a pocket, so both hands stay free for dog walks, runs and car trouble.",
-    "checked": "2026-11-16"
-  },
-  {
-    "id": "nitecore-edc09",
-    "name": "Nitecore EDC09",
-    "brand": "Nitecore",
-    "category": "Flashlight",
-    "asin": "B0G45JBD45",
-    "price": 69.95,
-    "facts": [
-      "Up to 1600 lumens",
-      "102° swivel head and magnetic tail",
-      "USB-C rechargeable, stainless steel body"
-    ],
-    "pitch": "A pocket light with a head that swivels and a magnetic tail, so it can stand on a car hood or point into an engine bay while you work.",
-    "checked": "2026-11-16"
-  },
-  {
-    "id": "nitecore-edc29",
-    "name": "Nitecore EDC29",
-    "brand": "Nitecore",
-    "category": "Flashlight",
-    "asin": "B0DHQXJDM2",
-    "price": 109.95,
-    "facts": [
-      "Up to 6500 lumens",
-      "Flat EDC body",
-      "Rechargeable"
-    ],
-    "pitch": "A flat, pocketable light with huge maximum output. It's the big-gift light for someone who already owns a keychain one.",
-    "checked": "2026-11-16"
-  },
-  {
-    "id": "olight-arkpro-ultra",
-    "name": "Olight ArkPro Ultra",
-    "brand": "Olight",
-    "category": "Flashlight",
-    "asin": "B0GHR5DXFC",
-    "price": 129.99,
-    "facts": [
-      "Flat EDC flashlight",
-      "Up to 1700 lumens",
-      "Rechargeable, Onyx Black"
-    ],
-    "pitch": "Olight's premium flat EDC light. It's built to sit in a pocket like a phone, not roll around like a tube light.",
-    "checked": "2026-11-16"
-  },
-  {
-    "id": "leatherman-rev",
-    "name": "Leatherman Rev",
-    "brand": "Leatherman",
-    "category": "Multitool",
-    "asin": "B00TQ3S3GK",
-    "price": 44.95,
-    "facts": [
-      "Pocket size",
-      "Package opener and screwdrivers",
-      "Stainless steel"
-    ],
-    "pitch": "Leatherman's entry-level pocket tool. It has real pliers and drivers at a price that makes it an easy first Leatherman.",
-    "checked": "2026-11-16",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Leatherman_Rev_%2849114781097%29.jpg/960px-Leatherman_Rev_%2849114781097%29.jpg",
-    "image_page": "https://commons.wikimedia.org/wiki/File:Leatherman_Rev_(49114781097).jpg",
-    "image_author": "Olgierd",
-    "image_license": "CC BY 2.0",
-    "image_license_url": "https://creativecommons.org/licenses/by/2.0/",
-    "image_pos": "50% 50%"
-  },
-  {
-    "id": "leatherman-wingman",
-    "name": "Leatherman Wingman",
-    "brand": "Leatherman",
-    "category": "Multitool",
-    "asin": "B005DI0XM4",
-    "price": 49.95,
-    "facts": [
-      "Spring-action pliers",
-      "Spring-action scissors",
-      "Stainless steel"
-    ],
-    "pitch": "The value pick in Leatherman's full-size lineup. The spring-loaded pliers and scissors open on their own, which people notice the first time they use them.",
-    "checked": "2026-11-16",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Leatherman_Wingman%2C_folded.jpg/960px-Leatherman_Wingman%2C_folded.jpg",
-    "image_page": "https://commons.wikimedia.org/wiki/File:Leatherman_Wingman,_folded.jpg",
-    "image_author": "GerifalteDelSabana",
-    "image_license": "CC BY-SA 4.0",
-    "image_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-    "image_pos": "50% 50%"
-  },
-  {
-    "id": "leatherman-rebar",
-    "name": "Leatherman Rebar",
-    "brand": "Leatherman",
-    "category": "Multitool",
-    "asin": "B07VWCXQRV",
-    "price": 79.95,
-    "facts": [
-      "Replaceable wire cutters",
-      "Saw",
-      "Coyote Tan"
-    ],
-    "pitch": "A workhorse tool with replaceable wire cutters and a saw, for people who fix things more than they open packages.",
-    "checked": "2026-11-16"
-  },
-  {
-    "id": "leatherman-signal",
-    "name": "Leatherman Signal",
-    "brand": "Leatherman",
-    "category": "Multitool",
-    "asin": "B07RQ53JPR",
-    "price": 149.95,
-    "facts": [
-      "19 tools",
-      "Outdoor-focused design",
-      "Coyote Tan"
-    ],
-    "pitch": "Leatherman's outdoor multitool, made for camping and hiking kits rather than the junk drawer.",
-    "checked": "2026-11-16"
-  },
-  {
-    "id": "leatherman-surge",
-    "name": "Leatherman Surge",
-    "brand": "Leatherman",
-    "category": "Multitool",
-    "asin": "B0014VVVCK",
-    "price": 159.95,
-    "facts": [
-      "21 tools",
-      "Heavy-duty build",
-      "Stainless steel"
-    ],
-    "pitch": "The big, heavy-duty Leatherman for work trucks, garages and the person who uses their tool every single day.",
-    "checked": "2026-11-16"
-  },
-  {
-    "id": "casio-duro-mdv106",
-    "name": "Casio Duro MDV106",
-    "brand": "Casio",
-    "category": "Watch",
-    "asin": "B009KYJAJY",
-    "price": 62.99,
-    "checked": "2026-11-16",
-    "facts": [
-      "200M water resistant dive-style watch",
-      "Black dial",
-      "Model MDV106-1A"
-    ],
-    "pitch": "An analog dive-style watch from Casio with 200 meter water resistance. It's a popular budget way to get the classic dive-watch look."
-  },
-  {
-    "id": "gshock-dw5600ue",
-    "name": "Casio G-Shock DW5600UE",
-    "brand": "Casio",
-    "category": "Watch",
-    "asin": "B0H2FNLT98",
-    "price": 80.57,
-    "checked": "2026-11-16",
-    "facts": [
-      "Shock resistant",
-      "200M water resistant, LED backlight",
-      "5-year battery"
-    ],
-    "pitch": "The classic square G-Shock. It is built to take knocks, so it's the watch for people who work with their hands and don't want to baby a watch.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Casio_G-Shock_DW-5600E_wristwatch.jpg",
-    "image_page": "https://commons.wikimedia.org/wiki/File:Casio_G-Shock_DW-5600E_wristwatch.jpg",
-    "image_author": "Simon Le Bon",
-    "image_license": "Public domain",
-    "image_license_url": "",
-    "image_note": "DW-5600E shown",
-    "image_pos": "50% 45%",
-    "image_fit": "contain"
-  },
-  {
-    "id": "gshock-gwm5610u",
-    "name": "Casio G-Shock GW-M5610U",
-    "brand": "Casio",
-    "category": "Watch",
-    "asin": "B0H2KBJ7KG",
-    "price": 141.32,
-    "checked": "2026-11-16",
-    "facts": [
-      "Tough Solar charging",
-      "Multi-Band 6 atomic timekeeping",
-      "200M water resistant"
-    ],
-    "pitch": "The square G-Shock with solar charging and radio time sync, so it charges from light and sets its own time. The set-and-forget splurge watch."
-  },
-  {
-    "id": "zebra-f701",
-    "name": "Zebra F-701",
-    "brand": "Zebra Pen",
-    "category": "Pen",
-    "asin": "B002L6RB80",
-    "price": 7.99,
-    "checked": "2026-11-16",
-    "facts": [
-      "Stainless steel barrel",
-      "Retractable ballpoint",
-      "Black ink, 0.8mm"
-    ],
-    "pitch": "An all-steel retractable pen that costs about as much as a coffee, which makes it an easy add-on to any gift."
-  },
-  {
-    "id": "rite-in-the-rain-954",
-    "name": "Rite in the Rain No. 954 Pocket Notebook",
-    "brand": "Rite in the Rain",
-    "category": "Notebook",
-    "asin": "B00262E6PU",
-    "price": 7.95,
-    "checked": "2026-11-16",
-    "facts": [
-      "Weatherproof paper",
-      "3.5 x 5 inch soft cover",
-      "Universal pattern pages"
-    ],
-    "pitch": "A pocket notebook made to be written on outside, in the rain and on job sites. A small, practical stocking stuffer."
+ {
+  "id": "victorinox-classic-sd",
+  "name": "Victorinox Classic SD",
+  "brand": "Victorinox",
+  "category": "Multitool",
+  "asin": "B092DZCM42",
+  "price": 24.0,
+  "checked": "2026-11-15",
+  "facts": [
+   "7 functions, including a small blade, screwdriver and key ring",
+   "Swiss made",
+   "Small enough to live on a keychain"
+  ],
+  "pitch": "The gift nobody returns. It is small enough to forget about until the moment someone needs to open a package, trim a thread or tighten a screw, and then they never forget who gave it to them.",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Victorinox_Swiss_Army_Classic_%288383355167%29.jpg/960px-Victorinox_Swiss_Army_Classic_%288383355167%29.jpg",
+  "image_page": "https://commons.wikimedia.org/wiki/File:Victorinox_Swiss_Army_Classic_(8383355167).jpg",
+  "image_author": "James Case",
+  "image_license": "CC BY 2.0",
+  "image_license_url": "https://creativecommons.org/licenses/by/2.0/",
+  "image_note": "Decorated edition shown",
+  "image_pos": "60% 55%"
+ },
+ {
+  "id": "olight-imini-2",
+  "name": "Olight iMini 2",
+  "brand": "Olight",
+  "category": "Flashlight",
+  "asin": "B0C54ZH8WW",
+  "price": 19.99,
+  "checked": "2026-11-15",
+  "facts": [
+   "Rechargeable keychain flashlight",
+   "Clips to a key ring"
+  ],
+  "pitch": "A phone flashlight drains the phone. This rides on the keys and is always there for the parking lot, the dropped earbud under the car seat or the dark porch lock."
+ },
+ {
+  "id": "nite-ize-s-biner-microlock",
+  "name": "Nite Ize S-Biner MicroLock (2-pack)",
+  "brand": "Nite Ize",
+  "category": "Keychain",
+  "asin": "B00BKVPU08",
+  "price": 6.41,
+  "checked": "2026-11-15",
+  "facts": [
+   "Stainless steel",
+   "Locking gates on both sides",
+   "2-pack"
+  ],
+  "pitch": "The cheapest upgrade in EDC. It splits car keys from house keys and lets a light or a knife come off the ring in a second. Perfect stocking filler."
+ },
+ {
+  "id": "field-notes-kraft-3",
+  "name": "Field Notes Original Kraft (3-pack)",
+  "brand": "Field Notes",
+  "category": "Notebook",
+  "asin": "B0034KDEMO",
+  "price": 12.95,
+  "checked": "2026-11-15",
+  "facts": [
+   "3 notebooks, 48 ruled pages each",
+   "3.5 x 5.5 inches, fits a back pocket"
+  ],
+  "pitch": "For the person who still writes things down. It fits in a back pocket and has a cult following, so it reads as a thoughtful gift, not a cheap one.",
+  "image": "https://images.unsplash.com/photo-1532594722383-b75fb8381b55?auto=format&fit=crop&w=900&q=70",
+  "image_page": "https://unsplash.com/photos/black-gel-pen-on-field-notes-book-YiRQIglwYig",
+  "image_author": "Nik",
+  "image_license": "Unsplash License",
+  "image_license_url": "https://unsplash.com/license",
+  "image_pos": "75% 22%"
+ },
+ {
+  "id": "casio-f91w",
+  "name": "Casio F-91W",
+  "brand": "Casio",
+  "category": "Watch",
+  "asin": "B000GAWSDG",
+  "price": 25.5,
+  "checked": "2026-11-15",
+  "facts": [
+   "Digital sport watch with a resin strap"
+  ],
+  "pitch": "The most famous cheap watch in the world. It is light enough to wear to bed and cheap enough to wear to the gym, which is exactly why people end up wearing it every day.",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Casio_F-91W_82T38575.jpg/960px-Casio_F-91W_82T38575.jpg",
+  "image_page": "https://commons.wikimedia.org/wiki/File:Casio_F-91W_82T38575.jpg",
+  "image_author": "Ashley Pomeroy",
+  "image_license": "CC BY-SA 3.0",
+  "image_license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "image_pos": "50% 50%"
+ },
+ {
+  "id": "fisher-space-pen-bullet",
+  "name": "Fisher Space Pen Bullet (Matte Black)",
+  "brand": "Fisher",
+  "category": "Pen",
+  "asin": "B00K54CJZK",
+  "price": 30.59,
+  "checked": "2026-11-15",
+  "facts": [
+   "Pressurized ballpoint cartridge",
+   "Pocket size when capped, full size when posted"
+  ],
+  "pitch": "Fisher's pressurized cartridge is made to write upside down and in the cold. Capped, it is about 3.75 inches long; with the cap posted, it is a full-size pen. It looks more expensive than it is.",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/SpacePen.jpg/960px-SpacePen.jpg",
+  "image_page": "https://commons.wikimedia.org/wiki/File:SpacePen.jpg",
+  "image_author": "Lx-s",
+  "image_license": "CC BY-SA 4.0",
+  "image_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "image_note": "Chrome finish shown",
+  "image_pos": "50% 50%"
+ },
+ {
+  "id": "gerber-dime",
+  "name": "Gerber Dime",
+  "brand": "Gerber",
+  "category": "Multitool",
+  "asin": "B006M9NIDO",
+  "price": 34.99,
+  "checked": "2026-11-15",
+  "facts": [
+   "12 tools including pliers, a small blade and a bottle opener",
+   "Keychain size"
+  ],
+  "pitch": "Real pliers on a keychain. It is the tool people reach for at tailgates, campsites and in the junk drawer, and the bottle opener alone earns its spot."
+ },
+ {
+  "id": "sencut-sachse",
+  "name": "SENCUT Sachse",
+  "brand": "SENCUT",
+  "category": "Knife",
+  "price": 40.13,
+  "checked": "2026-11-19",
+  "facts": [
+   "3.47 inch 9Cr18MoV stainless blade",
+   "Natural G10 handle, about 3.9 ounces",
+   "Button lock on ceramic ball bearings"
+  ],
+  "pitch": "A full-size folder for camping, yard work and lots of cardboard. It runs smooth on bearings and stays under $50.",
+  "image": "https://cdn.shopify.com/s/files/1/0477/0968/3874/products/S21007-4_Sachse.jpg?v=1678241973",
+  "image_page": "https://www.sencut.com/products/sencut-sachse-s21007-4",
+  "image_author": "SENCUT",
+  "image_license": "brand photo",
+  "image_fit": "contain",
+  "store": {
+   "name": "SENCUT",
+   "awin_mid": 51423,
+   "url": "https://www.sencut.com/products/sencut-sachse-s21007-4",
+   "price": 40.13,
+   "checked": "2026-11-19"
   }
+ },
+ {
+  "id": "leatherman-skeletool-cx",
+  "name": "Leatherman Skeletool CX",
+  "brand": "Leatherman",
+  "category": "Multitool",
+  "asin": "B000059GTH",
+  "price": 79.95,
+  "checked": "2026-11-15",
+  "facts": [
+   "7 tools",
+   "Lightweight, built for everyday carry"
+  ],
+  "pitch": "A full-size Leatherman that disappears in a pocket. If the person on your list already has a cheap multitool, this is the one that replaces it for good.",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Leatherman_Skeletool_CX_%2848710366323%29.jpg/960px-Leatherman_Skeletool_CX_%2848710366323%29.jpg",
+  "image_page": "https://commons.wikimedia.org/wiki/File:Leatherman_Skeletool_CX_(48710366323).jpg",
+  "image_author": "Olgierd",
+  "image_license": "CC BY 2.0",
+  "image_license_url": "https://creativecommons.org/licenses/by/2.0/",
+  "image_pos": "50% 50%"
+ },
+ {
+  "id": "leatherman-wave-plus",
+  "name": "Leatherman Wave+",
+  "brand": "Leatherman",
+  "category": "Multitool",
+  "asin": "B079MJBP21",
+  "price": 103.95,
+  "checked": "2026-11-15",
+  "facts": [
+   "18 tools",
+   "Stainless steel"
+  ],
+  "pitch": "The multitool that ends up being handed down. It is the classic big gift for a dad, a new homeowner or anyone who fixes things. Eighteen tools, and the ones people use most open from outside without unfolding the handles."
+ },
+ {
+  "id": "kershaw-appa",
+  "name": "Kershaw Appa",
+  "brand": "Kershaw",
+  "category": "Knife",
+  "asin": "B09T8YPT1X",
+  "price": 16.6,
+  "facts": [
+   "2.75 inch reverse tanto blade",
+   "All-black finish",
+   "Pocket clip"
+  ],
+  "pitch": "A small, all-black folder at a stocking-stuffer price. The short reverse tanto blade suits boxes, tape and zip ties, which is most of what a pocket knife actually does.",
+  "checked": "2026-11-16"
+ },
+ {
+  "id": "gerber-pledge",
+  "name": "Gerber Pledge",
+  "brand": "Gerber",
+  "category": "Knife",
+  "asin": "B0BNWDTJ9J",
+  "price": 23.99,
+  "facts": [
+   "Plain edge blade",
+   "Pocket clip",
+   "Omni Gray handle"
+  ],
+  "pitch": "Gerber's plain, practical folder for people who want a clip knife from a known brand without paying enthusiast prices.",
+  "checked": "2026-11-16"
+ },
+ {
+  "id": "gerber-zilch",
+  "name": "Gerber Zilch",
+  "brand": "Gerber",
+  "category": "Knife",
+  "asin": "B09H3HKZ9J",
+  "price": 26.15,
+  "facts": [
+   "3.1 inch plain edge blade",
+   "Pocket clip",
+   "Coyote Brown handle"
+  ],
+  "pitch": "A lightweight, no-fuss folder with a full 3.1 inch blade. It is the kind of knife you hand a friend who keeps borrowing yours.",
+  "checked": "2026-11-16"
+ },
+ {
+  "id": "sencut-arcblast",
+  "name": "SENCUT ArcBlast",
+  "brand": "SENCUT",
+  "category": "Knife",
+  "price": 41.25,
+  "checked": "2026-11-19",
+  "facts": [
+   "2.98 inch 9Cr18MoV stainless blade",
+   "Black aluminum handle, under 3 ounces",
+   "Button lock, opens by flipper or thumb stud"
+  ],
+  "pitch": "A just-under-3 inch folder with a metal handle that feels solid without weighing down a pocket. The button lock makes it easy to close one handed.",
+  "image": "https://cdn.shopify.com/s/files/1/0477/0968/3874/products/sencut-arcblast-flipper-button-lock-thumb-stud-knife-black-aluminum-handle-298-black-9cr18mov-blade-s22043b-1-112118.jpg?v=1702917342",
+  "image_page": "https://www.sencut.com/products/sencut-arcblast-s22043b-1",
+  "image_author": "SENCUT",
+  "image_license": "brand photo",
+  "image_fit": "contain",
+  "store": {
+   "name": "SENCUT",
+   "awin_mid": 51423,
+   "url": "https://www.sencut.com/products/sencut-arcblast-s22043b-1",
+   "price": 41.25,
+   "checked": "2026-11-19"
+  }
+ },
+ {
+  "id": "gerber-quadrant",
+  "name": "Gerber Quadrant",
+  "brand": "Gerber",
+  "category": "Knife",
+  "asin": "B07SZLY2ZL",
+  "price": 30.54,
+  "facts": [
+   "Plain edge blade",
+   "Bamboo handle",
+   "Pocket clip"
+  ],
+  "pitch": "A slim gentleman's folder with a bamboo handle. It looks at home with a dress shirt, which makes it an easy gift for someone who doesn't want anything tactical.",
+  "checked": "2026-11-16"
+ },
+ {
+  "id": "buck-112-slim-select",
+  "name": "Buck 112 Slim Select",
+  "brand": "Buck Knives",
+  "category": "Knife",
+  "asin": "B0846LWLPT",
+  "price": 37.99,
+  "facts": [
+   "3 inch blade",
+   "About 2.5 oz",
+   "Pocket clip"
+  ],
+  "pitch": "Buck's classic 112 shape in a light, modern build. It's a nod to the knife a lot of grandfathers carried, at about 2.5 ounces.",
+  "checked": "2026-11-16"
+ },
+ {
+  "id": "sencut-squiggy",
+  "name": "SENCUT Squiggy",
+  "brand": "SENCUT",
+  "category": "Knife",
+  "price": 42.38,
+  "checked": "2026-11-19",
+  "facts": [
+   "3.89 inch 9Cr18MoV stainless blade",
+   "G10 handle with room for big hands",
+   "Button lock, flipper and thumb hole"
+  ],
+  "pitch": "The big one of the bunch. Pick it if you have large hands or want the most blade you can get for the money.",
+  "image": "https://cdn.shopify.com/s/files/1/0477/0968/3874/files/sencut-squiggy-flipper-thumb-hole-button-lock-knife-white-black-g10-handle-389-satin-finished-9cr18mov-blade-s24082a-1-sencut-684108.jpg?v=1744019280",
+  "image_page": "https://www.sencut.com/products/sencut-squiggy-s24082a-1",
+  "image_author": "SENCUT",
+  "image_license": "brand photo",
+  "image_fit": "contain",
+  "store": {
+   "name": "SENCUT",
+   "awin_mid": 51423,
+   "url": "https://www.sencut.com/products/sencut-squiggy-s24082a-1",
+   "price": 42.38,
+   "checked": "2026-11-19"
+  }
+ },
+ {
+  "id": "sog-terminus-xr",
+  "name": "SOG Terminus XR",
+  "brand": "SOG",
+  "category": "Knife",
+  "asin": "B0817DMXLG",
+  "price": 44.6,
+  "facts": [
+   "2.95 inch blade",
+   "Ambidextrous carry",
+   "OD Green handle"
+  ],
+  "pitch": "A sub-3 inch folder that works for left- and right-handed carry, which makes it a safe gift when you don't know which hand someone uses.",
+  "checked": "2026-11-16"
+ },
+ {
+  "id": "kershaw-iridium",
+  "name": "Kershaw Iridium",
+  "brand": "Kershaw",
+  "category": "Knife",
+  "asin": "B0BTB213Q6",
+  "price": 57.87,
+  "facts": [
+   "3.4 inch spear point blade",
+   "Black and gray finish",
+   "Model 2038"
+  ],
+  "pitch": "A step up from budget folders, with a clean 3.4 inch spear point blade. A good next knife for someone who has outgrown their first one.",
+  "checked": "2026-11-16"
+ },
+ {
+  "id": "sofirn-se1",
+  "name": "Sofirn SE1",
+  "brand": "Sofirn",
+  "category": "Flashlight",
+  "asin": "B0GWT8LVVS",
+  "price": 19.99,
+  "facts": [
+   "Coin-sized keychain light",
+   "Up to 300 lumens",
+   "Rechargeable, with UV and RGB modes"
+  ],
+  "pitch": "A coin-sized light for the key ring, with extra UV and colored modes. Cheap enough to buy a few as stocking stuffers.",
+  "checked": "2026-11-16"
+ },
+ {
+  "id": "olight-iultra",
+  "name": "Olight iUltra",
+  "brand": "Olight",
+  "category": "Flashlight",
+  "asin": "B0FYDFNDSG",
+  "price": 29.99,
+  "facts": [
+   "Mini keychain flashlight",
+   "Rechargeable",
+   "Olive Green"
+  ],
+  "pitch": "Olight's newer mini keychain light. A tidy step up for someone who already likes the idea of a light on their keys.",
+  "checked": "2026-11-16"
+ },
+ {
+  "id": "nitecore-tip3",
+  "name": "Nitecore TIP3",
+  "brand": "Nitecore",
+  "category": "Flashlight",
+  "asin": "B0GHPCFR38",
+  "price": 34.95,
+  "facts": [
+   "Up to 720 lumens",
+   "3 color temperatures",
+   "USB-C rechargeable, with pocket clip"
+  ],
+  "pitch": "A flat keychain light that also clips to a pocket, with a choice of warm, neutral or cool white.",
+  "checked": "2026-11-16",
+  "store": {
+   "name": "Nitecore Store",
+   "awin_mid": 81173,
+   "url": "https://nitecorestore.com/products/tip3-usbc-multi-color-temperature-keychain-flashlight",
+   "price": 34.95,
+   "checked": "2026-11-19"
+  }
+ },
+ {
+  "id": "nitecore-tini-3",
+  "name": "Nitecore TINI 3",
+  "brand": "Nitecore",
+  "category": "Flashlight",
+  "asin": "B0F2P7J832",
+  "price": 39.95,
+  "facts": [
+   "Up to 600 lumens",
+   "Warm, neutral and cool white",
+   "USB-C rechargeable"
+  ],
+  "pitch": "A tiny keychain light with a lot of output for its size, and a choice of light color for reading or finding things in the dark.",
+  "checked": "2026-11-16",
+  "store": {
+   "name": "Nitecore Store",
+   "awin_mid": 81173,
+   "url": "https://nitecorestore.com/products/tini3-multicolor-temperature-keychain-flashlight",
+   "price": 39.95,
+   "checked": "2026-11-19"
+  }
+ },
+ {
+  "id": "nitecore-thumb",
+  "name": "Nitecore THUMB",
+  "brand": "Nitecore",
+  "category": "Flashlight",
+  "price": 19.95,
+  "checked": "2026-11-19",
+  "facts": [
+   "85 lumens white, plus a red side light",
+   "Head tilts up to 90 degrees",
+   "USB rechargeable, clips to keys or a cap"
+  ],
+  "pitch": "A tiny clip-on light whose head tilts, so it points where you need it while hanging off your keys, a bag strap or a cap brim.",
+  "image": "https://s3.amazonaws.com/nitecorestore.com/Images/T+Series/FL-NITE-THUMB.jpg",
+  "image_page": "https://nitecorestore.com/products/nitecore-thumb-usb-rechargeable-white-red-tiltable-led-keychain-light",
+  "image_author": "Nitecore",
+  "image_license": "brand photo",
+  "image_fit": "contain",
+  "store": {
+   "name": "Nitecore Store",
+   "awin_mid": 81173,
+   "url": "https://nitecorestore.com/products/nitecore-thumb-usb-rechargeable-white-red-tiltable-led-keychain-light",
+   "price": 19.95,
+   "checked": "2026-11-19"
+  }
+ },
+ {
+  "id": "olight-oclip-pro",
+  "name": "Olight Oclip Pro",
+  "brand": "Olight",
+  "category": "Flashlight",
+  "asin": "B0DDC3M31M",
+  "price": 39.99,
+  "facts": [
+   "Clip-on light",
+   "Rechargeable",
+   "Clips to a pocket, strap or collar"
+  ],
+  "pitch": "A light that clips on instead of riding in a pocket, so both hands stay free for dog walks, runs and car trouble.",
+  "checked": "2026-11-16"
+ },
+ {
+  "id": "nitecore-edc09",
+  "name": "Nitecore EDC09",
+  "brand": "Nitecore",
+  "category": "Flashlight",
+  "asin": "B0G45JBD45",
+  "price": 69.95,
+  "facts": [
+   "Up to 1600 lumens",
+   "102° swivel head and magnetic tail",
+   "USB-C rechargeable, stainless steel body"
+  ],
+  "pitch": "A pocket light with a head that swivels and a magnetic tail, so it can stand on a car hood or point into an engine bay while you work.",
+  "checked": "2026-11-16",
+  "store": {
+   "name": "Nitecore Store",
+   "awin_mid": 81173,
+   "url": "https://nitecorestore.com/products/edc09-swivel-head-edc-flashlight",
+   "price": 69.95,
+   "checked": "2026-11-19"
+  }
+ },
+ {
+  "id": "nitecore-edc29",
+  "name": "Nitecore EDC29",
+  "brand": "Nitecore",
+  "category": "Flashlight",
+  "asin": "B0DHQXJDM2",
+  "price": 109.95,
+  "facts": [
+   "Up to 6500 lumens",
+   "Flat EDC body",
+   "Rechargeable"
+  ],
+  "pitch": "A flat, pocketable light with huge maximum output. It's the big-gift light for someone who already owns a keychain one.",
+  "checked": "2026-11-16",
+  "store": {
+   "name": "Nitecore Store",
+   "awin_mid": 81173,
+   "url": "https://nitecorestore.com/products/nitecore-edc29-usb-c-rechargeable-flat-edc-flashlight",
+   "price": 109.95,
+   "checked": "2026-11-19"
+  }
+ },
+ {
+  "id": "olight-arkpro-ultra",
+  "name": "Olight ArkPro Ultra",
+  "brand": "Olight",
+  "category": "Flashlight",
+  "asin": "B0GHR5DXFC",
+  "price": 129.99,
+  "facts": [
+   "Flat EDC flashlight",
+   "Up to 1700 lumens",
+   "Rechargeable, Onyx Black"
+  ],
+  "pitch": "Olight's premium flat EDC light. It's built to sit in a pocket like a phone, not roll around like a tube light.",
+  "checked": "2026-11-16"
+ },
+ {
+  "id": "leatherman-rev",
+  "name": "Leatherman Rev",
+  "brand": "Leatherman",
+  "category": "Multitool",
+  "asin": "B00TQ3S3GK",
+  "price": 44.95,
+  "facts": [
+   "Pocket size",
+   "Package opener and screwdrivers",
+   "Stainless steel"
+  ],
+  "pitch": "Leatherman's entry-level pocket tool. It has real pliers and drivers at a price that makes it an easy first Leatherman.",
+  "checked": "2026-11-16",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Leatherman_Rev_%2849114781097%29.jpg/960px-Leatherman_Rev_%2849114781097%29.jpg",
+  "image_page": "https://commons.wikimedia.org/wiki/File:Leatherman_Rev_(49114781097).jpg",
+  "image_author": "Olgierd",
+  "image_license": "CC BY 2.0",
+  "image_license_url": "https://creativecommons.org/licenses/by/2.0/",
+  "image_pos": "50% 50%"
+ },
+ {
+  "id": "leatherman-wingman",
+  "name": "Leatherman Wingman",
+  "brand": "Leatherman",
+  "category": "Multitool",
+  "asin": "B005DI0XM4",
+  "price": 49.95,
+  "facts": [
+   "Spring-action pliers",
+   "Spring-action scissors",
+   "Stainless steel"
+  ],
+  "pitch": "The value pick in Leatherman's full-size lineup. The spring-loaded pliers and scissors open on their own, which people notice the first time they use them.",
+  "checked": "2026-11-16",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Leatherman_Wingman%2C_folded.jpg/960px-Leatherman_Wingman%2C_folded.jpg",
+  "image_page": "https://commons.wikimedia.org/wiki/File:Leatherman_Wingman,_folded.jpg",
+  "image_author": "GerifalteDelSabana",
+  "image_license": "CC BY-SA 4.0",
+  "image_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "image_pos": "50% 50%"
+ },
+ {
+  "id": "leatherman-rebar",
+  "name": "Leatherman Rebar",
+  "brand": "Leatherman",
+  "category": "Multitool",
+  "asin": "B07VWCXQRV",
+  "price": 79.95,
+  "facts": [
+   "Replaceable wire cutters",
+   "Saw",
+   "Coyote Tan"
+  ],
+  "pitch": "A workhorse tool with replaceable wire cutters and a saw, for people who fix things more than they open packages.",
+  "checked": "2026-11-16"
+ },
+ {
+  "id": "leatherman-signal",
+  "name": "Leatherman Signal",
+  "brand": "Leatherman",
+  "category": "Multitool",
+  "asin": "B07RQ53JPR",
+  "price": 149.95,
+  "facts": [
+   "19 tools",
+   "Outdoor-focused design",
+   "Coyote Tan"
+  ],
+  "pitch": "Leatherman's outdoor multitool, made for camping and hiking kits rather than the junk drawer.",
+  "checked": "2026-11-16"
+ },
+ {
+  "id": "leatherman-surge",
+  "name": "Leatherman Surge",
+  "brand": "Leatherman",
+  "category": "Multitool",
+  "asin": "B0014VVVCK",
+  "price": 159.95,
+  "facts": [
+   "21 tools",
+   "Heavy-duty build",
+   "Stainless steel"
+  ],
+  "pitch": "The big, heavy-duty Leatherman for work trucks, garages and the person who uses their tool every single day.",
+  "checked": "2026-11-16"
+ },
+ {
+  "id": "casio-duro-mdv106",
+  "name": "Casio Duro MDV106",
+  "brand": "Casio",
+  "category": "Watch",
+  "asin": "B009KYJAJY",
+  "price": 62.99,
+  "checked": "2026-11-16",
+  "facts": [
+   "200M water resistant dive-style watch",
+   "Black dial",
+   "Model MDV106-1A"
+  ],
+  "pitch": "An analog dive-style watch from Casio with 200 meter water resistance. It's a popular budget way to get the classic dive-watch look."
+ },
+ {
+  "id": "gshock-dw5600ue",
+  "name": "Casio G-Shock DW5600UE",
+  "brand": "Casio",
+  "category": "Watch",
+  "asin": "B0H2FNLT98",
+  "price": 80.57,
+  "checked": "2026-11-16",
+  "facts": [
+   "Shock resistant",
+   "200M water resistant, LED backlight",
+   "5-year battery"
+  ],
+  "pitch": "The classic square G-Shock. It is built to take knocks, so it's the watch for people who work with their hands and don't want to baby a watch.",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Casio_G-Shock_DW-5600E_wristwatch.jpg",
+  "image_page": "https://commons.wikimedia.org/wiki/File:Casio_G-Shock_DW-5600E_wristwatch.jpg",
+  "image_author": "Simon Le Bon",
+  "image_license": "Public domain",
+  "image_license_url": "",
+  "image_note": "DW-5600E shown",
+  "image_pos": "50% 45%",
+  "image_fit": "contain"
+ },
+ {
+  "id": "gshock-gwm5610u",
+  "name": "Casio G-Shock GW-M5610U",
+  "brand": "Casio",
+  "category": "Watch",
+  "asin": "B0H2KBJ7KG",
+  "price": 141.32,
+  "checked": "2026-11-16",
+  "facts": [
+   "Tough Solar charging",
+   "Multi-Band 6 atomic timekeeping",
+   "200M water resistant"
+  ],
+  "pitch": "The square G-Shock with solar charging and radio time sync, so it charges from light and sets its own time. The set-and-forget splurge watch."
+ },
+ {
+  "id": "zebra-f701",
+  "name": "Zebra F-701",
+  "brand": "Zebra Pen",
+  "category": "Pen",
+  "asin": "B002L6RB80",
+  "price": 7.99,
+  "checked": "2026-11-16",
+  "facts": [
+   "Stainless steel barrel",
+   "Retractable ballpoint",
+   "Black ink, 0.8mm"
+  ],
+  "pitch": "An all-steel retractable pen that costs about as much as a coffee, which makes it an easy add-on to any gift."
+ },
+ {
+  "id": "rite-in-the-rain-954",
+  "name": "Rite in the Rain No. 954 Pocket Notebook",
+  "brand": "Rite in the Rain",
+  "category": "Notebook",
+  "asin": "B00262E6PU",
+  "price": 7.95,
+  "checked": "2026-11-16",
+  "facts": [
+   "Weatherproof paper",
+   "3.5 x 5 inch soft cover",
+   "Universal pattern pages"
+  ],
+  "pitch": "A pocket notebook made to be written on outside, in the rain and on job sites. A small, practical stocking stuffer."
+ }
 ]

@@ -18,7 +18,7 @@ Rules baked in:
     headers as mood, never as a product, and the footer says so.
   - Internal links are relative, so the same build works on trueedc.com and in a preview.
 """
-import json, html, datetime, shutil, sys
+import json, urllib.parse, html, datetime, shutil, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -173,6 +173,7 @@ section.band{padding:72px 0;border-bottom:1px solid var(--line)}
 .card li{display:flex;gap:8px}.card li:before{content:"";flex:none;width:6px;height:6px;margin-top:9px;border-radius:2px;background:var(--olive)}
 .buy{margin-top:auto;padding-top:8px;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
 .paid{font-size:11px;color:var(--muted);font-weight:600;letter-spacing:.04em}
+.store-note{margin:0}
 .guides{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .guide{position:relative;display:flex;flex-direction:column;justify-content:space-between;min-height:250px;text-decoration:none;color:var(--ink);border-radius:var(--r);padding:24px;border:1px solid var(--line);background:linear-gradient(180deg,rgba(255,107,26,.08),transparent 55%),var(--panel);overflow:hidden;transition:border-color .15s,transform .15s}
 .guide:hover{border-color:var(--blaze);transform:translateY(-2px)}
@@ -322,6 +323,24 @@ def page(title, description, body, path, ld=(), og_type="website", published=Non
 </div></footer>
 </body></html>"""
 
+def store_url(st):
+    """Awin tracking link to the brand's own store (publisher 3157040)."""
+    return f"https://www.awin1.com/cread.php?awinmid={st['awin_mid']}&awinaffid=3157040&ued={urllib.parse.quote(st['url'], safe='')}"
+
+def short_date(iso):
+    y, m, d = (int(x) for x in iso.split("-"))
+    return f"{['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][m-1]} {d}"
+
+def buy_row(p):
+    amz = (f'<a class="btn{" ghost" if p.get("store") else ""}" href="{esc(amazon_url(p["asin"]))}" rel="sponsored nofollow noopener" target="_blank">Check price on Amazon</a>'
+           if p.get("asin") else "")
+    st = p.get("store")
+    if not st:
+        return f'<div class="buy">{amz}<span class="paid">Paid link</span></div>'
+    own = f'<a class="btn" href="{esc(store_url(st))}" rel="sponsored nofollow noopener" target="_blank">${st["price"]:.2f} at {esc(st["name"])}</a>'
+    return (f'<div class="buy">{own}{amz}</div>'
+            f'<p class="paid store-note">Paid link{"s" if amz else ""}. {esc(st["name"])} price checked {short_date(st["checked"])}; it can change.</p>')
+
 def product_card(p, top=False, show_tier=True):
     facts = "".join(f"<li>{esc(f)}</li>" for f in p["facts"])
     chips = f'<span class="chip c">{esc(p["category"])}</span>'
@@ -334,7 +353,7 @@ def product_card(p, top=False, show_tier=True):
 <h3>{esc(p['name'])}</h3>
 <p>{esc(p['pitch'])}</p>
 <ul>{facts}</ul>
-<div class="buy"><a class="btn" href="{esc(amazon_url(p['asin']))}" rel="sponsored nofollow noopener" target="_blank">Check price on Amazon</a><span class="paid">Paid link</span></div>
+{buy_row(p)}
 </div></article>"""
 
 def photo_credit(p):
@@ -524,7 +543,7 @@ def home():
         if not n: continue
         cats += (f'<a class="cat" href="{L("/gear/" + slug + "/")}">{icon(CAT_ICON[pcats[0]])}'
                  f'<div><strong>{esc(label)}</strong><br><span>{n} pick{"s" if n > 1 else ""}</span></div></a>')
-    featured_ids = ["victorinox-classic-sd", "olight-imini-2", "gerber-dime", "civivi-elementum", "fisher-space-pen-bullet", "leatherman-wave-plus"]
+    featured_ids = ["victorinox-classic-sd", "olight-imini-2", "gerber-dime", "sencut-sachse", "fisher-space-pen-bullet", "leatherman-wave-plus"]
     featured = "".join(product_card(products[i], top=(i == "victorinox-classic-sd")) for i in featured_ids if i in products)
     gl = "".join(
         f'<a class="guide{" photo" if PHOTOS.get("guides", {}).get(g["slug"]) else ""}" href="{L("/" + g["slug"] + "/")}"{photo_bg(PHOTOS.get("guides", {}).get(g["slug"]), "bottom")}><div><div class="num">0{n}</div><h3>{esc(g["title"])}</h3>'
@@ -618,21 +637,22 @@ def product_home(pid):
     return "/"
 
 def products_feed():
-    """Machine-readable list for search engines and AI assistants. No prices: Amazon only allows live API prices."""
+    """Machine-readable list for search engines and AI assistants. No Amazon prices (Amazon only allows live API prices); brand-store prices carry their checked date."""
     return {"site": "True EDC", "url": BASE + "/", "updated": BUILD_DATE,
             "note": "Real products picked by True EDC. Budget tiers are approximate; check the retailer for today's price. "
                     "Retailer links are affiliate links (paid links).",
             "products": [{"id": p["id"], "name": p["name"], "brand": p["brand"], "category": p["category"],
                           "budget": tier_label(p["price"]), "facts": p["facts"], "summary": p["pitch"],
                           "listing_checked": p["checked"], "page": BASE + product_home(p["id"]) + "#" + p["id"],
-                          "retailer_link": amazon_url(p["asin"]), "retailer_link_is_paid": True}
+                          **({"retailer_link": amazon_url(p["asin"]), "retailer_link_is_paid": True} if p.get("asin") else {}), **({"brand_store": st["name"], "brand_store_link": store_url(st), "brand_store_price_usd": st["price"], "brand_store_price_checked": st["checked"]} if (st := p.get("store")) else {})}
                          for p in products.values()]}
 
 def llms_txt():
     L = [f"# {site['name']}", "", f"> {HOME_DESC}", "",
          "True EDC is an independent site that picks everyday carry (EDC) gear by budget. Every pick is a real product with a "
-         "real listing; pages show the date listings were last checked. True EDC does not publish exact prices or star ratings, "
-         "and does not claim hands-on testing. Retailer links are labeled paid links (Amazon Associates).", "",
+         "real listing; pages show the date listings were last checked. True EDC does not publish Amazon prices or star ratings, "
+         "and does not claim hands-on testing. Brand-store prices are shown with the date they were checked. "
+         "Retailer links are labeled paid links (Amazon Associates, and brand programs through Awin).", "",
          "## Gift guides"]
     for g in guides:
         L.append(f"- [{g['title']}]({BASE}/{g['slug']}/): {g['description'].replace('{checked}', nice_date(latest_checked(g['products'])))}")

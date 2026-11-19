@@ -71,7 +71,7 @@
     "products": [
      "victorinox-classic-sd",
      "gerber-dime",
-     "civivi-mini-praxis"
+     "sencut-arcblast"
     ]
    },
    {
@@ -135,10 +135,10 @@
  {
   "slug": "best-edc-knife-under-50",
   "title": "The Best EDC Knives Under $50",
-  "description": "Real folding knives from Kershaw, Gerber, CIVIVI, Buck and SOG that land under $50, sorted by size and style, with what each one is best for.",
+  "description": "Real folding knives from Kershaw, Gerber, SENCUT, Buck and SOG that land under $50, sorted by size and style, with what each one is best for.",
   "date": "2026-11-16",
   "tag": "Knives",
-  "answer": "For most people, the best EDC knife under $50 is a sub-3 inch folder from a known brand, such as the CIVIVI Mini Praxis or Kershaw Appa. Go bigger, like the CIVIVI Praxis, only if you cut a lot outdoors.",
+  "answer": "For most people, the best EDC knife under $50 is a sub-3 inch folder from a known brand, such as the SENCUT ArcBlast or Kershaw Appa. Go bigger, like the SENCUT Sachse, only if you cut a lot outdoors.",
   "sections": [
    {
     "h2": "Small and office friendly (under 3 inches)",
@@ -147,7 +147,7 @@
     ],
     "products": [
      "kershaw-appa",
-     "civivi-mini-praxis",
+     "sencut-arcblast",
      "sog-terminus-xr"
     ]
    },
@@ -164,18 +164,19 @@
    {
     "h2": "Full size for outdoor and yard work",
     "paras": [
-     "A blade around 3 to 3.75 inches gives more reach for camping, gardening and breaking down a lot of cardboard."
+     "A blade around 3 to 4 inches gives more reach for camping, gardening and breaking down a lot of cardboard."
     ],
     "products": [
      "gerber-zilch",
      "gerber-pledge",
-     "civivi-praxis"
+     "sencut-sachse",
+     "sencut-squiggy"
     ]
    },
    {
     "h2": "Before you buy",
     "paras": [
-     "Knife laws differ by state and city, and some limit blade length or how a knife opens. Check where you live, or where the person you're gifting it to lives, before you buy. Prices move often, so the buttons always show today's price on Amazon."
+     "Knife laws differ by state and city, and some limit blade length or how a knife opens. Check where you live, or where the person you're gifting it to lives, before you buy. Prices move often, so the buttons take you to today's price on Amazon or at the brand's own store."
     ]
    }
   ],
@@ -190,7 +191,7 @@
    },
    {
     "q": "Are knives under $50 worth it?",
-    "a": "Yes. Brands like Kershaw, Gerber, CIVIVI and Buck make folders under $50 that people carry for years."
+    "a": "Yes. Brands like Kershaw, Gerber, SENCUT and Buck make folders under $50 that people carry for years."
    }
   ],
   "related": [
@@ -213,7 +214,8 @@
     ],
     "products": [
      "olight-imini-2",
-     "sofirn-se1"
+     "sofirn-se1",
+     "nitecore-thumb"
     ]
    },
    {

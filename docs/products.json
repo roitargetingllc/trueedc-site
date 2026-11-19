@@ -1,7 +1,7 @@
 {
  "site": "True EDC",
  "url": "https://trueedc.com/",
- "updated": "2026-11-16",
+ "updated": "2026-11-19",
  "note": "Real products picked by True EDC. Budget tiers are approximate; check the retailer for today's price. Retailer links are affiliate links (paid links).",
  "products": [
   {
@@ -118,20 +118,23 @@
    "retailer_link_is_paid": true
   },
   {
-   "id": "civivi-elementum",
-   "name": "CIVIVI Elementum",
-   "brand": "CIVIVI",
+   "id": "sencut-sachse",
+   "name": "SENCUT Sachse",
+   "brand": "SENCUT",
    "category": "Knife",
-   "budget": "Worth the splurge",
+   "budget": "Under $50",
    "facts": [
-    "2.96 inch D2 steel blade",
-    "G10 handle"
+    "3.47 inch 9Cr18MoV stainless blade",
+    "Natural G10 handle, about 3.9 ounces",
+    "Button lock on ceramic ball bearings"
    ],
-   "summary": "The knife enthusiasts recommend to people buying their first good one. Clean, slim, and it feels far nicer in the hand than its price suggests.",
-   "listing_checked": "2026-11-15",
-   "page": "https://trueedc.com/best-edc-gifts-2026/#civivi-elementum",
-   "retailer_link": "https://www.amazon.com/dp/B08C9PQPRQ?tag=trueedc-20",
-   "retailer_link_is_paid": true
+   "summary": "A full-size folder for camping, yard work and lots of cardboard. It runs smooth on bearings and stays under $50.",
+   "listing_checked": "2026-11-19",
+   "page": "https://trueedc.com/best-edc-gifts-2026/#sencut-sachse",
+   "brand_store": "SENCUT",
+   "brand_store_link": "https://www.awin1.com/cread.php?awinmid=51423&awinaffid=3157040&ued=https%3A%2F%2Fwww.sencut.com%2Fproducts%2Fsencut-sachse-s21007-4",
+   "brand_store_price_usd": 40.13,
+   "brand_store_price_checked": "2026-11-19"
   },
   {
    "id": "leatherman-skeletool-cx",
@@ -217,21 +220,23 @@
    "retailer_link_is_paid": true
   },
   {
-   "id": "civivi-mini-praxis",
-   "name": "CIVIVI Mini Praxis",
-   "brand": "CIVIVI",
+   "id": "sencut-arcblast",
+   "name": "SENCUT ArcBlast",
+   "brand": "SENCUT",
    "category": "Knife",
    "budget": "Under $50",
    "facts": [
-    "2.98 inch D2 steel blade",
-    "OD Green handle",
-    "Pocket clip"
+    "2.98 inch 9Cr18MoV stainless blade",
+    "Black aluminum handle, under 3 ounces",
+    "Button lock, opens by flipper or thumb stud"
    ],
-   "summary": "The smaller version of one of CIVIVI's best-known designs. A just-under-3 inch D2 blade keeps it office friendly while still feeling like a real knife.",
-   "listing_checked": "2026-11-16",
-   "page": "https://trueedc.com/blog/how-to-build-an-edc-kit/#civivi-mini-praxis",
-   "retailer_link": "https://www.amazon.com/dp/B0BF8FPH5L?tag=trueedc-20",
-   "retailer_link_is_paid": true
+   "summary": "A just-under-3 inch folder with a metal handle that feels solid without weighing down a pocket. The button lock makes it easy to close one handed.",
+   "listing_checked": "2026-11-19",
+   "page": "https://trueedc.com/blog/how-to-build-an-edc-kit/#sencut-arcblast",
+   "brand_store": "SENCUT",
+   "brand_store_link": "https://www.awin1.com/cread.php?awinmid=51423&awinaffid=3157040&ued=https%3A%2F%2Fwww.sencut.com%2Fproducts%2Fsencut-arcblast-s22043b-1",
+   "brand_store_price_usd": 41.25,
+   "brand_store_price_checked": "2026-11-19"
   },
   {
    "id": "gerber-quadrant",
@@ -268,21 +273,23 @@
    "retailer_link_is_paid": true
   },
   {
-   "id": "civivi-praxis",
-   "name": "CIVIVI Praxis",
-   "brand": "CIVIVI",
+   "id": "sencut-squiggy",
+   "name": "SENCUT Squiggy",
+   "brand": "SENCUT",
    "category": "Knife",
    "budget": "Under $50",
    "facts": [
-    "3.75 inch blade",
-    "G10 handle",
-    "Model C803F"
+    "3.89 inch 9Cr18MoV stainless blade",
+    "G10 handle with room for big hands",
+    "Button lock, flipper and thumb hole"
    ],
-   "summary": "The full-size Praxis, for people who want a bigger blade and handle for outdoor work, yard work and opening a lot of boxes.",
-   "listing_checked": "2026-11-16",
-   "page": "https://trueedc.com/blog/best-edc-knife-under-50/#civivi-praxis",
-   "retailer_link": "https://www.amazon.com/dp/B08PF6NHLJ?tag=trueedc-20",
-   "retailer_link_is_paid": true
+   "summary": "The big one of the bunch. Pick it if you have large hands or want the most blade you can get for the money.",
+   "listing_checked": "2026-11-19",
+   "page": "https://trueedc.com/blog/best-edc-knife-under-50/#sencut-squiggy",
+   "brand_store": "SENCUT",
+   "brand_store_link": "https://www.awin1.com/cread.php?awinmid=51423&awinaffid=3157040&ued=https%3A%2F%2Fwww.sencut.com%2Fproducts%2Fsencut-squiggy-s24082a-1",
+   "brand_store_price_usd": 42.38,
+   "brand_store_price_checked": "2026-11-19"
   },
   {
    "id": "sog-terminus-xr",
@@ -367,7 +374,11 @@
    "listing_checked": "2026-11-16",
    "page": "https://trueedc.com/blog/best-keychain-flashlight/#nitecore-tip3",
    "retailer_link": "https://www.amazon.com/dp/B0GHPCFR38?tag=trueedc-20",
-   "retailer_link_is_paid": true
+   "retailer_link_is_paid": true,
+   "brand_store": "Nitecore Store",
+   "brand_store_link": "https://www.awin1.com/cread.php?awinmid=81173&awinaffid=3157040&ued=https%3A%2F%2Fnitecorestore.com%2Fproducts%2Ftip3-usbc-multi-color-temperature-keychain-flashlight",
+   "brand_store_price_usd": 34.95,
+   "brand_store_price_checked": "2026-11-19"
   },
   {
    "id": "nitecore-tini-3",
@@ -384,7 +395,30 @@
    "listing_checked": "2026-11-16",
    "page": "https://trueedc.com/blog/how-to-build-an-edc-kit/#nitecore-tini-3",
    "retailer_link": "https://www.amazon.com/dp/B0F2P7J832?tag=trueedc-20",
-   "retailer_link_is_paid": true
+   "retailer_link_is_paid": true,
+   "brand_store": "Nitecore Store",
+   "brand_store_link": "https://www.awin1.com/cread.php?awinmid=81173&awinaffid=3157040&ued=https%3A%2F%2Fnitecorestore.com%2Fproducts%2Ftini3-multicolor-temperature-keychain-flashlight",
+   "brand_store_price_usd": 39.95,
+   "brand_store_price_checked": "2026-11-19"
+  },
+  {
+   "id": "nitecore-thumb",
+   "name": "Nitecore THUMB",
+   "brand": "Nitecore",
+   "category": "Flashlight",
+   "budget": "Under $25",
+   "facts": [
+    "85 lumens white, plus a red side light",
+    "Head tilts up to 90 degrees",
+    "USB rechargeable, clips to keys or a cap"
+   ],
+   "summary": "A tiny clip-on light whose head tilts, so it points where you need it while hanging off your keys, a bag strap or a cap brim.",
+   "listing_checked": "2026-11-19",
+   "page": "https://trueedc.com/blog/best-keychain-flashlight/#nitecore-thumb",
+   "brand_store": "Nitecore Store",
+   "brand_store_link": "https://www.awin1.com/cread.php?awinmid=81173&awinaffid=3157040&ued=https%3A%2F%2Fnitecorestore.com%2Fproducts%2Fnitecore-thumb-usb-rechargeable-white-red-tiltable-led-keychain-light",
+   "brand_store_price_usd": 19.95,
+   "brand_store_price_checked": "2026-11-19"
   },
   {
    "id": "olight-oclip-pro",
@@ -418,7 +452,11 @@
    "listing_checked": "2026-11-16",
    "page": "https://trueedc.com/blog/best-keychain-flashlight/#nitecore-edc09",
    "retailer_link": "https://www.amazon.com/dp/B0G45JBD45?tag=trueedc-20",
-   "retailer_link_is_paid": true
+   "retailer_link_is_paid": true,
+   "brand_store": "Nitecore Store",
+   "brand_store_link": "https://www.awin1.com/cread.php?awinmid=81173&awinaffid=3157040&ued=https%3A%2F%2Fnitecorestore.com%2Fproducts%2Fedc09-swivel-head-edc-flashlight",
+   "brand_store_price_usd": 69.95,
+   "brand_store_price_checked": "2026-11-19"
   },
   {
    "id": "nitecore-edc29",
@@ -435,7 +473,11 @@
    "listing_checked": "2026-11-16",
    "page": "https://trueedc.com/blog/best-keychain-flashlight/#nitecore-edc29",
    "retailer_link": "https://www.amazon.com/dp/B0DHQXJDM2?tag=trueedc-20",
-   "retailer_link_is_paid": true
+   "retailer_link_is_paid": true,
+   "brand_store": "Nitecore Store",
+   "brand_store_link": "https://www.awin1.com/cread.php?awinmid=81173&awinaffid=3157040&ued=https%3A%2F%2Fnitecorestore.com%2Fproducts%2Fnitecore-edc29-usb-c-rechargeable-flat-edc-flashlight",
+   "brand_store_price_usd": 109.95,
+   "brand_store_price_checked": "2026-11-19"
   },
   {
    "id": "olight-arkpro-ultra",

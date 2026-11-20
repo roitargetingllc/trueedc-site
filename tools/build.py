@@ -490,7 +490,7 @@ def build_post(po):
            "mainEntityOfPage": BASE + path, "image": BASE + "/og.png", "articleSection": po["tag"]}]
     if items: ld.append(itemlist_ld(po["title"], path, items))
     if po.get("faq"): ld.append(faq_ld(po["faq"]))
-    return path, page(f"{po['title']} | True EDC", po["description"], body, path, ld, "article", po["date"])
+    return path, page(po.get("seo_title") or f"{po['title']} | True EDC", po["description"], body, path, ld, "article", po["date"])
 
 def post_thumb(p):
     ph = PHOTOS.get("posts", {}).get(p["slug"])
@@ -523,7 +523,15 @@ def listing_page(path, eyebrow, title, dek, items, trail_mid=None):
             + f'<div class="wrap" style="padding-top:36px;padding-bottom:72px"><p class="disclosure">{esc(FTC_LINE)} {esc(AMAZON_LINE)}</p>'
             + f'<div class="grid" style="margin-top:28px">{cards}</div></div>')
     ld = [crumbs_ld([trail[0], trail[2]]), itemlist_ld(title, path, items)]
-    return page(f"{title} | True EDC", dek, body, path, ld)
+    return page(f"{title} | True EDC", META_DESC.get(path, dek), body, path, ld)
+
+META_DESC = {  # search descriptions for listing pages (SEO fixes, Nov 20 2026)
+    "/gear/flashlights/": "Keychain and pocket flashlights that beat a phone torch, sorted by budget from under $25 to splurge, with prices checked this month.",
+    "/gear/knives/": "Folding knives for everyday carry, from small keychain blades to full size folders, grouped by budget with checked prices.",
+    "/budget/under-25/": "Everyday carry gear under $25: keychain tools, lights, pens and notebooks that make useful stocking stuffers and Secret Santa gifts.",
+    "/budget/under-50/": "The sweet spot for everyday carry: real multitools, knives and lights from trusted brands, all under $50, with checked prices.",
+    "/budget/splurge/": "Everyday carry gear worth the splurge: full size multitools, premium lights and tough watches built to carry for a decade.",
+}
 
 HOME_DESC = ("Everyday carry gear picked by budget: pocket knives, keychain flashlights, multitools, pens and watches. "
              "Real products, dated listings and labeled affiliate links.")
@@ -741,6 +749,7 @@ def main():
     sys.path.insert(0, str(ROOT / "tools"))
     import pins, feed
     pin_items = pins.make_all(site, products, guides, OUT / "pins", posts)
+    pin_items += pins.make_extra(site, ROOT, OUT / "pins")
     write("/feed.xml", feed.rss(site, pin_items))
     print(f"Built {len(urls)} pages and {len(pin_items)} pins into {OUT}")
     if all_warn:

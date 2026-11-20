@@ -1,0 +1,151 @@
+[
+ {
+  "n": 1,
+  "path": "/first-edc-kit-under-100/",
+  "kicker": "Starter kit",
+  "title": "A Complete First EDC Kit for Under $100",
+  "desc": "Knife, light, multitool and pen that cover most daily jobs, all under $100. Budget picks with checked prices."
+ },
+ {
+  "n": 2,
+  "path": "/edc-stocking-stuffers-under-25/",
+  "kicker": "Holiday gift guide",
+  "title": "EDC Stocking Stuffers Under $25",
+  "desc": "Small, useful gifts people keep using in March: keychain tools, lights, notebooks."
+ },
+ {
+  "n": 3,
+  "path": "/best-edc-gifts-2026/",
+  "kicker": "Holiday gift guide",
+  "title": "The Best EDC Gifts of 2026, by Budget",
+  "desc": "Under $25, under $50 and worth the splurge picks for anyone who carries gear."
+ },
+ {
+  "n": 4,
+  "path": "/blog/secret-santa-gifts-under-25/",
+  "kicker": "Gift exchange",
+  "title": "Secret Santa Gifts Under $25 People Actually Use",
+  "desc": "Useful office and family exchange gifts under $25."
+ },
+ {
+  "n": 5,
+  "path": "/blog/best-edc-gifts-for-dads/",
+  "kicker": "Gifts for dad",
+  "title": "EDC Gifts for Dads Who Have Everything",
+  "desc": "Multitools, lights and pens a dad will carry daily, by budget."
+ },
+ {
+  "n": 6,
+  "path": "/blog/gifts-for-hikers-and-campers/",
+  "kicker": "Outdoor gifts",
+  "title": "Gifts for Hikers and Campers",
+  "desc": "Small gear that earns its spot in a pack."
+ },
+ {
+  "n": 7,
+  "path": "/blog/best-keychain-flashlight/",
+  "kicker": "Keychain lights",
+  "title": "The Best Keychain Flashlights",
+  "desc": "Tiny rechargeable lights for keys, bags and cap brims.",
+  "photo": "data/img/nitecore-thumb.jpg",
+  "credit": "Photo: Nitecore."
+ },
+ {
+  "n": 8,
+  "path": "/blog/best-edc-flashlight/",
+  "kicker": "Pocket lights",
+  "title": "The Best Pocket Flashlight for Everyday Carry",
+  "desc": "Pocket lights that outshine a phone torch."
+ },
+ {
+  "n": 9,
+  "path": "/blog/edc-flashlight-vs-headlamp/",
+  "kicker": "Lights compared",
+  "title": "Flashlight or Headlamp: Which to Carry?",
+  "desc": "When a pocket light wins and when you want hands free."
+ },
+ {
+  "n": 10,
+  "path": "/blog/best-edc-knife-under-50/",
+  "kicker": "Budget knives",
+  "title": "The Best EDC Knives Under $50",
+  "desc": "Folders that open clean and carry light, sorted by size."
+ },
+ {
+  "n": 11,
+  "path": "/gear/knives/",
+  "kicker": "Full size folder",
+  "title": "A Full Size Folder Under $45: SENCUT Sachse",
+  "desc": "Big blade for camp and yard work at a budget price."
+ },
+ {
+  "n": 12,
+  "path": "/gear/knives/",
+  "kicker": "Small folder",
+  "title": "SENCUT Squiggy: A Small Folder With Character",
+  "desc": "Compact everyday blade under $45."
+ },
+ {
+  "n": 13,
+  "path": "/blog/which-leatherman-to-buy/",
+  "kicker": "Multitools compared",
+  "title": "Which Leatherman Should You Buy?",
+  "desc": "Rev vs Wingman vs Wave+ vs Rebar vs Signal vs Surge, compared plainly."
+ },
+ {
+  "n": 14,
+  "path": "/blog/best-pocket-multitool/",
+  "kicker": "Multitool guide",
+  "title": "Best Multitools, From Keychain to Full Size",
+  "desc": "Pick by size and job."
+ },
+ {
+  "n": 15,
+  "path": "/gear/multitools/",
+  "kicker": "Under $50 multitool",
+  "title": "Leatherman Wingman: The Under $50 Multitool",
+  "desc": "Spring pliers and outside scissors in a budget tool."
+ },
+ {
+  "n": 16,
+  "path": "/blog/best-edc-watch/",
+  "kicker": "Watch guide",
+  "title": "The Best EDC Watches, $25 to Splurge",
+  "desc": "Tough, accurate watches for daily wear."
+ },
+ {
+  "n": 17,
+  "path": "/gear/watches/",
+  "kicker": "Classic watch",
+  "title": "The Casio F-91W: Still the Best Cheap Watch",
+  "desc": "Light, accurate, years of battery."
+ },
+ {
+  "n": 18,
+  "path": "/gear/pens-notebooks/",
+  "kicker": "Pocket pen",
+  "title": "The Pen That Writes Upside Down",
+  "desc": "Fisher Space Pen Bullet for pockets and cold weather."
+ },
+ {
+  "n": 19,
+  "path": "/gear/pens-notebooks/",
+  "kicker": "Pocket notebook",
+  "title": "Field Notes: The Pocket Notebook Gift",
+  "desc": "A 3-pack under $15."
+ },
+ {
+  "n": 20,
+  "path": "/blog/what-is-edc/",
+  "kicker": "Beginner guide",
+  "title": "What Is EDC? Everyday Carry Explained",
+  "desc": "A plain-English start for beginners."
+ },
+ {
+  "n": 21,
+  "path": "/blog/how-to-build-an-edc-kit/",
+  "kicker": "Beginner guide",
+  "title": "How to Build an EDC Kit, Step by Step",
+  "desc": "Start with your problems, then add one tool each."
+ }
+]

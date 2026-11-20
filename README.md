@@ -21,7 +21,7 @@ Needs Python 3 and Pillow. Exit code 2 means a guide broke its own rule (an item
 ## Rules the build enforces, and why
 
 - No exact Amazon prices on pages. Amazon only allows prices that come from its own API and refresh at least daily; stored prices are used only to sort items into budget tiers.
-- Product photos only from a source that allows them. Amazon images only through Amazon's own API (needs 10 qualifying sales in 30 days). Brand photos from a brand's Awin feed once it approves us (`image` + `image_source`). Otherwise an openly licensed photo of the exact model (Wikimedia Commons CC0/public domain/CC BY/CC BY-SA, or Unsplash): set `image`, `image_page`, `image_author`, `image_license`, `image_license_url`, and `image_note` when the finish or edition differs. Never copy from Amazon or retailer listings. Pins are text graphics.
+- Product photos only from a source that allows them. Amazon images only through Amazon's own API (needs 10 qualifying sales in 30 days). Brand photos from a brand's Awin feed once it approves us (`image` + `image_source`). Otherwise an openly licensed photo of the exact model (Wikimedia Commons CC0/public domain/CC BY/CC BY-SA, or Unsplash): set `image`, `image_page`, `image_author`, `image_license`, `image_license_url`, and `image_note` when the finish or edition differs. Never copy from Amazon or retailer listings. Pins are text graphics, or carry a brand or openly licensed photo credited on the pin.
 - Scene photos in `data/photos.json` are free Unsplash photos, each checked for no visible brand. They sit behind headers and blog cards as mood, never as one of our products, and the footer says so.
 - Every page has the FTC disclosure and Amazon's line, "As an Amazon Associate, True EDC earns from qualifying purchases." Affiliate links carry `rel="sponsored nofollow noopener"`.
 - No Amazon customer reviews or star ratings, in part or in whole, until they come through Amazon's API. Never quote or paraphrase reviews from any store unless its terms allow it in writing.
@@ -38,3 +38,7 @@ Needs Python 3 and Pillow. Exit code 2 means a guide broke its own rule (an item
 ## Pinterest
 
 Pinterest auto-publishes from `https://trueedc.com/feed.xml` once the site is claimed in a Pinterest business account and the feed is added under Settings, Bulk create Pins. Each new item becomes a Pin, linked to its guide.
+
+### Scheduled pins
+
+`data/pins_scheduled.json` holds pre-made pins (images in `docs/pins/<batch>/`), each with a `release` date in Israel time. An item joins `feed.xml` only on or after its release date, so Pinterest posts it that day. `.github/workflows/release-pins.yml` runs `tools/release_pins.py` every morning (07:15 Israel), commits the feed and asks Pages to rebuild. A full `tools/build.py` run includes the same due pins. Check what is due with `python3 tools/release_pins.py --check`.

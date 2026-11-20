@@ -1,0 +1,38 @@
+name: Release scheduled pins
+
+# Once a day, add the pins due today (data/pins_scheduled.json) to docs/feed.xml.
+# Pinterest reads the feed and makes the new Pins on the board it is set to.
+on:
+  schedule:
+    - cron: "15 5 * * *"   # 05:15 UTC = 07:15 Israel in winter
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: release-pins
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Release today's pins
+        run: python3 tools/release_pins.py
+      - name: Commit and publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet; then echo "Nothing due today"; exit 0; fi
+          git config user.name "True EDC pin release"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/feed.xml data/feed_dates.json
+          git commit -m "Release scheduled pins for $(TZ=Asia/Jerusalem date +%F)"
+          git push
+          gh api -X POST "repos/${{ github.repository }}/pages/builds" || echo "Pages build request skipped"

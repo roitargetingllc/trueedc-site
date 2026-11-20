@@ -8,6 +8,26 @@ from email.utils import format_datetime
 from pathlib import Path
 
 DATES = Path(__file__).resolve().parent.parent / "data" / "feed_dates.json"
+SCHEDULED = Path(__file__).resolve().parent.parent / "data" / "pins_scheduled.json"
+
+def mime(url):
+    return "image/jpeg" if url.lower().endswith((".jpg", ".jpeg")) else "image/png"
+
+def today_israel():
+    try:
+        from zoneinfo import ZoneInfo
+        return datetime.datetime.now(ZoneInfo("Asia/Jerusalem")).date()
+    except Exception:
+        return (datetime.datetime.now(datetime.timezone.utc) + datetime.timedelta(hours=2)).date()
+
+def due(site, today=None):
+    """Scheduled pins (data/pins_scheduled.json) whose release date (Israel time) has come.
+    Items not yet due stay out of the feed, so Pinterest only sees them on their day."""
+    if not SCHEDULED.exists(): return []
+    today = today or today_israel()
+    base = site["base_url"].rstrip("/")
+    return [{"id": it["id"], "title": it["title"], "desc": it["desc"], "link": it["link"], "image": base + it["image"]}
+            for it in json.loads(SCHEDULED.read_text()) if datetime.date.fromisoformat(it["release"]) <= today]
 
 def rss(site, items):
     dates = json.loads(DATES.read_text()) if DATES.exists() else {}
@@ -28,7 +48,7 @@ def rss(site, items):
         out += ["<item>", f"<title>{e(it['title'])}</title>", f"<link>{e(it['link'])}</link>",
                 f"<description>{e(it['desc'])}</description>", f'<guid isPermaLink="false">{e(it["id"])}</guid>',
                 f"<pubDate>{pub}</pubDate>",
-                f'<media:content url="{e(it["image"])}" medium="image" type="image/png" width="1000" height="1500"/>',
-                f'<enclosure url="{e(it["image"])}" type="image/png" length="0"/>', "</item>"]
+                f'<media:content url="{e(it["image"])}" medium="image" type="{mime(it["image"])}" width="1000" height="1500"/>',
+                f'<enclosure url="{e(it["image"])}" type="{mime(it["image"])}" length="0"/>', "</item>"]
     out += ["</channel>", "</rss>", ""]
     return "\n".join(out)

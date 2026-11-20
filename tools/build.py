@@ -750,6 +750,7 @@ def main():
     import pins, feed
     pin_items = pins.make_all(site, products, guides, OUT / "pins", posts)
     pin_items += pins.make_extra(site, ROOT, OUT / "pins")
+    pin_items += feed.due(site)  # pre-made pins from data/pins_scheduled.json, released on their day
     write("/feed.xml", feed.rss(site, pin_items))
     print(f"Built {len(urls)} pages and {len(pin_items)} pins into {OUT}")
     if all_warn:

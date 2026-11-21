@@ -18,7 +18,7 @@ Rules baked in:
     headers as mood, never as a product, and the footer says so.
   - Internal links are relative, so the same build works on trueedc.com and in a preview.
 """
-import json, urllib.parse, html, datetime, shutil, sys
+import json, re, urllib.parse, html, datetime, shutil, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -65,6 +65,20 @@ CAT_ICON = {"Knife": "knife", "Flashlight": "light", "Multitool": "tool", "Pen":
             "Watch": "watch", "Keychain": "clip"}
 
 def esc(s): return html.escape(str(s), quote=True)
+
+LINK_RE = re.compile(r"\[([^\]]+)\]\((/[^)\s]*)\)")
+def plain(s):
+    """Text with [words](/internal/path/) markup reduced to the words (for JSON-LD and llms.txt)."""
+    return LINK_RE.sub(lambda m: m.group(1), str(s))
+def rich(s, path):
+    """Escaped text where [words](/internal/path/) becomes an internal link. Only site-relative paths."""
+    out, last = [], 0
+    for m in LINK_RE.finditer(str(s)):
+        out.append(esc(s[last:m.start()]))
+        out.append(f'<a href="{esc(rel(path, m.group(2)))}">{esc(m.group(1))}</a>')
+        last = m.end()
+    out.append(esc(s[last:]))
+    return "".join(out)
 
 def nice_date(iso):
     return datetime.date.fromisoformat(iso).strftime("%b %-d, %Y")
@@ -275,12 +289,12 @@ def itemlist_ld(name, path, items):
 
 def faq_ld(faq):
     return {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
-        {"@type": "Question", "name": x["q"], "acceptedAnswer": {"@type": "Answer", "text": x["a"]}} for x in faq]}
+        {"@type": "Question", "name": x["q"], "acceptedAnswer": {"@type": "Answer", "text": plain(x["a"])}} for x in faq]}
 
-def faq_html(faq):
+def faq_html(faq, path="/"):
     if not faq: return ""
     return ('<section class="faq"><h2>Questions people ask</h2>' + "".join(
-        f'<details><summary>{esc(x["q"])}</summary><p>{esc(x["a"])}</p></details>' for x in faq) + "</section>")
+        f'<details><summary>{esc(x["q"])}</summary><p>{rich(x["a"], path)}</p></details>' for x in faq) + "</section>")
 
 def answer_html(text):
     return f'<div class="answer"><strong>The short answer</strong>{esc(text)}</div>' if text else ""
@@ -376,7 +390,7 @@ def plate_art(p):
         fit = p.get("image_fit", "cover")
         style = f'object-fit:{fit};object-position:{esc(p.get("image_pos", "50% 50%"))}'
         if fit == "contain": style += ";background:#fff"
-        return f'<img src="{esc(p["image"])}" alt="{esc(p["name"])}" loading="lazy" style="{style}">'
+        return f'<img src="{esc(p["image"])}" alt="{esc(p.get("image_alt") or p["name"])}" loading="lazy" style="{style}">'
     return icon(CAT_ICON.get(p['category'], 'spark'))
 
 def latest_checked(ids):
@@ -422,7 +436,7 @@ def build_guide(g):
     body.append(f'<div class="outro">{esc(g["outro"])}</div>')
     body.append(f'<p class="muted" style="margin:18px 0 0;font-size:14px">Prices checked {checked}. Prices and stock change, so the button always shows today\'s price on Amazon.</p>')
     for w in warnings: print("WARN", w, file=sys.stderr)
-    body.append(faq_html(g.get("faq", [])))
+    body.append(faq_html(g.get("faq", []), path))
     body.append(related_html(path, g.get("related", [])))
     dek = g["description"].replace("{checked}", checked)
     trail = [("Home", "/"), ("Guides", "/#guides"), (g["short"], path)]
@@ -469,7 +483,7 @@ def build_post(po):
     secs = []
     for sec in po["sections"]:
         secs.append(f'<h2 id="{esc(sec["h2"].lower().replace(" ", "-").replace(":", "").replace("(", "").replace(")", ""))}">{esc(sec["h2"])}</h2>')
-        secs.append("".join(f"<p>{esc(t)}</p>" for t in sec["paras"]))
+        secs.append("".join(f"<p>{rich(t, path)}</p>" for t in sec["paras"]))
         ps = [products[i] for i in sec.get("products", []) if i in products]
         missing = [i for i in sec.get("products", []) if i not in products]
         if missing: print("WARN", po["slug"], "unknown products", missing, file=sys.stderr)
@@ -482,7 +496,7 @@ def build_post(po):
             + answer_html(po["answer"])
             + f'<div class="post prose" style="max-width:none">{"".join(secs)}</div>'
             + (f'<p class="muted" style="margin:28px 0 0;font-size:14px">Listings checked {checked}. Prices and stock change, so the buttons always show today\'s price on Amazon.</p>' if items else "")
-            + faq_html(po.get("faq", [])) + related_html(path, po.get("related", [])) + "</div>")
+            + faq_html(po.get("faq", []), path) + related_html(path, po.get("related", [])) + "</div>")
     modified = max([p["checked"] for p in items] + [po["date"]])
     ld = [crumbs_ld(trail),
           {"@context": "https://schema.org", "@type": "BlogPosting", "headline": po["title"], "description": po["description"],

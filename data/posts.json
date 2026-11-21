@@ -456,7 +456,7 @@
  {
   "slug": "best-edc-knife-under-50",
   "title": "The Best EDC Knives Under $50",
-  "description": "Real folding knives from Kershaw, Gerber, SENCUT, Buck and SOG that land under $50, sorted by size and style, with what each one is best for.",
+  "description": "Real folding knives from Kershaw, Gerber, SENCUT and Buck that land under $50, sorted by size and style, with what each one is best for.",
   "date": "2026-11-16",
   "tag": "Knives",
   "answer": "For most people, the best EDC knife under $50 is a sub-3 inch folder from a known brand, such as the SENCUT ArcBlast or Kershaw Appa. Go bigger, like the SENCUT Sachse, only if you cut a lot outdoors.",
@@ -468,8 +468,7 @@
     ],
     "products": [
      "kershaw-appa",
-     "sencut-arcblast",
-     "sog-terminus-xr"
+     "sencut-arcblast"
     ]
    },
    {
@@ -478,7 +477,6 @@
      "If the knife will live in a dress pocket or go to someone who doesn't want anything tactical, pick a slim, classic shape."
     ],
     "products": [
-     "gerber-quadrant",
      "buck-112-slim-select"
     ]
    },
@@ -492,6 +490,16 @@
      "gerber-pledge",
      "sencut-sachse",
      "sencut-squiggy"
+    ]
+   },
+   {
+    "h2": "Worth stretching for (over $50)",
+    "paras": [
+     "These two were on this list, but at the brand's own store they now cost more than $50. They're still good knives if you can stretch the budget: the SOG Terminus XR for ambidextrous carry, and the Gerber Quadrant for a slim, dressy folder."
+    ],
+    "products": [
+     "sog-terminus-xr",
+     "gerber-quadrant"
     ]
    },
    {
@@ -593,7 +601,8 @@
    {
     "h2": "Where a pocket flashlight wins",
     "paras": [
-     "A flashlight is small, quick to grab and easy to point exactly where you need it: a keyhole, a dropped earbud, a fuse box. It also rides on your keys or clips to a pocket, so it's there when you didn't plan on needing light."
+     "A flashlight is small, quick to grab and easy to point exactly where you need it: a keyhole, a dropped earbud, a fuse box. It also rides on your keys or clips to a pocket, so it's there when you didn't plan on needing light.",
+     "If you want one pocket light with real power, our top pick is the [Nitecore EDC09](/blog/best-edc-flashlight/)."
     ],
     "products": [
      "olight-imini-2",
@@ -685,7 +694,7 @@
    },
    {
     "q": "Which Leatherman is best for everyday carry?",
-    "a": "For a front pocket, a smaller model like the Rev or Wingman. For people who use pliers daily, the Wave+ is the classic full-size choice."
+    "a": "For a front pocket, a smaller model like the Rev or Wingman. For people who use pliers daily, the Wave+ is the classic full-size choice. [See our full Leatherman comparison](/blog/which-leatherman-to-buy/)."
    },
    {
     "q": "Can I fly with a multitool?",

@@ -1,7 +1,7 @@
 {
  "site": "True EDC",
  "url": "https://trueedc.com/",
- "updated": "2026-11-20",
+ "updated": "2026-11-21",
  "note": "Real products picked by True EDC. Budget tiers are approximate; check the retailer for today's price. Retailer links are affiliate links (paid links).",
  "products": [
   {
@@ -87,7 +87,7 @@
   },
   {
    "id": "fisher-space-pen-bullet",
-   "name": "Fisher Space Pen Bullet (Matte Black)",
+   "name": "Fisher Space Pen Bullet",
    "brand": "Fisher",
    "category": "Pen",
    "budget": "Under $50",
@@ -190,14 +190,14 @@
    "name": "Gerber Pledge",
    "brand": "Gerber",
    "category": "Knife",
-   "budget": "Under $25",
+   "budget": "Under $50",
    "facts": [
     "Plain edge blade",
     "Pocket clip",
     "Omni Gray handle"
    ],
    "summary": "Gerber's plain, practical folder for people who want a clip knife from a known brand without paying enthusiast prices.",
-   "listing_checked": "2026-11-16",
+   "listing_checked": "2026-11-21",
    "page": "https://trueedc.com/blog/best-edc-knife-under-50/#gerber-pledge",
    "retailer_link": "https://www.amazon.com/dp/B0BNWDTJ9J?tag=trueedc-20",
    "retailer_link_is_paid": true
@@ -243,14 +243,14 @@
    "name": "Gerber Quadrant",
    "brand": "Gerber",
    "category": "Knife",
-   "budget": "Under $50",
+   "budget": "Worth the splurge",
    "facts": [
     "Plain edge blade",
     "Bamboo handle",
     "Pocket clip"
    ],
    "summary": "A slim gentleman's folder with a bamboo handle. It looks at home with a dress shirt, which makes it an easy gift for someone who doesn't want anything tactical.",
-   "listing_checked": "2026-11-16",
+   "listing_checked": "2026-11-21",
    "page": "https://trueedc.com/blog/best-edc-knife-under-50/#gerber-quadrant",
    "retailer_link": "https://www.amazon.com/dp/B07SZLY2ZL?tag=trueedc-20",
    "retailer_link_is_paid": true
@@ -296,14 +296,14 @@
    "name": "SOG Terminus XR",
    "brand": "SOG",
    "category": "Knife",
-   "budget": "Under $50",
+   "budget": "Worth the splurge",
    "facts": [
     "2.95 inch blade",
     "Ambidextrous carry",
     "OD Green handle"
    ],
    "summary": "A sub-3 inch folder that works for left- and right-handed carry, which makes it a safe gift when you don't know which hand someone uses.",
-   "listing_checked": "2026-11-16",
+   "listing_checked": "2026-11-21",
    "page": "https://trueedc.com/blog/best-edc-knife-under-50/#sog-terminus-xr",
    "retailer_link": "https://www.amazon.com/dp/B0817DMXLG?tag=trueedc-20",
    "retailer_link_is_paid": true

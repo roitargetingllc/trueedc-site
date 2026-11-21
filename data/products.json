@@ -91,7 +91,7 @@
  },
  {
   "id": "fisher-space-pen-bullet",
-  "name": "Fisher Space Pen Bullet (Matte Black)",
+  "name": "Fisher Space Pen Bullet",
   "brand": "Fisher",
   "category": "Pen",
   "asin": "B00K54CJZK",
@@ -108,7 +108,8 @@
   "image_license": "CC BY-SA 4.0",
   "image_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
   "image_note": "Chrome finish shown",
-  "image_pos": "50% 50%"
+  "image_pos": "50% 50%",
+  "image_alt": "Fisher Space Pen Bullet, chrome finish"
  },
  {
   "id": "gerber-dime",
@@ -205,14 +206,14 @@
   "brand": "Gerber",
   "category": "Knife",
   "asin": "B0BNWDTJ9J",
-  "price": 23.99,
+  "price": 29.99,
   "facts": [
    "Plain edge blade",
    "Pocket clip",
    "Omni Gray handle"
   ],
   "pitch": "Gerber's plain, practical folder for people who want a clip knife from a known brand without paying enthusiast prices.",
-  "checked": "2026-11-16"
+  "checked": "2026-11-21"
  },
  {
   "id": "gerber-zilch",
@@ -261,14 +262,14 @@
   "brand": "Gerber",
   "category": "Knife",
   "asin": "B07SZLY2ZL",
-  "price": 30.54,
+  "price": 54.99,
   "facts": [
    "Plain edge blade",
    "Bamboo handle",
    "Pocket clip"
   ],
   "pitch": "A slim gentleman's folder with a bamboo handle. It looks at home with a dress shirt, which makes it an easy gift for someone who doesn't want anything tactical.",
-  "checked": "2026-11-16"
+  "checked": "2026-11-21"
  },
  {
   "id": "buck-112-slim-select",
@@ -317,14 +318,14 @@
   "brand": "SOG",
   "category": "Knife",
   "asin": "B0817DMXLG",
-  "price": 44.6,
+  "price": 69.95,
   "facts": [
    "2.95 inch blade",
    "Ambidextrous carry",
    "OD Green handle"
   ],
   "pitch": "A sub-3 inch folder that works for left- and right-handed carry, which makes it a safe gift when you don't know which hand someone uses.",
-  "checked": "2026-11-16"
+  "checked": "2026-11-21"
  },
  {
   "id": "kershaw-iridium",
@@ -638,7 +639,8 @@
   "image_license_url": "",
   "image_note": "DW-5600E shown",
   "image_pos": "50% 45%",
-  "image_fit": "contain"
+  "image_fit": "contain",
+  "image_alt": "Casio G-Shock DW-5600E square digital watch"
  },
  {
   "id": "gshock-gwm5610u",

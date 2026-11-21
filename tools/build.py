@@ -309,6 +309,9 @@ def page(title, description, body, path, ld=(), og_type="website", published=Non
     brand = f'<a class="brand" href="{L("/")}">{LOGO}<span>TRUE<b>EDC</b></span></a>'
     return f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
+<!-- Google tag (gtag.js): visitor counts -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7GK8RS46ME"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}gtag('js',new Date());gtag('config','G-7GK8RS46ME');</script>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="p:domain_verify" content="7c7e33527bbc4a9db4a0926ce592402d"/>
 <title>{esc(title)}</title>
@@ -641,7 +644,7 @@ def static_pages():
 <p>{esc(AMAZON_LINE)}</p>
 <p>We may also earn commissions from other retailers and brand programs. Links that can earn a commission are marked "paid link" and tagged as sponsored, and posts with affiliate links on social media are labeled #ad.</p>"""
     privacy = """<span class="eyebrow">Privacy</span><h1 style="margin-top:14px">Privacy</h1>
-<p>This site has no accounts and sets no cookies of its own. Fonts load from Google Fonts. Retailers you click through to, such as Amazon, may set their own cookies to track a referral; their privacy policies apply on their sites.</p>
+<p>This site has no accounts and uses Google Analytics to count visits, which sets its own cookies; Google's privacy policy covers that data. Fonts load from Google Fonts. Retailers you click through to, such as Amazon, may set their own cookies to track a referral; their privacy policies apply on their sites.</p>
 <p>If you sign up for our email, your address is stored by our newsletter provider only to send that email, and every email has an unsubscribe link.</p>"""
     wrap = lambda b: f'<div class="wrap"><div class="page">{b}</div></div>'
     return {"/about/": ("About | True EDC", "What True EDC is and how picks are made.", wrap(about)),

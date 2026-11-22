@@ -729,6 +729,8 @@ def main():
         for c in OUT.iterdir():
             if c != keep: shutil.rmtree(c) if c.is_dir() else c.unlink()
     OUT.mkdir(exist_ok=True)
+    if (ROOT / "data" / "pimg").exists():  # cropped copies of openly licensed product photos
+        shutil.copytree(ROOT / "data" / "pimg", OUT / "pimg", dirs_exist_ok=True)
     urls, all_warn = ["/"], []
     for g in guides:
         path, htmltext, w = build_guide(g)

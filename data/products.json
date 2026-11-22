@@ -61,7 +61,7 @@
    "2-pack"
   ],
   "pitch": "The cheapest upgrade in EDC. It splits car keys from house keys and lets a light or a knife come off the ring in a second. Perfect stocking filler.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Nite_Ize_IMG_0127.jpg/960px-Nite_Ize_IMG_0127.jpg",
+  "image": "/pimg/nite-ize-s-biner-microlock.jpg",
   "image_page": "https://commons.wikimedia.org/wiki/File:Nite_Ize_IMG_0127.jpg",
   "image_author": "Joe Loong",
   "image_license": "CC BY-SA 2.0",
@@ -144,11 +144,12 @@
    "About 1.8 ounces"
   ],
   "pitch": "Leatherman's keychain tool. Instead of pliers it has proper spring-loaded scissors, which get used far more often for tags, tape and loose threads.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Leatherman-Micra.jpg/960px-Leatherman-Micra.jpg",
+  "image": "/pimg/leatherman-micra.jpg",
   "image_page": "https://commons.wikimedia.org/wiki/File:Leatherman-Micra.jpg",
   "image_author": "Picanox",
   "image_license": "CC0",
-  "image_license_url": "https://creativecommons.org/publicdomain/zero/1.0/"
+  "image_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "image_note": "Cropped."
  },
  {
   "id": "sencut-sachse",
@@ -224,7 +225,7 @@
    "Virobloc locking ring"
   ],
   "pitch": "The French classic: a light wooden-handled folder that has been in pockets for over a century. The stainless blade shrugs off food and damp weather, and a twist of the ring locks it open.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Opinel_N%C2%B0_8_carbon_and_inox.jpg/960px-Opinel_N%C2%B0_8_carbon_and_inox.jpg",
+  "image": "/pimg/opinel-no8-inox.jpg",
   "image_page": "https://commons.wikimedia.org/wiki/File:Opinel_N%C2%B0_8_carbon_and_inox.jpg",
   "image_author": "fitm",
   "image_license": "CC BY-SA 3.0",
@@ -272,11 +273,12 @@
    "Pocket clip"
   ],
   "pitch": "A skeletonized steel frame keeps it light and simple. The serrated part of the blade chews through rope, cord and packing straps.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/6/65/Gerber-Picanox-11.jpg",
+  "image": "/pimg/gerber-paraframe-1.jpg",
   "image_page": "https://commons.wikimedia.org/wiki/File:Gerber-Picanox-11.jpg",
   "image_author": "Picanox",
   "image_license": "CC0",
-  "image_license_url": "https://creativecommons.org/publicdomain/zero/1.0/"
+  "image_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "image_note": "Cropped."
  },
  {
   "id": "sencut-arcblast",
@@ -318,7 +320,7 @@
    "Liner lock, round thumb hole"
   ],
   "pitch": "Spyderco's long-running budget folder. The thumb hole opens it easily with either hand, and it is a common first step up from a cheap knife.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Spyderco_Tenacious_%2834110141840%29.jpg/960px-Spyderco_Tenacious_%2834110141840%29.jpg",
+  "image": "/pimg/spyderco-tenacious.jpg",
   "image_page": "https://commons.wikimedia.org/wiki/File:Spyderco_Tenacious_%2834110141840%29.jpg",
   "image_author": "James Case",
   "image_license": "CC BY 2.0",
@@ -338,11 +340,12 @@
    "Lockback, comes with a nylon sheath"
   ],
   "pitch": "Buck's famous 110 shape in a light handle, so it carries in a pocket or on a belt without the brass weight. A traditional pick for someone who doesn't want anything tactical.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Buck-110-LT.jpg/960px-Buck-110-LT.jpg",
+  "image": "/pimg/buck-110-lt.jpg",
   "image_page": "https://commons.wikimedia.org/wiki/File:Buck-110-LT.jpg",
   "image_author": "Picanox",
   "image_license": "CC0",
-  "image_license_url": "https://creativecommons.org/publicdomain/zero/1.0/"
+  "image_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "image_note": "Cropped."
  },
  {
   "id": "sencut-squiggy",
@@ -410,7 +413,7 @@
    "Frame lock, slim profile"
   ],
   "pitch": "A slim, dressy folder that disappears in a pocket and flicks open with assisted opening. A gift that looks more expensive than it is.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Kershaw_Leek_%2837009688975%29.jpg/960px-Kershaw_Leek_%2837009688975%29.jpg",
+  "image": "/pimg/kershaw-leek.jpg",
   "image_page": "https://commons.wikimedia.org/wiki/File:Kershaw_Leek_%2837009688975%29.jpg",
   "image_author": "James Case",
   "image_license": "CC BY 2.0",
@@ -589,7 +592,7 @@
    "Holster included"
   ],
   "pitch": "A classic tube light with a tail switch you can work with gloves on. It runs on common lithium batteries, so it keeps working in the cold and in a glovebox for years.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Streamlight_ProTac_HL_Tactical_LED_Flashlight_%2840251814600%29.jpg/960px-Streamlight_ProTac_HL_Tactical_LED_Flashlight_%2840251814600%29.jpg",
+  "image": "/pimg/streamlight-protac-hl.jpg",
   "image_page": "https://commons.wikimedia.org/wiki/File:Streamlight_ProTac_HL_Tactical_LED_Flashlight_%2840251814600%29.jpg",
   "image_author": "Tony Webster",
   "image_license": "CC BY 2.0",
@@ -703,11 +706,12 @@
    "50 m water resistant, fabric strap"
   ],
   "pitch": "A plain field watch with hands, a date and a backlight. Easy to read at a glance and casual enough for every day.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Timex_Expedition_Scout.jpg/960px-Timex_Expedition_Scout.jpg",
+  "image": "/pimg/timex-expedition-scout.jpg",
   "image_page": "https://commons.wikimedia.org/wiki/File:Timex_Expedition_Scout.jpg",
   "image_author": "Clyde94",
   "image_license": "CC BY-SA 4.0",
-  "image_license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+  "image_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "image_note": "Cropped."
  },
  {
   "id": "gshock-dw5600ue",
@@ -747,12 +751,13 @@
    "200M water resistant"
   ],
   "pitch": "The square G-Shock with solar charging and radio time sync, so it charges from light and sets its own time. The set-and-forget splurge watch.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/CASIO_G-Shock_GW-M5610U.jpg/960px-CASIO_G-Shock_GW-M5610U.jpg",
+  "image": "/pimg/gshock-gwm5610u.jpg",
   "image_page": "https://commons.wikimedia.org/wiki/File:CASIO_G-Shock_GW-M5610U.jpg",
   "image_author": "Md. Rifat Hasan Jihan",
   "image_license": "CC BY-SA 4.0",
   "image_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "image_pos": "50% 50%"
+  "image_pos": "50% 50%",
+  "image_note": "Cropped."
  },
  {
   "id": "parker-jotter",
@@ -768,7 +773,7 @@
    "Takes standard refills"
   ],
   "pitch": "A slim all-steel click pen that has been around for decades. It costs little, looks smart and takes refills that are easy to find.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/2_parker_jotter.JPG/960px-2_parker_jotter.JPG",
+  "image": "/pimg/parker-jotter.jpg",
   "image_page": "https://commons.wikimedia.org/wiki/File:2_parker_jotter.JPG",
   "image_author": "I (uploader's name on Commons)",
   "image_license": "Public domain",
@@ -790,10 +795,11 @@
    "Hard cover, elastic closure"
   ],
   "pitch": "The pocket notebook most people picture: a hard cover, an elastic band and enough pages to last months.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Moleskine_Ruled_Pocket_Notebook_%28430658172%29.jpg/960px-Moleskine_Ruled_Pocket_Notebook_%28430658172%29.jpg",
+  "image": "/pimg/moleskine-pocket.jpg",
   "image_page": "https://commons.wikimedia.org/wiki/File:Moleskine_Ruled_Pocket_Notebook_%28430658172%29.jpg",
   "image_author": "Mack Male",
   "image_license": "CC BY-SA 2.0",
-  "image_license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  "image_license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+  "image_note": "Cropped."
  }
 ]

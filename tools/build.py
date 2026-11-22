@@ -528,7 +528,8 @@ def blog_index():
     path = "/blog/"
     trail = [("Home", "/"), ("Blog", path)]
     dek = "Plain-English buying guides and comparisons for everyday carry gear: knives, lights, multitools and gifts."
-    body = (ghero("True EDC blog", "The EDC blog", dek, [f"{len(posts)} posts", "Real products only"], "", crumbs_html(path, trail))
+    body = (ghero("True EDC blog", "The EDC blog", dek, [f"{len(posts)} posts", "Real products only"], "", crumbs_html(path, trail),
+                  PHOTOS.get("pages", {}).get(path))
             + f'<div class="wrap" style="padding-top:36px;padding-bottom:72px">{postcards(path, posts)}</div>')
     ld = [crumbs_ld(trail), {"@context": "https://schema.org", "@type": "Blog", "name": "The True EDC blog", "url": BASE + path,
           "publisher": ORG, "blogPost": [{"@type": "BlogPosting", "headline": p["title"], "url": f"{BASE}/blog/{p['slug']}/",
@@ -540,7 +541,7 @@ def listing_page(path, eyebrow, title, dek, items, trail_mid=None):
     checked = nice_date(latest_checked([p["id"] for p in items]))
     trail = [("Home", "/"), trail_mid, (title, path)]
     body = (ghero(eyebrow, title, dek, [f"{len(items)} pick{'s' if len(items) > 1 else ''}", f"Checked {checked}"], "",
-                  crumbs_html(path, trail))
+                  crumbs_html(path, trail), PHOTOS.get("pages", {}).get(path))
             + f'<div class="wrap" style="padding-top:36px;padding-bottom:72px"><p class="disclosure">{esc(FTC_LINE)} {esc(AMAZON_LINE)}</p>'
             + f'<div class="grid" style="margin-top:28px">{cards}</div></div>')
     ld = [crumbs_ld([trail[0], trail[2]]), itemlist_ld(title, path, items)]
@@ -573,7 +574,7 @@ def home():
         if not n: continue
         cats += (f'<a class="cat" href="{L("/gear/" + slug + "/")}">{icon(CAT_ICON[pcats[0]])}'
                  f'<div><strong>{esc(label)}</strong><br><span>{n} pick{"s" if n > 1 else ""}</span></div></a>')
-    featured_ids = ["victorinox-classic-sd", "olight-imini-2", "gerber-dime", "sencut-sachse", "fisher-space-pen-bullet", "leatherman-wave-plus"]
+    featured_ids = ["victorinox-classic-sd", "nitecore-thumb-leo", "leatherman-micra", "sencut-sachse", "fisher-space-pen-bullet", "leatherman-wave-plus"]
     featured = "".join(product_card(products[i], top=(i == "victorinox-classic-sd")) for i in featured_ids if i in products)
     gl = "".join(
         f'<a class="guide{" photo" if PHOTOS.get("guides", {}).get(g["slug"]) else ""}" href="{L("/" + g["slug"] + "/")}"{photo_bg(PHOTOS.get("guides", {}).get(g["slug"]), "bottom")}><div><div class="num">0{n}</div><h3>{esc(g["title"])}</h3>'

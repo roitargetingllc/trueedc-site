@@ -116,25 +116,25 @@
     ],
     "products": [
      "nitecore-thumb",
-     "olight-imini-2",
+     "nitecore-thumb-leo",
      "sofirn-se1"
     ]
    },
    {
     "h2": "Pens and notebooks",
     "paras": [
-     "For the person who still writes things down. The Zebra F-701 is an all-steel pen that costs about as much as a coffee. Field Notes have a following of their own, so they read as thoughtful rather than cheap. Rite in the Rain is the pick for someone who works outside."
+     "For the person who still writes things down. The Parker Jotter is an all-steel click pen that costs less than a lunch out. Field Notes have a following of their own, so they read as thoughtful rather than cheap. A Moleskine pocket notebook is the classic hard-cover pick."
     ],
     "products": [
-     "zebra-f701",
+     "parker-jotter",
      "field-notes-kraft-3",
-     "rite-in-the-rain-954"
+     "moleskine-pocket"
     ]
    },
    {
     "h2": "Under $10 add-ons",
     "paras": [
-     "If the limit is tight, pair two small things. A Nite Ize S-Biner MicroLock with a Zebra pen, or a Rite in the Rain notebook with the pen, makes a neat little set for about the price of one gift."
+     "If the limit is tight, pair two small things. A Nite Ize S-Biner MicroLock with a Parker Jotter, or a pocket notebook with the pen, makes a neat little set for about the price of one gift."
     ],
     "products": [
      "nite-ize-s-biner-microlock"
@@ -152,7 +152,7 @@
    },
    {
     "q": "What can I get for $10?",
-    "a": "A Zebra F-701 pen, a Rite in the Rain pocket notebook or a pair of Nite Ize S-Biners all fit under $10."
+    "a": "A pair of Nite Ize S-Biner MicroLocks fits under $10. A Parker Jotter pen or a Moleskine pocket notebook costs a little more, under $20."
    }
   ],
   "related": [
@@ -177,11 +177,11 @@
    {
     "h2": "A multitool made for camp",
     "paras": [
-     "The Leatherman Signal is the standout. Along with pliers, a saw and a blade, it carries a ferro rod for starting fires, a safety whistle and a hammer surface for tent stakes. For a smaller budget, the Gerber Dime puts real pliers and a bottle opener on a keychain."
+     "The Leatherman Signal is the standout. Along with pliers, a saw and a blade, it carries a ferro rod for starting fires, a safety whistle and a hammer surface for tent stakes. For a smaller budget, the Leatherman Micra puts scissors, a small blade and tweezers on a keychain."
     ],
     "products": [
      "leatherman-signal",
-     "gerber-dime"
+     "leatherman-micra"
     ]
    },
    {
@@ -207,10 +207,10 @@
    {
     "h2": "Write it down, even in the rain",
     "paras": [
-     "Trail notes, campsite numbers and the name of that bird all need somewhere to go. Rite in the Rain paper takes a wet day, and Fisher's pressurized cartridge is made to write in the cold and upside down."
+     "Trail notes, campsite numbers and the name of that bird all need somewhere to go. A hard-cover pocket notebook survives a pack, and Fisher's pressurized cartridge is made to write in the cold and upside down."
     ],
     "products": [
-     "rite-in-the-rain-954",
+     "moleskine-pocket",
      "fisher-space-pen-bullet"
     ]
    },
@@ -235,7 +235,7 @@
    },
    {
     "q": "What is a good camping gift under $25?",
-    "a": "A clip-on keychain light like the Nitecore THUMB, or a Rite in the Rain notebook with a pen."
+    "a": "A clip-on keychain light like the Nitecore THUMB, or a pocket notebook with a pen."
    }
   ],
   "related": [
@@ -249,7 +249,7 @@
   "description": "When a keychain light isn't enough: flat pocket lights, swivel-head lights and clip-on lights compared, from about $35 to a splurge.",
   "date": "2026-11-19",
   "tag": "Flashlights",
-  "answer": "The best pocket EDC flashlight for most people is the Nitecore EDC09, because its head swivels and its magnetic tail lets it stand on its own while you work. Pick the Nitecore TIP3 to spend less, the Olight ArkPro Ultra or Nitecore EDC29 for a flat, phone-like light with more power, or the Olight Oclip Pro to clip on and keep your hands free.",
+  "answer": "The best pocket EDC flashlight for most people is the Nitecore EDC09, because its head swivels and its magnetic tail lets it stand on its own while you work. Pick the Nitecore TIP3 to spend less, the Nitecore EDC29 for a flat, phone-like light with more power, the Streamlight ProTac HL for a classic tube light with a tail switch, or the Olight Oclip Pro to clip on and keep your hands free.",
   "sections": [
    {
     "h2": "Keychain light or pocket light?",
@@ -276,13 +276,14 @@
     ]
    },
    {
-    "h2": "Flat lights with serious output",
+    "h2": "More output: flat or classic tube",
     "paras": [
-     "Flat EDC lights sit in a pocket like a phone instead of rolling around like a tube. The Olight ArkPro Ultra goes up to 1,700 lumens. The Nitecore EDC29 is the power pick, at up to 6,500 lumens, which is far more than daily chores need but very welcome on a dark road."
+     "Flat EDC lights sit in a pocket like a phone instead of rolling around like a tube. The Nitecore EDC29 is the power pick, at up to 6,500 lumens, which is far more than daily chores need but very welcome on a dark road.",
+     "If you prefer a classic tube light, the Streamlight ProTac HL reaches 750 lumens and has a tail switch you can press with gloves on."
     ],
     "products": [
-     "olight-arkpro-ultra",
-     "nitecore-edc29"
+     "nitecore-edc29",
+     "streamlight-protac-hl"
     ]
    },
    {
@@ -342,7 +343,7 @@
     ],
     "products": [
      "victorinox-classic-sd",
-     "olight-imini-2",
+     "nitecore-thumb-leo",
      "fisher-space-pen-bullet",
      "field-notes-kraft-3",
      "nite-ize-s-biner-microlock"
@@ -387,11 +388,11 @@
     "h2": "Step 1: Pick your cutting tool",
     "paras": [
      "Decide between a small multitool and a folding knife. A multitool is the safer bet for offices, travel days and anywhere knives draw looks. A folding knife cuts better and opens faster.",
-     "If you're not sure, start with a keychain-size tool like the Victorinox Classic SD or Gerber Dime."
+     "If you're not sure, start with a keychain-size tool like the Victorinox Classic SD or Leatherman Micra."
     ],
     "products": [
      "victorinox-classic-sd",
-     "gerber-dime",
+     "leatherman-micra",
      "sencut-arcblast"
     ]
    },
@@ -401,7 +402,7 @@
      "A phone flashlight drains your battery and ties up your hand. A keychain light weighs almost nothing and is always on your keys."
     ],
     "products": [
-     "olight-imini-2",
+     "nitecore-thumb-leo",
      "sofirn-se1",
      "nitecore-tini-3"
     ]
@@ -413,9 +414,9 @@
     ],
     "products": [
      "fisher-space-pen-bullet",
-     "zebra-f701",
+     "parker-jotter",
      "field-notes-kraft-3",
-     "rite-in-the-rain-954"
+     "moleskine-pocket"
     ]
    },
    {
@@ -456,10 +457,10 @@
  {
   "slug": "best-edc-knife-under-50",
   "title": "The Best EDC Knives Under $50",
-  "description": "Real folding knives from Kershaw, Gerber, SENCUT and Buck that land under $50, sorted by size and style, with what each one is best for.",
+  "description": "Real folding knives from Opinel, Gerber, SENCUT and Buck that land under $50, sorted by size and style, with what each one is best for.",
   "date": "2026-11-16",
   "tag": "Knives",
-  "answer": "For most people, the best EDC knife under $50 is a sub-3 inch folder from a known brand, such as the SENCUT ArcBlast or Kershaw Appa. Go bigger, like the SENCUT Sachse, only if you cut a lot outdoors.",
+  "answer": "For most people, the best EDC knife under $50 is a small, simple folder from a known brand, such as the SENCUT ArcBlast or the classic Opinel No.08. Go bigger, like the SENCUT Sachse, only if you cut a lot outdoors.",
   "sections": [
    {
     "h2": "Small and office friendly (under 3 inches)",
@@ -467,17 +468,17 @@
      "A blade under 3 inches handles boxes, tape, string and food prep without looking like a weapon. It is also the size most likely to be legal where you live."
     ],
     "products": [
-     "kershaw-appa",
      "sencut-arcblast"
     ]
    },
    {
     "h2": "Classic and gentleman's folders",
     "paras": [
-     "If the knife will live in a dress pocket or go to someone who doesn't want anything tactical, pick a slim, classic shape."
+     "If the knife will go to someone who doesn't want anything tactical, pick a traditional shape. The Opinel has a wooden handle and a locking ring, and the Buck 110 LT is the famous lockback in a lighter handle."
     ],
     "products": [
-     "buck-112-slim-select"
+     "opinel-no8-inox",
+     "buck-110-lt"
     ]
    },
    {
@@ -486,8 +487,9 @@
      "A blade around 3 to 4 inches gives more reach for camping, gardening and breaking down a lot of cardboard."
     ],
     "products": [
-     "gerber-zilch",
-     "gerber-pledge",
+     "gerber-paraframe-1",
+     "sencut-mims",
+     "sencut-serene",
      "sencut-sachse",
      "sencut-squiggy"
     ]
@@ -495,11 +497,10 @@
    {
     "h2": "Worth stretching for (over $50)",
     "paras": [
-     "These two were on this list, but at the brand's own store they now cost more than $50. They're still good knives if you can stretch the budget: the SOG Terminus XR for ambidextrous carry, and the Gerber Quadrant for a slim, dressy folder."
+     "The Spyderco Tenacious costs a little over $50, but it's worth stretching for. It's a long-running favorite, and its round thumb hole opens it easily with either hand."
     ],
     "products": [
-     "sog-terminus-xr",
-     "gerber-quadrant"
+     "spyderco-tenacious"
     ]
    },
    {
@@ -520,7 +521,7 @@
    },
    {
     "q": "Are knives under $50 worth it?",
-    "a": "Yes. Brands like Kershaw, Gerber, SENCUT and Buck make folders under $50 that people carry for years."
+    "a": "Yes. Brands like Opinel, Gerber, SENCUT and Buck make folders under $50 that people carry for years."
    }
   ],
   "related": [
@@ -534,7 +535,7 @@
   "description": "Small rechargeable lights from Olight, Nitecore and Sofirn that live on your keys, plus when it's worth stepping up to a pocket light.",
   "date": "2026-11-16",
   "tag": "Flashlights",
-  "answer": "The best keychain flashlight is one small enough that you forget it's on your keys until you need it. The Olight iMini 2 and Sofirn SE1 are easy starts under $25, and the Nitecore TINI 3 adds more output and a choice of light color.",
+  "answer": "The best keychain flashlight is one small enough that you forget it's on your keys until you need it. The Nitecore THUMB LEO and Sofirn SE1 are easy starts at $25 or less, and the Nitecore TINI 3 adds more output and a choice of light color.",
   "sections": [
    {
     "h2": "Under $25",
@@ -542,7 +543,7 @@
      "These are cheap enough to buy as stocking stuffers or to keep one on every key ring in the house."
     ],
     "products": [
-     "olight-imini-2",
+     "nitecore-thumb-leo",
      "sofirn-se1",
      "nitecore-thumb"
     ]
@@ -567,7 +568,7 @@
     "products": [
      "nitecore-edc09",
      "nitecore-edc29",
-     "olight-arkpro-ultra"
+     "streamlight-protac-hl"
     ]
    }
   ],
@@ -605,7 +606,7 @@
      "If you want one pocket light with real power, our top pick is the [Nitecore EDC09](/blog/best-edc-flashlight/)."
     ],
     "products": [
-     "olight-imini-2",
+     "nitecore-thumb-leo",
      "nitecore-tini-3"
     ]
    },
@@ -653,7 +654,7 @@
   "description": "How to choose between a keychain multitool, a pocket-size Leatherman and a full-size tool, with real picks from Victorinox, Gerber and Leatherman at every budget.",
   "date": "2026-11-16",
   "tag": "Multitools",
-  "answer": "Pick a multitool by size first. A keychain tool like the Victorinox Classic SD or Gerber Dime covers small daily jobs; a full-size tool like the Leatherman Wave+ is for people who fix things often and don't mind the weight.",
+  "answer": "Pick a multitool by size first. A keychain tool like the Victorinox Classic SD or Leatherman Micra covers small daily jobs; a full-size tool like the Leatherman Wave+ is for people who fix things often and don't mind the weight.",
   "sections": [
    {
     "h2": "Keychain size",
@@ -662,7 +663,7 @@
     ],
     "products": [
      "victorinox-classic-sd",
-     "gerber-dime"
+     "leatherman-micra"
     ]
    },
    {
@@ -727,10 +728,10 @@
      "Small, useful gifts that don't need a big budget."
     ],
     "products": [
-     "olight-imini-2",
+     "nitecore-thumb-leo",
      "casio-f91w",
      "fisher-space-pen-bullet",
-     "buck-112-slim-select",
+     "buck-110-lt",
      "leatherman-wingman"
     ]
    },
@@ -744,7 +745,7 @@
      "gshock-dw5600ue",
      "leatherman-rebar",
      "nitecore-edc09",
-     "kershaw-iridium"
+     "kershaw-leek"
     ]
    },
    {
@@ -776,10 +777,10 @@
  {
   "slug": "best-edc-watch",
   "title": "The Best EDC Watches, From $25 to Splurge",
-  "description": "Tough, simple watches for everyday carry: the Casio F-91W, the Casio Duro and the square G-Shock, and how to choose between digital, analog and solar.",
+  "description": "Tough, simple watches for everyday carry: the Casio F-91W, the Timex Expedition Scout and the square G-Shock, and how to choose between digital, analog and solar.",
   "date": "2026-11-16",
   "tag": "Watches",
-  "answer": "For most people the best EDC watch is a tough, simple Casio. The F-91W is the cheap classic, the Duro gives you an analog dive-watch look, and the square G-Shock is the one to buy if you want something built to take knocks.",
+  "answer": "For most people the best EDC watch is a tough, simple Casio. The F-91W is the cheap classic, the Timex Expedition Scout is an easy-to-read analog field watch, and the square G-Shock is the one to buy if you want something built to take knocks.",
   "sections": [
    {
     "h2": "Under $50: the cheap classic",
@@ -791,12 +792,12 @@
     ]
    },
    {
-    "h2": "Analog: the dive-watch look",
+    "h2": "Analog: the field-watch look",
     "paras": [
-     "If you want hands instead of a digital screen, a dive-style watch with real water resistance is the most practical everyday analog style."
+     "If you want hands instead of a digital screen, a field watch is the most practical everyday analog style: clear numbers, a backlight and a light strap."
     ],
     "products": [
-     "casio-duro-mdv106"
+     "timex-expedition-scout"
     ]
    },
    {

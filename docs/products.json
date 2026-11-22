@@ -1,7 +1,7 @@
 {
  "site": "True EDC",
  "url": "https://trueedc.com/",
- "updated": "2026-11-21",
+ "updated": "2026-11-22",
  "note": "Real products picked by True EDC. Budget tiers are approximate; check the retailer for today's price. Retailer links are affiliate links (paid links).",
  "products": [
   {
@@ -22,20 +22,23 @@
    "retailer_link_is_paid": true
   },
   {
-   "id": "olight-imini-2",
-   "name": "Olight iMini 2",
-   "brand": "Olight",
+   "id": "nitecore-thumb-leo",
+   "name": "Nitecore THUMB LEO",
+   "brand": "Nitecore",
    "category": "Flashlight",
    "budget": "Under $25",
    "facts": [
-    "Rechargeable keychain flashlight",
-    "Clips to a key ring"
+    "45 lumens white plus UV",
+    "Red and blue side light",
+    "Head tilts, USB rechargeable"
    ],
-   "summary": "A phone flashlight drains the phone. This rides on the keys and is always there for the parking lot, the dropped earbud under the car seat or the dark porch lock.",
-   "listing_checked": "2026-11-20",
-   "page": "https://trueedc.com/best-edc-gifts-2026/#olight-imini-2",
-   "retailer_link": "https://www.amazon.com/dp/B0C54ZH8WW?tag=trueedc-20",
-   "retailer_link_is_paid": true
+   "summary": "A tiny clip-on light with a tilting head and a UV mode for spotting stains, checking bills or finding a pet accident. It hangs off keys, a zipper or a cap brim.",
+   "listing_checked": "2026-11-22",
+   "page": "https://trueedc.com/best-edc-gifts-2026/#nitecore-thumb-leo",
+   "brand_store": "Nitecore Store",
+   "brand_store_link": "https://www.awin1.com/cread.php?awinmid=81173&awinaffid=3157040&ued=https%3A%2F%2Fnitecorestore.com%2Fproducts%2Fnitecore-thumb-leo-uv-usb-rechargeable-led-keychain-light",
+   "brand_store_price_usd": 24.99,
+   "brand_store_price_checked": "2026-11-22"
   },
   {
    "id": "nite-ize-s-biner-microlock",
@@ -102,19 +105,20 @@
    "retailer_link_is_paid": true
   },
   {
-   "id": "gerber-dime",
-   "name": "Gerber Dime",
-   "brand": "Gerber",
+   "id": "leatherman-micra",
+   "name": "Leatherman Micra",
+   "brand": "Leatherman",
    "category": "Multitool",
    "budget": "Under $50",
    "facts": [
-    "12 tools including pliers, a small blade and a bottle opener",
-    "Keychain size"
+    "Keychain tool built around spring-action scissors",
+    "Knife, tweezers, file and screwdrivers",
+    "About 1.8 ounces"
    ],
-   "summary": "Real pliers on a keychain. It is the tool people reach for at tailgates, campsites and in the junk drawer, and the bottle opener alone earns its spot.",
-   "listing_checked": "2026-11-15",
-   "page": "https://trueedc.com/best-edc-gifts-2026/#gerber-dime",
-   "retailer_link": "https://www.amazon.com/dp/B006M9NIDO?tag=trueedc-20",
+   "summary": "Leatherman's keychain tool. Instead of pliers it has proper spring-loaded scissors, which get used far more often for tags, tape and loose threads.",
+   "listing_checked": "2026-11-22",
+   "page": "https://trueedc.com/best-edc-gifts-2026/#leatherman-micra",
+   "retailer_link": "https://www.amazon.com/dp/B000JCN0FG?tag=trueedc-20",
    "retailer_link_is_paid": true
   },
   {
@@ -169,54 +173,56 @@
    "retailer_link_is_paid": true
   },
   {
-   "id": "kershaw-appa",
-   "name": "Kershaw Appa",
-   "brand": "Kershaw",
+   "id": "opinel-no8-inox",
+   "name": "Opinel No.08 Stainless",
+   "brand": "Opinel",
    "category": "Knife",
    "budget": "Under $25",
    "facts": [
-    "2.75 inch reverse tanto blade",
-    "All-black finish",
+    "3.3 inch Sandvik 12C27 stainless blade",
+    "Beech wood handle",
+    "Virobloc locking ring"
+   ],
+   "summary": "The French classic: a light wooden-handled folder that has been in pockets for over a century. The stainless blade shrugs off food and damp weather, and a twist of the ring locks it open.",
+   "listing_checked": "2026-11-22",
+   "page": "https://trueedc.com/blog/best-edc-knife-under-50/#opinel-no8-inox",
+   "retailer_link": "https://www.amazon.com/dp/B000UGYWTO?tag=trueedc-20",
+   "retailer_link_is_paid": true
+  },
+  {
+   "id": "sencut-mims",
+   "name": "SENCUT Mims",
+   "brand": "SENCUT",
+   "category": "Knife",
+   "budget": "Under $50",
+   "facts": [
+    "3.48 inch 9Cr18MoV stainless blade",
+    "Natural G10 handle",
+    "Flipper opening, liner lock"
+   ],
+   "summary": "A full-size folder with a grippy G10 handle and a stainless blade, for camping, yard work and a lot of cardboard.",
+   "listing_checked": "2026-11-22",
+   "page": "https://trueedc.com/blog/best-edc-knife-under-50/#sencut-mims",
+   "brand_store": "SENCUT",
+   "brand_store_link": "https://www.awin1.com/cread.php?awinmid=51423&awinaffid=3157040&ued=https%3A%2F%2Fwww.sencut.com%2Fproducts%2Fsencut-mims-s21013-2",
+   "brand_store_price_usd": 38.25,
+   "brand_store_price_checked": "2026-11-22"
+  },
+  {
+   "id": "gerber-paraframe-1",
+   "name": "Gerber Paraframe I",
+   "brand": "Gerber",
+   "category": "Knife",
+   "budget": "Under $50",
+   "facts": [
+    "3 inch partly serrated stainless blade",
+    "Open stainless frame lock",
     "Pocket clip"
    ],
-   "summary": "A small, all-black folder at a stocking-stuffer price. The short reverse tanto blade suits boxes, tape and zip ties, which is most of what a pocket knife actually does.",
-   "listing_checked": "2026-11-16",
-   "page": "https://trueedc.com/blog/best-edc-knife-under-50/#kershaw-appa",
-   "retailer_link": "https://www.amazon.com/dp/B09T8YPT1X?tag=trueedc-20",
-   "retailer_link_is_paid": true
-  },
-  {
-   "id": "gerber-pledge",
-   "name": "Gerber Pledge",
-   "brand": "Gerber",
-   "category": "Knife",
-   "budget": "Under $50",
-   "facts": [
-    "Plain edge blade",
-    "Pocket clip",
-    "Omni Gray handle"
-   ],
-   "summary": "Gerber's plain, practical folder for people who want a clip knife from a known brand without paying enthusiast prices.",
-   "listing_checked": "2026-11-21",
-   "page": "https://trueedc.com/blog/best-edc-knife-under-50/#gerber-pledge",
-   "retailer_link": "https://www.amazon.com/dp/B0BNWDTJ9J?tag=trueedc-20",
-   "retailer_link_is_paid": true
-  },
-  {
-   "id": "gerber-zilch",
-   "name": "Gerber Zilch",
-   "brand": "Gerber",
-   "category": "Knife",
-   "budget": "Under $50",
-   "facts": [
-    "3.1 inch plain edge blade",
-    "Pocket clip",
-    "Coyote Brown handle"
-   ],
-   "summary": "A lightweight, no-fuss folder with a full 3.1 inch blade. It is the kind of knife you hand a friend who keeps borrowing yours.",
-   "listing_checked": "2026-11-16",
-   "page": "https://trueedc.com/blog/best-edc-knife-under-50/#gerber-zilch",
-   "retailer_link": "https://www.amazon.com/dp/B09H3HKZ9J?tag=trueedc-20",
+   "summary": "A skeletonized steel frame keeps it light and simple. The serrated part of the blade chews through rope, cord and packing straps.",
+   "listing_checked": "2026-11-22",
+   "page": "https://trueedc.com/blog/best-edc-knife-under-50/#gerber-paraframe-1",
+   "retailer_link": "https://www.amazon.com/dp/B000U7LU20?tag=trueedc-20",
    "retailer_link_is_paid": true
   },
   {
@@ -239,37 +245,37 @@
    "brand_store_price_checked": "2026-11-19"
   },
   {
-   "id": "gerber-quadrant",
-   "name": "Gerber Quadrant",
-   "brand": "Gerber",
+   "id": "spyderco-tenacious",
+   "name": "Spyderco Tenacious G-10",
+   "brand": "Spyderco",
    "category": "Knife",
    "budget": "Worth the splurge",
    "facts": [
-    "Plain edge blade",
-    "Bamboo handle",
-    "Pocket clip"
+    "3.39 inch 8Cr13MoV stainless blade",
+    "G-10 handle",
+    "Liner lock, round thumb hole"
    ],
-   "summary": "A slim gentleman's folder with a bamboo handle. It looks at home with a dress shirt, which makes it an easy gift for someone who doesn't want anything tactical.",
-   "listing_checked": "2026-11-21",
-   "page": "https://trueedc.com/blog/best-edc-knife-under-50/#gerber-quadrant",
-   "retailer_link": "https://www.amazon.com/dp/B07SZLY2ZL?tag=trueedc-20",
+   "summary": "Spyderco's long-running budget folder. The thumb hole opens it easily with either hand, and it is a common first step up from a cheap knife.",
+   "listing_checked": "2026-11-22",
+   "page": "https://trueedc.com/blog/best-edc-knife-under-50/#spyderco-tenacious",
+   "retailer_link": "https://www.amazon.com/dp/B001EI7578?tag=trueedc-20",
    "retailer_link_is_paid": true
   },
   {
-   "id": "buck-112-slim-select",
-   "name": "Buck 112 Slim Select",
-   "brand": "Buck Knives",
+   "id": "buck-110-lt",
+   "name": "Buck 110 Folding Hunter LT",
+   "brand": "Buck",
    "category": "Knife",
    "budget": "Under $50",
    "facts": [
-    "3 inch blade",
-    "About 2.5 oz",
-    "Pocket clip"
+    "3.75 inch blade",
+    "Lightweight black handle, about 3.2 ounces",
+    "Lockback, comes with a nylon sheath"
    ],
-   "summary": "Buck's classic 112 shape in a light, modern build. It's a nod to the knife a lot of grandfathers carried, at about 2.5 ounces.",
-   "listing_checked": "2026-11-16",
-   "page": "https://trueedc.com/blog/best-edc-knife-under-50/#buck-112-slim-select",
-   "retailer_link": "https://www.amazon.com/dp/B0846LWLPT?tag=trueedc-20",
+   "summary": "Buck's famous 110 shape in a light handle, so it carries in a pocket or on a belt without the brass weight. A traditional pick for someone who doesn't want anything tactical.",
+   "listing_checked": "2026-11-22",
+   "page": "https://trueedc.com/blog/best-edc-knife-under-50/#buck-110-lt",
+   "retailer_link": "https://www.amazon.com/dp/B078VCNRSY?tag=trueedc-20",
    "retailer_link_is_paid": true
   },
   {
@@ -292,37 +298,39 @@
    "brand_store_price_checked": "2026-11-19"
   },
   {
-   "id": "sog-terminus-xr",
-   "name": "SOG Terminus XR",
-   "brand": "SOG",
+   "id": "sencut-serene",
+   "name": "SENCUT Serene",
+   "brand": "SENCUT",
    "category": "Knife",
-   "budget": "Worth the splurge",
+   "budget": "Under $50",
    "facts": [
-    "2.95 inch blade",
-    "Ambidextrous carry",
-    "OD Green handle"
+    "3.48 inch D2 steel blade",
+    "Black aluminum handle",
+    "Button lock, flipper or thumb stud"
    ],
-   "summary": "A sub-3 inch folder that works for left- and right-handed carry, which makes it a safe gift when you don't know which hand someone uses.",
-   "listing_checked": "2026-11-21",
-   "page": "https://trueedc.com/blog/best-edc-knife-under-50/#sog-terminus-xr",
-   "retailer_link": "https://www.amazon.com/dp/B0817DMXLG?tag=trueedc-20",
-   "retailer_link_is_paid": true
+   "summary": "A bigger sibling to the ArcBlast, with the same easy one-handed button lock and a longer D2 blade for outdoor work.",
+   "listing_checked": "2026-11-22",
+   "page": "https://trueedc.com/blog/best-edc-knife-under-50/#sencut-serene",
+   "brand_store": "SENCUT",
+   "brand_store_link": "https://www.awin1.com/cread.php?awinmid=51423&awinaffid=3157040&ued=https%3A%2F%2Fwww.sencut.com%2Fproducts%2Fsencut-serene-s21022b-1",
+   "brand_store_price_usd": 41.25,
+   "brand_store_price_checked": "2026-11-22"
   },
   {
-   "id": "kershaw-iridium",
-   "name": "Kershaw Iridium",
+   "id": "kershaw-leek",
+   "name": "Kershaw Leek",
    "brand": "Kershaw",
    "category": "Knife",
    "budget": "Worth the splurge",
    "facts": [
-    "3.4 inch spear point blade",
-    "Black and gray finish",
-    "Model 2038"
+    "3 inch blade",
+    "SpeedSafe assisted opening",
+    "Frame lock, slim profile"
    ],
-   "summary": "A step up from budget folders, with a clean 3.4 inch spear point blade. A good next knife for someone who has outgrown their first one.",
-   "listing_checked": "2026-11-16",
-   "page": "https://trueedc.com/blog/best-edc-gifts-for-dads/#kershaw-iridium",
-   "retailer_link": "https://www.amazon.com/dp/B0BTB213Q6?tag=trueedc-20",
+   "summary": "A slim, dressy folder that disappears in a pocket and flicks open with assisted opening. A gift that looks more expensive than it is.",
+   "listing_checked": "2026-11-22",
+   "page": "https://trueedc.com/blog/best-edc-gifts-for-dads/#kershaw-leek",
+   "retailer_link": "https://www.amazon.com/dp/B0009VC9YK?tag=trueedc-20",
    "retailer_link_is_paid": true
   },
   {
@@ -480,20 +488,20 @@
    "brand_store_price_checked": "2026-11-19"
   },
   {
-   "id": "olight-arkpro-ultra",
-   "name": "Olight ArkPro Ultra",
-   "brand": "Olight",
+   "id": "streamlight-protac-hl",
+   "name": "Streamlight ProTac HL",
+   "brand": "Streamlight",
    "category": "Flashlight",
    "budget": "Worth the splurge",
    "facts": [
-    "Flat EDC flashlight",
-    "Up to 1700 lumens",
-    "Rechargeable, Onyx Black"
+    "Up to 750 lumens",
+    "Runs on CR123A batteries",
+    "Holster included"
    ],
-   "summary": "Olight's premium flat EDC light. It's built to sit in a pocket like a phone, not roll around like a tube light.",
-   "listing_checked": "2026-11-16",
-   "page": "https://trueedc.com/blog/best-edc-flashlight/#olight-arkpro-ultra",
-   "retailer_link": "https://www.amazon.com/dp/B0GHR5DXFC?tag=trueedc-20",
+   "summary": "A classic tube light with a tail switch you can work with gloves on. It runs on common lithium batteries, so it keeps working in the cold and in a glovebox for years.",
+   "listing_checked": "2026-11-22",
+   "page": "https://trueedc.com/blog/best-edc-flashlight/#streamlight-protac-hl",
+   "retailer_link": "https://www.amazon.com/dp/B007RB82CS?tag=trueedc-20",
    "retailer_link_is_paid": true
   },
   {
@@ -582,20 +590,20 @@
    "retailer_link_is_paid": true
   },
   {
-   "id": "casio-duro-mdv106",
-   "name": "Casio Duro MDV106",
-   "brand": "Casio",
+   "id": "timex-expedition-scout",
+   "name": "Timex Expedition Scout 40mm",
+   "brand": "Timex",
    "category": "Watch",
    "budget": "Worth the splurge",
    "facts": [
-    "200M water resistant dive-style watch",
-    "Black dial",
-    "Model MDV106-1A"
+    "40 mm case",
+    "Indiglo backlight",
+    "50 m water resistant, fabric strap"
    ],
-   "summary": "An analog dive-style watch from Casio with 200 meter water resistance. It's a popular budget way to get the classic dive-watch look.",
-   "listing_checked": "2026-11-16",
-   "page": "https://trueedc.com/blog/best-edc-watch/#casio-duro-mdv106",
-   "retailer_link": "https://www.amazon.com/dp/B009KYJAJY?tag=trueedc-20",
+   "summary": "A plain field watch with hands, a date and a backlight. Easy to read at a glance and casual enough for every day.",
+   "listing_checked": "2026-11-22",
+   "page": "https://trueedc.com/blog/best-edc-watch/#timex-expedition-scout",
+   "retailer_link": "https://www.amazon.com/dp/B00HF49WWG?tag=trueedc-20",
    "retailer_link_is_paid": true
   },
   {
@@ -633,37 +641,37 @@
    "retailer_link_is_paid": true
   },
   {
-   "id": "zebra-f701",
-   "name": "Zebra F-701",
-   "brand": "Zebra Pen",
+   "id": "parker-jotter",
+   "name": "Parker Jotter Stainless",
+   "brand": "Parker",
    "category": "Pen",
    "budget": "Under $25",
    "facts": [
-    "Stainless steel barrel",
-    "Retractable ballpoint",
-    "Black ink, 0.8mm"
+    "Stainless steel click ballpoint",
+    "Medium point, black ink",
+    "Takes standard refills"
    ],
-   "summary": "An all-steel retractable pen that costs about as much as a coffee, which makes it an easy add-on to any gift.",
-   "listing_checked": "2026-11-16",
-   "page": "https://trueedc.com/blog/secret-santa-gifts-under-25/#zebra-f701",
-   "retailer_link": "https://www.amazon.com/dp/B002L6RB80?tag=trueedc-20",
+   "summary": "A slim all-steel click pen that has been around for decades. It costs little, looks smart and takes refills that are easy to find.",
+   "listing_checked": "2026-11-22",
+   "page": "https://trueedc.com/blog/secret-santa-gifts-under-25/#parker-jotter",
+   "retailer_link": "https://www.amazon.com/dp/B0017D5WXY?tag=trueedc-20",
    "retailer_link_is_paid": true
   },
   {
-   "id": "rite-in-the-rain-954",
-   "name": "Rite in the Rain No. 954 Pocket Notebook",
-   "brand": "Rite in the Rain",
+   "id": "moleskine-pocket",
+   "name": "Moleskine Classic Pocket Notebook",
+   "brand": "Moleskine",
    "category": "Notebook",
    "budget": "Under $25",
    "facts": [
-    "Weatherproof paper",
-    "3.5 x 5 inch soft cover",
-    "Universal pattern pages"
+    "3.5 x 5.5 inches",
+    "192 ruled pages",
+    "Hard cover, elastic closure"
    ],
-   "summary": "A pocket notebook made to be written on outside, in the rain and on job sites. A small, practical stocking stuffer.",
-   "listing_checked": "2026-11-16",
-   "page": "https://trueedc.com/blog/secret-santa-gifts-under-25/#rite-in-the-rain-954",
-   "retailer_link": "https://www.amazon.com/dp/B00262E6PU?tag=trueedc-20",
+   "summary": "The pocket notebook most people picture: a hard cover, an elastic band and enough pages to last months.",
+   "listing_checked": "2026-11-22",
+   "page": "https://trueedc.com/blog/secret-santa-gifts-under-25/#moleskine-pocket",
+   "retailer_link": "https://www.amazon.com/dp/8883701003?tag=trueedc-20",
    "retailer_link_is_paid": true
   }
  ]

@@ -83,5 +83,57 @@
    "alt": "A person shining a flashlight beam into a starry night sky",
    "pos": "50% 40%"
   }
+ },
+ "pages": {
+  "/blog/": {
+   "id": "1471107340929-a87cd0f5b5f3",
+   "alt": "A fountain pen resting on a notebook",
+   "pos": "60% 60%"
+  },
+  "/gear/knives/": {
+   "id": "1765563472316-591c95509ba1",
+   "alt": "A folding knife with a wood-inlay handle against a tree trunk",
+   "pos": "50% 45%"
+  },
+  "/gear/flashlights/": {
+   "id": "1598096928085-058ac66c24f6",
+   "alt": "A person shining a flashlight beam into a starry night sky",
+   "pos": "50% 40%"
+  },
+  "/gear/multitools/": {
+   "id": "1595148852838-426feff31473",
+   "alt": "An open multitool resting on a timber frame",
+   "pos": "50% 45%"
+  },
+  "/gear/pens-notebooks/": {
+   "id": "1471107340929-a87cd0f5b5f3",
+   "alt": "A fountain pen resting on a notebook",
+   "pos": "60% 60%"
+  },
+  "/gear/watches/": {
+   "id": "1759489036027-44eac680741a",
+   "alt": "Someone checking the watch on their wrist outdoors",
+   "pos": "50% 50%"
+  },
+  "/gear/keychain/": {
+   "id": "1722487631997-cf1e0f92c2c4",
+   "alt": "A hand holding a ring of house keys",
+   "pos": "55% 45%"
+  },
+  "/budget/under-25/": {
+   "id": "1639972584779-8c95dc6757bb",
+   "alt": "Christmas stockings on a mantel beside a tree and wrapped gifts",
+   "pos": "50% 50%"
+  },
+  "/budget/under-50/": {
+   "id": "1426927308491-6380b6a9936f",
+   "alt": "Hand tools hanging on a workshop wall",
+   "pos": "50% 45%"
+  },
+  "/budget/splurge/": {
+   "id": "1509762774605-f07235a08f1f",
+   "alt": "A day pack and water bottle on a rock above a valley at sunset",
+   "pos": "60% 55%"
+  }
  }
 }

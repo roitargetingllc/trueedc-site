@@ -12,19 +12,19 @@
   "mode": "tiers",
   "products": [
    "victorinox-classic-sd",
-   "olight-imini-2",
+   "nitecore-thumb-leo",
    "nite-ize-s-biner-microlock",
    "field-notes-kraft-3",
    "casio-f91w",
    "fisher-space-pen-bullet",
-   "gerber-dime",
+   "leatherman-micra",
    "sencut-sachse",
    "leatherman-skeletool-cx",
    "leatherman-wave-plus"
   ],
   "outro": "Buying a blade? Knife laws differ by state and city, so check where the person lives before you gift one. Every pick here except the SENCUT Sachse is a tool first and a blade second.",
   "top_pick": "victorinox-classic-sd",
-  "answer": "The best EDC gift for most people is the Victorinox Classic SD: small, useful every day and under $25. Spend more on a Gerber Dime or SENCUT Sachse, or go big with a Leatherman Wave+.",
+  "answer": "The best EDC gift for most people is the Victorinox Classic SD: small, useful every day and under $25. Spend more on a Leatherman Micra or SENCUT Sachse, or go big with a Leatherman Wave+.",
   "faq": [
    {
     "q": "What is an EDC gift?",
@@ -32,7 +32,7 @@
    },
    {
     "q": "What is a good EDC gift under $25?",
-    "a": "The Victorinox Classic SD, an Olight iMini 2 keychain light or a Casio F-91W watch all land around $25 or less."
+    "a": "The Victorinox Classic SD, a Nitecore THUMB LEO keychain light or a Casio F-91W watch all land around $25 or less."
    },
    {
     "q": "Is a knife an appropriate gift?",
@@ -58,7 +58,7 @@
   "max_price": 25,
   "products": [
    "victorinox-classic-sd",
-   "olight-imini-2",
+   "nitecore-thumb-leo",
    "nite-ize-s-biner-microlock",
    "field-notes-kraft-3"
   ],
@@ -92,7 +92,7 @@
   "budget": 100,
   "products": [
    "victorinox-classic-sd",
-   "olight-imini-2",
+   "nitecore-thumb-leo",
    "fisher-space-pen-bullet",
    "field-notes-kraft-3",
    "nite-ize-s-biner-microlock"

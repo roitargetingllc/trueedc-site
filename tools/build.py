@@ -460,6 +460,10 @@ def page_title(slug):
         if g["slug"] == slug: return g["title"], g["description"].replace("{checked}", nice_date(latest_checked(g["products"]))), f"/{slug}/"
     for p in posts:
         if p["slug"] == slug: return p["title"], p["description"], f"/blog/{slug}/"
+    for cs, label, _, blurb in CATS:  # gear pages, e.g. "gear/flashlights"
+        if slug == f"gear/{cs}":
+            path = f"/gear/{cs}/"
+            return (f"Best EDC {label.lower()}" if cs != "keychain" else "EDC keychain gear"), META_DESC.get(path, blurb), path
     return None
 
 def related_html(path, slugs):

@@ -593,7 +593,7 @@
  {
   "slug": "edc-flashlight-vs-headlamp",
   "title": "EDC Flashlight vs Headlamp: Which Should You Carry?",
-  "description": "When a pocket flashlight beats a headlamp, when it doesn't, and why most people should carry a small flashlight every day and keep a headlamp in the car or pack.",
+  "description": "When a pocket flashlight beats a headlamp, when it doesn't, and why most people should carry a small light daily and keep a headlamp in the pack.",
   "date": "2026-11-16",
   "tag": "Flashlights",
   "answer": "Carry a small flashlight every day, because it fits a pocket or key ring and is quick to aim. Keep a headlamp in the car, camping kit or junk drawer for jobs where you need both hands free for a long time.",
@@ -618,7 +618,8 @@
    {
     "h2": "A middle ground: clip-on and magnetic lights",
     "paras": [
-     "Clip-on lights and lights with a magnetic tail cover a lot of headlamp jobs. Clip one to a collar or strap, or stick it to a car hood, and both hands stay free."
+     "Clip-on lights and lights with a magnetic tail cover a lot of headlamp jobs. Clip one to a collar or strap, or stick it to a car hood, and both hands stay free.",
+     "For a clip-on pick, see the [Olight Oclip Pro in our hikers gift guide](/blog/gifts-for-hikers-and-campers/#olight-oclip-pro)."
     ],
     "products": [
      "olight-oclip-pro",
@@ -642,7 +643,8 @@
   ],
   "related": [
    "best-keychain-flashlight",
-   "how-to-build-an-edc-kit"
+   "how-to-build-an-edc-kit",
+   "gear/flashlights"
   ]
  },
  {
@@ -666,7 +668,8 @@
    {
     "h2": "Pocket size",
     "paras": [
-     "A step up with real pliers or drivers, still small enough for a front pocket."
+     "A step up with real pliers or drivers, still small enough for a front pocket.",
+     "Not sure which Leatherman fits you? See [which Leatherman to buy](/blog/which-leatherman-to-buy/)."
     ],
     "products": [
      "leatherman-rev",
@@ -691,6 +694,10 @@
    {
     "q": "Is a multitool or a pocket knife better for EDC?",
     "a": "A multitool is more versatile and more widely accepted. A pocket knife is better if most of what you do is cutting."
+   },
+   {
+    "q": "What is the best multitool under $50?",
+    "a": "The Leatherman Rev ($44.95 at Leatherman) is the simplest pick. The Wingman ($49.95) adds spring-loaded pliers and scissors."
    },
    {
     "q": "Which Leatherman is best for everyday carry?",
@@ -795,7 +802,7 @@
    {
     "h2": "Built to take knocks: G-Shock",
     "paras": [
-     "The square G-Shock is shock resistant and water resistant to 200 meters. The solar, atomic-time version charges from light and sets its own time."
+     "The square G-Shock is shock resistant and water resistant to 200 meters. The [solar, atomic-time version](/blog/gifts-for-hikers-and-campers/) charges from light and sets its own time."
     ],
     "products": [
      "gshock-dw5600ue",
@@ -825,7 +832,8 @@
   ],
   "related": [
    "best-edc-gifts-for-dads",
-   "best-edc-gifts-2026"
+   "best-edc-gifts-2026",
+   "gear/watches"
   ]
  }
 ]

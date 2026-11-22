@@ -547,7 +547,10 @@ def listing_page(path, eyebrow, title, dek, items, trail_mid=None):
     ld = [crumbs_ld([trail[0], trail[2]]), itemlist_ld(title, path, items)]
     return page(f"{title} | True EDC", META_DESC.get(path, dek), body, path, ld)
 
+ALL_BLURB = "Every knife, light, multitool, pen, watch and clip we recommend, in one place, grouped by type and sorted by price."
+
 META_DESC = {  # search descriptions for listing pages (SEO fixes, Nov 20 2026)
+    "/gear/": "Every piece of everyday carry gear True EDC recommends, from keychain lights to full size multitools, with prices checked this month.",
     "/gear/flashlights/": "Keychain and pocket flashlights that beat a phone torch, sorted by budget from under $25 to splurge, with prices checked this month.",
     "/gear/knives/": "Folding knives for everyday carry, from small keychain blades to full size folders, grouped by budget with checked prices.",
     "/budget/under-25/": "Everyday carry gear under $25: keychain tools, lights, pens and notebooks that make useful stocking stuffers and Secret Santa gifts.",
@@ -574,7 +577,7 @@ def home():
         if not n: continue
         cats += (f'<a class="cat" href="{L("/gear/" + slug + "/")}">{icon(CAT_ICON[pcats[0]])}'
                  f'<div><strong>{esc(label)}</strong><br><span>{n} pick{"s" if n > 1 else ""}</span></div></a>')
-    featured_ids = ["victorinox-classic-sd", "nitecore-thumb-leo", "leatherman-micra", "sencut-sachse", "fisher-space-pen-bullet", "leatherman-wave-plus"]
+    featured_ids = ["victorinox-classic-sd", "nitecore-thumb-leo", "leatherman-micra", "sencut-sachse", "fisher-space-pen-bullet", "leatherman-sidekick"]
     featured = "".join(product_card(products[i], top=(i == "victorinox-classic-sd")) for i in featured_ids if i in products)
     gl = "".join(
         f'<a class="guide{" photo" if PHOTOS.get("guides", {}).get(g["slug"]) else ""}" href="{L("/" + g["slug"] + "/")}"{photo_bg(PHOTOS.get("guides", {}).get(g["slug"]), "bottom")}><div><div class="num">0{n}</div><h3>{esc(g["title"])}</h3>'
@@ -612,7 +615,7 @@ def home():
 <section class="band"><div class="wrap">
 <div class="sec-head"><div><span class="eyebrow">Top picks</span><h2 style="margin-top:12px">What we would carry</h2>
 <p>Six picks that earn their pocket space, from a keychain light to a tool that gets handed down.</p></div>
-<a href="{L('/budget/under-25/')}">See all {len(allp)} →</a></div>
+<a href="{L('/gear/')}">See all {len(allp)} →</a></div>
 <div class="grid">{featured}</div>
 </div></section>
 <section class="band" id="guides"><div class="wrap">
@@ -691,7 +694,7 @@ def llms_txt():
     for po in posts:
         L.append(f"- [{po['title']}]({BASE}/blog/{po['slug']}/): {po['answer']}")
     L += ["", "## Shop by budget"] + [f"- [{l}]({BASE}/budget/{s}/): {b}" for s, l, b in TIERS]
-    L += ["", "## Shop by gear"] + [f"- [{lab}]({BASE}/gear/{sl}/): {b}" for sl, lab, _, b in CATS]
+    L += ["", "## Shop by gear", f"- [All gear]({BASE}/gear/): {ALL_BLURB}"] + [f"- [{lab}]({BASE}/gear/{sl}/): {b}" for sl, lab, _, b in CATS]
     L += ["", "## Data", f"- [All products as JSON]({BASE}/products.json): names, brands, categories, budget tiers, facts and page links",
           f"- [Sitemap]({BASE}/sitemap.xml)", f"- [RSS feed]({BASE}/feed.xml)", "",
           "## Policies", f"- [Affiliate disclosure]({BASE}/disclosure/)", f"- [About]({BASE}/about/)", ""]
@@ -742,6 +745,10 @@ def main():
         path = f"/budget/{s}/"
         title = "EDC gear worth the splurge" if s == "splurge" else f"EDC gear {l.lower()}"
         write(path, listing_page(path, "Shop by budget", title, b, items, ("Budget", "/#budget"))); urls.append(path)
+    cat_order = [c for _, _, pcats, _ in CATS for c in pcats]
+    items = sorted(allp, key=lambda p: (cat_order.index(p["category"]) if p["category"] in cat_order else 99, p["price"]))
+    path = "/gear/"
+    write(path, listing_page(path, "Shop by gear", "All EDC gear we recommend", ALL_BLURB, items, ("Gear", "/#gear"))); urls.append(path)
     for slug, label, pcats, blurb in CATS:
         items = [p for p in allp if p["category"] in pcats]
         if not items: continue

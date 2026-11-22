@@ -198,18 +198,25 @@
   "image_pos": "50% 50%"
  },
  {
-  "id": "leatherman-wave-plus",
-  "name": "Leatherman Wave+",
+  "id": "leatherman-sidekick",
+  "name": "Leatherman Sidekick",
   "brand": "Leatherman",
   "category": "Multitool",
-  "asin": "B079MJBP21",
-  "price": 103.95,
-  "checked": "2026-11-20",
+  "asin": "B005DI2QTC",
+  "price": 69.95,
+  "checked": "2026-11-22",
   "facts": [
-   "18 tools",
-   "Stainless steel"
+   "14 tools, including a saw",
+   "Spring-action pliers",
+   "Blades open from outside"
   ],
-  "pitch": "The multitool that ends up being handed down. It is the classic big gift for a dad, a new homeowner or anyone who fixes things. Eighteen tools, and the ones people use most open from outside without unfolding the handles."
+  "pitch": "Leatherman's pick for a first full-size tool. The plain and serrated blades open from the outside with one hand, the pliers spring open on their own, and there's a real saw for branches and plastic. A lot of tool for the money.",
+  "image": "/pimg/leatherman-sidekick.jpg",
+  "image_page": "https://commons.wikimedia.org/wiki/File:Leatherman_Sidekick_(50644972266).jpg",
+  "image_author": "Olgierd",
+  "image_license": "CC BY 2.0",
+  "image_license_url": "https://creativecommons.org/licenses/by/2.0/",
+  "image_note": "Cropped."
  },
  {
   "id": "opinel-no8-inox",
@@ -420,78 +427,25 @@
   "image_license_url": "https://creativecommons.org/licenses/by/2.0/"
  },
  {
-  "id": "sofirn-se1",
-  "name": "Sofirn SE1",
-  "brand": "Sofirn",
+  "id": "maglite-mini-led-aa",
+  "name": "Mini Maglite LED AA",
+  "brand": "Maglite",
   "category": "Flashlight",
-  "asin": "B0GWT8LVVS",
+  "asin": "B000HFBR1O",
   "price": 19.99,
+  "checked": "2026-11-22",
   "facts": [
-   "Coin-sized keychain light",
-   "Up to 300 lumens",
-   "Rechargeable, with UV and RGB modes"
+   "Up to 127 lumens",
+   "Runs on 2 AA batteries",
+   "Twist head from spot to flood"
   ],
-  "pitch": "A coin-sized light for the key ring, with extra UV and colored modes. Cheap enough to buy a few as stocking stuffers.",
-  "checked": "2026-11-16"
- },
- {
-  "id": "olight-iultra",
-  "name": "Olight iUltra",
-  "brand": "Olight",
-  "category": "Flashlight",
-  "asin": "B0FYDFNDSG",
-  "price": 29.99,
-  "facts": [
-   "Mini keychain flashlight",
-   "Rechargeable",
-   "Olive Green"
-  ],
-  "pitch": "Olight's newer mini keychain light. A tidy step up for someone who already likes the idea of a light on their keys.",
-  "checked": "2026-11-16"
- },
- {
-  "id": "nitecore-tip3",
-  "name": "Nitecore TIP3",
-  "brand": "Nitecore",
-  "category": "Flashlight",
-  "asin": "B0GHPCFR38",
-  "price": 34.95,
-  "facts": [
-   "Up to 720 lumens",
-   "3 color temperatures",
-   "USB-C rechargeable, with pocket clip"
-  ],
-  "pitch": "A flat keychain light that also clips to a pocket, with a choice of warm, neutral or cool white.",
-  "checked": "2026-11-16",
-  "store": {
-   "name": "Nitecore Store",
-   "awin_mid": 81173,
-   "url": "https://nitecorestore.com/products/tip3-usbc-multi-color-temperature-keychain-flashlight",
-   "price": 34.95,
-   "checked": "2026-11-19"
-  }
- },
- {
-  "id": "nitecore-tini-3",
-  "name": "Nitecore TINI 3",
-  "brand": "Nitecore",
-  "category": "Flashlight",
-  "asin": "B0F2P7J832",
-  "price": 39.95,
-  "facts": [
-   "Up to 600 lumens",
-   "Warm, neutral and cool white",
-   "USB-C rechargeable"
-  ],
-  "pitch": "A tiny keychain light with a lot of output for its size, and a choice of light color for reading or finding things in the dark.",
-  "checked": "2026-11-16",
-  "store": {
-   "name": "Nitecore Store",
-   "awin_mid": 81173,
-   "url": "https://nitecorestore.com/products/tini3-multicolor-temperature-keychain-flashlight",
-   "price": 39.95,
-   "checked": "2026-11-19"
-  }
+  "pitch": "The classic. It runs on AA batteries you can buy anywhere, the head twists from a tight spot to a wide flood, and it's made in the USA with a 10-year warranty. A good first light for a glovebox, a drawer or a kid's first camping trip.",
+  "image": "/pimg/maglite-mini-led-aa.jpg",
+  "image_page": "https://commons.wikimedia.org/wiki/File:Mini_Maglite_LED_with_accessories.jpg",
+  "image_author": "A.Savin",
+  "image_license": "CC BY-SA 3.0",
+  "image_license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "image_note": "Cropped. Shown in gray, with its gift box."
  },
  {
   "id": "nitecore-thumb",
@@ -516,65 +470,6 @@
    "awin_mid": 81173,
    "url": "https://nitecorestore.com/products/nitecore-thumb-usb-rechargeable-white-red-tiltable-led-keychain-light",
    "price": 19.95,
-   "checked": "2026-11-19"
-  }
- },
- {
-  "id": "olight-oclip-pro",
-  "name": "Olight Oclip Pro",
-  "brand": "Olight",
-  "category": "Flashlight",
-  "asin": "B0DDC3M31M",
-  "price": 39.99,
-  "facts": [
-   "Clip-on light",
-   "Rechargeable",
-   "Clips to a pocket, strap or collar"
-  ],
-  "pitch": "A light that clips on instead of riding in a pocket, so both hands stay free for dog walks, runs and car trouble.",
-  "checked": "2026-11-16"
- },
- {
-  "id": "nitecore-edc09",
-  "name": "Nitecore EDC09",
-  "brand": "Nitecore",
-  "category": "Flashlight",
-  "asin": "B0G45JBD45",
-  "price": 69.95,
-  "facts": [
-   "Up to 1600 lumens",
-   "102° swivel head and magnetic tail",
-   "USB-C rechargeable, stainless steel body"
-  ],
-  "pitch": "A pocket light with a head that swivels and a magnetic tail, so it can stand on a car hood or point into an engine bay while you work.",
-  "checked": "2026-11-16",
-  "store": {
-   "name": "Nitecore Store",
-   "awin_mid": 81173,
-   "url": "https://nitecorestore.com/products/edc09-swivel-head-edc-flashlight",
-   "price": 69.95,
-   "checked": "2026-11-19"
-  }
- },
- {
-  "id": "nitecore-edc29",
-  "name": "Nitecore EDC29",
-  "brand": "Nitecore",
-  "category": "Flashlight",
-  "asin": "B0DHQXJDM2",
-  "price": 109.95,
-  "facts": [
-   "Up to 6500 lumens",
-   "Flat EDC body",
-   "Rechargeable"
-  ],
-  "pitch": "A flat, pocketable light with huge maximum output. It's the big-gift light for someone who already owns a keychain one.",
-  "checked": "2026-11-16",
-  "store": {
-   "name": "Nitecore Store",
-   "awin_mid": 81173,
-   "url": "https://nitecorestore.com/products/nitecore-edc29-usb-c-rechargeable-flat-edc-flashlight",
-   "price": 109.95,
    "checked": "2026-11-19"
   }
  },
@@ -641,21 +536,6 @@
   "image_pos": "50% 50%"
  },
  {
-  "id": "leatherman-rebar",
-  "name": "Leatherman Rebar",
-  "brand": "Leatherman",
-  "category": "Multitool",
-  "asin": "B07VWCXQRV",
-  "price": 79.95,
-  "facts": [
-   "Replaceable wire cutters",
-   "Saw",
-   "Coyote Tan"
-  ],
-  "pitch": "A workhorse tool with replaceable wire cutters and a saw, for people who fix things more than they open packages.",
-  "checked": "2026-11-16"
- },
- {
   "id": "leatherman-signal",
   "name": "Leatherman Signal",
   "brand": "Leatherman",
@@ -676,21 +556,6 @@
   "image_license_url": "https://unsplash.com/license",
   "image_note": "Photo shows the green finish; the link is for Coyote Tan.",
   "image_pos": "50% 50%"
- },
- {
-  "id": "leatherman-surge",
-  "name": "Leatherman Surge",
-  "brand": "Leatherman",
-  "category": "Multitool",
-  "asin": "B0014VVVCK",
-  "price": 159.95,
-  "facts": [
-   "21 tools",
-   "Heavy-duty build",
-   "Stainless steel"
-  ],
-  "pitch": "The big, heavy-duty Leatherman for work trucks, garages and the person who uses their tool every single day.",
-  "checked": "2026-11-16"
  },
  {
   "id": "timex-expedition-scout",

@@ -1,11 +1,11 @@
 [
  {
   "slug": "which-leatherman-to-buy",
-  "title": "Which Leatherman Should You Buy? Rev vs Wingman vs Wave+ vs Rebar vs Signal vs Surge",
+  "title": "Which Leatherman Should You Buy? Rev vs Wingman vs Sidekick vs Skeletool vs Signal",
   "description": "Leatherman makes a dozen look-alike multitools. Here is what actually separates the popular models, and which one fits the way you'll use it.",
   "date": "2026-11-19",
   "tag": "Multitools",
-  "answer": "For most people the Leatherman Wave+ is the one to buy: 18 tools, with the knives opening from outside so you don't unfold the handles. Pick the Wingman or Rev to spend less, the Skeletool CX to carry light, the Signal for camping, and the Surge for heavy daily work.",
+  "answer": "For most people the Leatherman Sidekick is the one to buy: 14 tools including a saw, spring-action pliers, and blades that open from the outside. Pick the Wingman or Rev to spend less, the Skeletool CX to carry light, and the Signal for camping.",
   "sections": [
    {
     "h2": "The short version",
@@ -15,12 +15,12 @@
     ]
    },
    {
-    "h2": "Best for most people: Wave+",
+    "h2": "Best for most people: Sidekick",
     "paras": [
-     "The Wave+ has 18 tools in about 8.5 ounces, and its blades open from the outside with one hand, so you don't have to unfold the handles to cut something. That one detail is why it's the model people keep for decades. If you're buying one Leatherman as a gift and don't know much about the person's habits, buy this."
+     "The Sidekick has 14 tools, including a saw, and its plain and serrated blades open from the outside with one hand, so you don't unfold the handles to cut something. The pliers are spring-loaded, so they open on their own. Leatherman pitches it as the first tool for new users, and it costs well under the big full-size models at Leatherman's own store. If you're buying one Leatherman as a gift and don't know much about the person's habits, buy this."
     ],
     "products": [
-     "leatherman-wave-plus"
+     "leatherman-sidekick"
     ]
    },
    {
@@ -43,15 +43,6 @@
     ]
    },
    {
-    "h2": "Fixing things: Rebar",
-    "paras": [
-     "The Rebar is the plain workhorse of the lineup, with 17 tools, a saw and replaceable wire cutters. It doesn't have the outside-opening blades of the Wave+, so you open the handles to reach the knife. That's fine in a garage, less handy on a ladder."
-    ],
-    "products": [
-     "leatherman-rebar"
-    ]
-   },
-   {
     "h2": "Camping and hiking: Signal",
     "paras": [
      "The Signal is built for the outdoors. Among its 19 tools are a ferro rod for starting fires, a safety whistle, a hammer surface for tent stakes and a diamond-coated sharpener for touching up the blade. It's 4.5 inches long and about 7.5 ounces. Leatherman sells the sheath separately."
@@ -61,23 +52,20 @@
     ]
    },
    {
-    "h2": "Heavy daily work: Surge",
+    "h2": "What about the Wave+ and Surge?",
     "paras": [
-     "The Surge is the big one, with 21 tools and about 12.5 ounces. It has four locking tools that open from outside, spring-action scissors, a large bit driver and a holder that swaps between a saw and a file. It's too heavy for a pants pocket, so think belt, toolbox or truck door."
-    ],
-    "products": [
-     "leatherman-surge"
+     "Leatherman's bigger tools add more tools and more weight. They make sense on a belt or in a truck for people who use pliers all day, but for a pocket the models above cover the same everyday jobs with less bulk."
     ]
    }
   ],
   "faq": [
    {
     "q": "What is the most popular Leatherman?",
-    "a": "The Wave+ is the model most people point to, because it balances tool count, size and outside-opening blades."
+    "a": "The Wave+ is the best-known full-size model. For a first Leatherman, the Sidekick gives you outside-opening blades, a saw and spring-loaded pliers for less."
    },
    {
     "q": "Which Leatherman is best for everyday carry?",
-    "a": "The Skeletool CX if you want light and simple, or the Wave+ if you want more tools and don't mind a little more weight."
+    "a": "The Skeletool CX if you want light and simple, or the Sidekick if you want more tools and a saw."
    },
    {
     "q": "What is the cheapest Leatherman worth buying?",
@@ -92,7 +80,7 @@
    "best-pocket-multitool",
    "best-edc-gifts-for-dads"
   ],
-  "seo_title": "Which Leatherman to Buy? Rev vs Wingman vs Wave+ and More | True EDC"
+  "seo_title": "Which Leatherman to Buy? Rev vs Wingman vs Sidekick and More | True EDC"
  },
  {
   "slug": "secret-santa-gifts-under-25",
@@ -117,7 +105,7 @@
     "products": [
      "nitecore-thumb",
      "nitecore-thumb-leo",
-     "sofirn-se1"
+     "maglite-mini-led-aa"
     ]
    },
    {
@@ -187,11 +175,11 @@
    {
     "h2": "Lights that keep your hands free",
     "paras": [
-     "A light you have to hold is a light you put down in the dark. The Nitecore THUMB clips to a cap brim or pack strap and tilts to aim, and it has a red side light that's easier on night vision. The Olight Oclip Pro clips to a jacket or strap for dog walks and late arrivals at camp."
+     "A light you have to hold is a light you put down in the dark. The Nitecore THUMB clips to a cap brim or pack strap and tilts to aim, and it has a red side light that's easier on night vision. The Mini Maglite runs on AA batteries you can find at any campground store, and its head twists from spot to flood."
     ],
     "products": [
      "nitecore-thumb",
-     "olight-oclip-pro"
+     "maglite-mini-led-aa"
     ]
    },
    {
@@ -246,10 +234,10 @@
  {
   "slug": "best-edc-flashlight",
   "title": "The Best EDC Flashlight for Your Pocket (Not Just Your Keys)",
-  "description": "When a keychain light isn't enough: flat pocket lights, swivel-head lights and clip-on lights compared, from about $35 to a splurge.",
+  "description": "When a keychain light isn't enough: slim AA lights, a classic tube light and a clip-on light compared, from about $20 to a splurge.",
   "date": "2026-11-19",
   "tag": "Flashlights",
-  "answer": "The best pocket EDC flashlight for most people is the Nitecore EDC09, because its head swivels and its magnetic tail lets it stand on its own while you work. Pick the Nitecore TIP3 to spend less, the Nitecore EDC29 for a flat, phone-like light with more power, the Streamlight ProTac HL for a classic tube light with a tail switch, or the Olight Oclip Pro to clip on and keep your hands free.",
+  "answer": "The best pocket EDC flashlight for most people is the Streamlight ProTac HL, a classic tube light with a tail switch. Pick the Mini Maglite LED to spend the least, or the Nitecore THUMB to clip on and keep your hands free.",
   "sections": [
    {
     "h2": "Keychain light or pocket light?",
@@ -258,41 +246,30 @@
     ]
    },
    {
-    "h2": "Best overall: Nitecore EDC09",
+    "h2": "Best on a budget: Mini Maglite LED",
     "paras": [
-     "The EDC09 puts out up to 1,600 lumens, and its head swivels through 102 degrees. Add the magnetic tail and you can stick it to a car hood or stand it on a shelf and aim it into whatever you're fixing. It charges over USB-C."
+     "The Mini Maglite is the light many people grew up with, now with an LED. It runs on two AA batteries, reaches 127 lumens, and its head twists from a tight spot to a wide flood. Maglite makes it in the USA and lists a 10-year warranty."
     ],
     "products": [
-     "nitecore-edc09"
+     "maglite-mini-led-aa"
     ]
    },
    {
-    "h2": "Best on a budget: Nitecore TIP3",
+    "h2": "More output: Streamlight ProTac HL",
     "paras": [
-     "The TIP3 is flat, clips to a pocket and reaches 720 lumens. It also lets you choose warm, neutral or cool white, which matters more than people expect: warm light is easier for reading labels and seeing true colors."
+     "If you want real reach, the Streamlight ProTac HL is a classic tube light that reaches 750 lumens, with a tail switch you can press with gloves on. It runs on CR123A lithium batteries, which hold up well in the cold and in a glovebox."
     ],
     "products": [
-     "nitecore-tip3"
-    ]
-   },
-   {
-    "h2": "More output: flat or classic tube",
-    "paras": [
-     "Flat EDC lights sit in a pocket like a phone instead of rolling around like a tube. The Nitecore EDC29 is the power pick, at up to 6,500 lumens, which is far more than daily chores need but very welcome on a dark road.",
-     "If you prefer a classic tube light, the Streamlight ProTac HL reaches 750 lumens and has a tail switch you can press with gloves on."
-    ],
-    "products": [
-     "nitecore-edc29",
      "streamlight-protac-hl"
     ]
    },
    {
-    "h2": "Hands-free: Olight Oclip Pro",
+    "h2": "Hands-free: Nitecore THUMB",
     "paras": [
-     "If you mostly need light while your hands are busy, a clip-on beats any pocket light. The Oclip Pro fastens to a pocket, a strap or a collar, which makes it a favorite for dog walks and runs."
+     "If you mostly need light while your hands are busy, a clip-on beats any pocket light. The Nitecore THUMB clips to a pocket, a strap or a cap brim, and its head tilts so you can aim it, which makes it a favorite for dog walks and car trouble."
     ],
     "products": [
-     "olight-oclip-pro"
+     "nitecore-thumb"
     ]
    },
    {
@@ -305,15 +282,15 @@
   "faq": [
    {
     "q": "What is the best EDC flashlight?",
-    "a": "For most people, a compact USB-C rechargeable light with a pocket clip and a range of brightness levels. The Nitecore EDC09 is our pick for its swivel head and magnetic tail."
+    "a": "For most people, a compact light with a pocket clip and a range of brightness levels. The Streamlight ProTac HL is our pick for its tail switch and reach."
    },
    {
     "q": "How many lumens should an EDC flashlight have?",
     "a": "A few hundred lumens covers everyday tasks. More is useful outdoors or on the road, as long as the light also has low modes."
    },
    {
-    "q": "Are flat flashlights better for pocket carry?",
-    "a": "Many people find them more comfortable, because they lie flat like a phone instead of rolling around in a pocket."
+    "q": "Should an EDC flashlight be rechargeable?",
+    "a": "Rechargeable lights save on batteries, but AA lights are easier to keep running on a trip or in a power cut, because spare batteries are sold everywhere."
    }
   ],
   "related": [
@@ -403,8 +380,7 @@
     ],
     "products": [
      "nitecore-thumb-leo",
-     "sofirn-se1",
-     "nitecore-tini-3"
+     "nitecore-thumb"
     ]
    },
    {
@@ -532,10 +508,10 @@
  {
   "slug": "best-keychain-flashlight",
   "title": "The Best Keychain Flashlights for EDC",
-  "description": "Small rechargeable lights from Olight, Nitecore and Sofirn that live on your keys, plus when it's worth stepping up to a pocket light.",
+  "description": "Small lights from Nitecore that live on your keys, plus when it's worth stepping up to a pocket light.",
   "date": "2026-11-16",
   "tag": "Flashlights",
-  "answer": "The best keychain flashlight is one small enough that you forget it's on your keys until you need it. The Nitecore THUMB LEO and Sofirn SE1 are easy starts at $25 or less, and the Nitecore TINI 3 adds more output and a choice of light color.",
+  "answer": "The best keychain flashlight is one small enough that you forget it's on your keys until you need it. The Nitecore THUMB LEO is the easy start at under $25, and the Nitecore THUMB adds a tilting head and a clip for a cap or strap.",
   "sections": [
    {
     "h2": "Under $25",
@@ -544,30 +520,16 @@
     ],
     "products": [
      "nitecore-thumb-leo",
-     "sofirn-se1",
      "nitecore-thumb"
-    ]
-   },
-   {
-    "h2": "Under $50",
-    "paras": [
-     "Spending a bit more gets you more output, a choice of warm or cool light, or a clip so the light can ride on a pocket or strap."
-    ],
-    "products": [
-     "olight-iultra",
-     "nitecore-tip3",
-     "nitecore-tini-3",
-     "olight-oclip-pro"
     ]
    },
    {
     "h2": "When to step up to a pocket light",
     "paras": [
-     "If you walk the dog at night, work on cars or spend time outdoors, a larger pocket light gives far more reach. These ride in a pocket instead of on your keys."
+     "If you walk the dog at night, work on cars or spend time outdoors, a larger pocket light gives far more reach. These ride in a pocket or a bag instead of on your keys, and the Maglite and Olight both run on AA batteries you can buy anywhere."
     ],
     "products": [
-     "nitecore-edc09",
-     "nitecore-edc29",
+     "maglite-mini-led-aa",
      "streamlight-protac-hl"
     ]
    }
@@ -603,11 +565,11 @@
     "h2": "Where a pocket flashlight wins",
     "paras": [
      "A flashlight is small, quick to grab and easy to point exactly where you need it: a keyhole, a dropped earbud, a fuse box. It also rides on your keys or clips to a pocket, so it's there when you didn't plan on needing light.",
-     "If you want one pocket light with real power, our top pick is the [Nitecore EDC09](/blog/best-edc-flashlight/)."
+     "If you want one pocket light with real reach, our top pick is the [Streamlight ProTac HL](/blog/best-edc-flashlight/)."
     ],
     "products": [
      "nitecore-thumb-leo",
-     "nitecore-tini-3"
+     "streamlight-protac-hl"
     ]
    },
    {
@@ -619,12 +581,11 @@
    {
     "h2": "A middle ground: clip-on and magnetic lights",
     "paras": [
-     "Clip-on lights and lights with a magnetic tail cover a lot of headlamp jobs. Clip one to a collar or strap, or stick it to a car hood, and both hands stay free.",
-     "For a clip-on pick, see the [Olight Oclip Pro in our hikers gift guide](/blog/gifts-for-hikers-and-campers/#olight-oclip-pro)."
+     "Clip-on lights cover a lot of headlamp jobs. Clip one to a collar, a cap brim or a strap and both hands stay free.",
+     "For a clip-on pick, see the [Nitecore THUMB in our hikers gift guide](/blog/gifts-for-hikers-and-campers/#nitecore-thumb)."
     ],
     "products": [
-     "olight-oclip-pro",
-     "nitecore-edc09"
+     "nitecore-thumb"
     ]
    }
   ],
@@ -654,7 +615,7 @@
   "description": "How to choose between a keychain multitool, a pocket-size Leatherman and a full-size tool, with real picks from Victorinox, Gerber and Leatherman at every budget.",
   "date": "2026-11-16",
   "tag": "Multitools",
-  "answer": "Pick a multitool by size first. A keychain tool like the Victorinox Classic SD or Leatherman Micra covers small daily jobs; a full-size tool like the Leatherman Wave+ is for people who fix things often and don't mind the weight.",
+  "answer": "Pick a multitool by size first. A keychain tool like the Victorinox Classic SD or Leatherman Micra covers small daily jobs; a full-size tool like the Leatherman Sidekick or Signal is for people who fix things often and don't mind the weight.",
   "sections": [
    {
     "h2": "Keychain size",
@@ -684,10 +645,8 @@
      "Big, capable tools for garages, job sites, camping and the person everyone calls when something breaks. Expect more weight and a belt sheath."
     ],
     "products": [
-     "leatherman-wave-plus",
-     "leatherman-rebar",
-     "leatherman-signal",
-     "leatherman-surge"
+     "leatherman-sidekick",
+     "leatherman-signal"
     ]
    }
   ],
@@ -702,7 +661,7 @@
    },
    {
     "q": "Which Leatherman is best for everyday carry?",
-    "a": "For a front pocket, a smaller model like the Rev or Wingman. For people who use pliers daily, the Wave+ is the classic full-size choice. [See our full Leatherman comparison](/blog/which-leatherman-to-buy/)."
+    "a": "For a front pocket, a smaller model like the Rev or Wingman. For people who use pliers daily, the Sidekick is a full-size tool that still fits a pocket. [See our full Leatherman comparison](/blog/which-leatherman-to-buy/)."
    },
    {
     "q": "Can I fly with a multitool?",
@@ -741,10 +700,10 @@
      "Bigger gifts that tend to get used for years."
     ],
     "products": [
-     "leatherman-wave-plus",
+     "leatherman-signal",
      "gshock-dw5600ue",
-     "leatherman-rebar",
-     "nitecore-edc09",
+     "leatherman-sidekick",
+     "streamlight-protac-hl",
      "kershaw-leek"
     ]
    },
